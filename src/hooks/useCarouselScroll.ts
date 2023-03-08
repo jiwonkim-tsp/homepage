@@ -5,17 +5,16 @@ export const useCarouselScroll = () => {
   useEffect(() => {
     const el = elRef.current;
     if (el) {
+      //any 수정
       const handleWheel = (event: any) => {
-        // console.log(event.deltaY);
         if (event.deltaY == 0) return;
         event.preventDefault();
-        console.log(el.scrollLeft);
         el.scrollTo({
-          left: el.scrollLeft + event.deltaY * 10,
+          left: el.scrollTop + event.deltaY,
           behavior: "smooth",
         });
       };
-      el.addEventListener("wheel", handleWheel);
+      window.addEventListener("wheel", handleWheel, { passive: false });
     }
   }, []);
   return elRef;
