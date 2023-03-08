@@ -1,7 +1,11 @@
-import React from "react";
+import Carousel from "./Carousel";
 
 const OurWork = () => {
-  return <div>OurWork</div>;
+  return (
+    <div>
+      <Carousel />
+    </div>
+  );
 };
 
 export default OurWork;
