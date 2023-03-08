@@ -13,11 +13,16 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   html {
+    scroll-behavior: smooth;
     //font
   }
   body {
-    overflow-x: hidden;
-    overflow-y: auto;
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+  background-color: #7a67ae;
+  background-image: linear-gradient(135deg, #7a67ae 0%, #a379b5 27%, #e8d0dc 100%);
+  background-attachment: fixed;
   }
   h1, h2, h3, h4, h5, h6, button {
     font-family: 'yg-jalnan';

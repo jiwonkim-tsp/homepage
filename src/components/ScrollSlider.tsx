@@ -12,38 +12,42 @@ const colors = [
   { id: 8, bg: "orange", rotate: "-261deg" },
   { id: 9, bg: "blue", rotate: "-294deg" },
   { id: 10, bg: "orange", rotate: "-327deg" },
+  { id: 11, bg: "pink", rotate: "0deg" },
+  { id: 12, bg: "red", rotate: "-32deg" },
+  { id: 13, bg: "blue", rotate: "-98deg" },
 ];
+
 const ScrollSlider = () => {
   const carouselRef = useCarouselScroll();
 
   return (
-    <Wrapper>
-      <Carousel ref={carouselRef}>
+    <$Wrapper>
+      <$Carousel ref={carouselRef}>
         {colors.map((color) => (
-          <CarouselItem key={color.id} color={color.bg} rotate={color.rotate}>
-            안녕
-          </CarouselItem>
+          <$CarouselItem key={color.id} color={color.bg} rotate={color.rotate}>
+            {color.id}
+          </$CarouselItem>
         ))}
-      </Carousel>
-    </Wrapper>
+      </$Carousel>
+    </$Wrapper>
   );
 };
 
 export default ScrollSlider;
 
-const Wrapper = styled.div`
-  margin: auto;
-  transform: translateX(-500px);
+const $Wrapper = styled.div`
+  background-color: beige;
+  width: 1100px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  transform: translateZ(685px) rotateZ(6deg);
 `;
 
-const Carousel = styled.div`
+const $Carousel = styled.div`
   display: flex;
-  flex-wrap: nowrap;
-  width: 80%;
   height: 300px;
   background-color: beige;
-  transform: translateZ(710px) rotateZ(6deg) rotateY(-160deg);
-  perspective: 2000px;
   overflow-x: scroll;
   -ms-overflow-style: none;
   ::-webkit-scrollbar {
@@ -51,10 +55,11 @@ const Carousel = styled.div`
   }
 `;
 
-const CarouselItem = styled.div<{ color: string; rotate: string }>`
-  flex: 0 0 auto;
-  width: 360px;
+const $CarouselItem = styled.div<{ color: string; rotate: string }>`
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 300px;
   height: 300px;
   background-color: ${({ color }) => color};
-  transform: rotateY(${({ rotate }) => rotate}) translateZ(686px);
+  /* transform: rotateY(${({ rotate }) => rotate}) translateZ(686px); */
 `;

@@ -1,12 +1,14 @@
-import ScrollSlider from "./components/ScrollSlider";
+import Header from "./components/header/header/Header";
 import GlobalStyle from "./styles/GlobalStyle";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <GlobalStyle />
-      <ScrollSlider />
-    </div>
+      <Header />
+      <Outlet />
+    </>
   );
 }
 
