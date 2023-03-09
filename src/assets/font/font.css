@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Gotham";
+  font-display: fallback;
+  src: url("./Gotham-Black.ttf") format("truetype"), url("./Gotham-Black.otf"),
+    format("opentype") format("woff");
+}
+
+@font-face {
+  font-family: "한국기계연구원";
+  font-display: fallback;
+  src: url("./한국기계연구원_Light.ttf") format("truetype");
+}

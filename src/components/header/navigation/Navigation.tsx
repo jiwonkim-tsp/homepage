@@ -19,7 +19,12 @@ const Navigation = ({ setOpenNav }: INavigationProps) => {
   return (
     <$Nav onClick={handleClick}>
       {navLists.map((list) => (
-        <NavigationList key={list.name} name={list.name} link={list.link} />
+        <NavigationList
+          key={list.name}
+          name={list.name}
+          link={list.link}
+          setOpenNav={setOpenNav}
+        />
       ))}
     </$Nav>
   );

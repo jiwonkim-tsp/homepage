@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "../navigation/Navigation";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { TiThMenu, TiThMenuOutline } from "react-icons/ti";
 import { $Wrapper, $Header, $Logo, $Toggle } from "./style";
 import logo from "../../../assets/image/logo/KR_가로형_화이트.png";
 
@@ -19,7 +20,7 @@ const Header = () => {
           </$Logo>
         </Link>
         <$Toggle onClick={handleClick}>
-          {openNav ? <AiOutlineClose /> : <AiOutlineMenu />}
+          {openNav ? <AiOutlineClose /> : <TiThMenu />}
         </$Toggle>
       </$Header>
       {openNav && <Navigation setOpenNav={setOpenNav} />}

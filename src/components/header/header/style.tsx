@@ -24,7 +24,7 @@ export const $Logo = styled.div`
 
 export const $Toggle = styled.div`
   background-color: rgba(255, 255, 255, 0.7);
-  border: 3px solid #a379b5;
+  /* border: 3px solid #a379b5; */
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -34,8 +34,8 @@ export const $Toggle = styled.div`
   cursor: pointer;
 
   svg {
-    color: #a379b5;
-    font-size: 30px;
-    font-weight: bold;
+    color: #f5d4e4;
+    font-size: 35px;
+    /* stroke-width: 5; */
   }
 `;

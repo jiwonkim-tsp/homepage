@@ -1,5 +1,4 @@
 import { $Wrapper, $CarouselWrapper, $Item } from "./styleCarousel";
-import loading from "./../../../assets/image/loading/loading.png";
 
 const items = [
   { id: 1, bg: "red" },
