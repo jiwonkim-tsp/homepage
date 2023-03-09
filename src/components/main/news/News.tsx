@@ -1,7 +1,14 @@
-import React from "react";
+import styled from "styled-components";
 
 const News = () => {
-  return <div>News</div>;
+  return <$Wrapper>News</$Wrapper>;
 };
 
 export default News;
+
+const height = window.innerHeight;
+
+const $Wrapper = styled.div`
+  /* height: ${height}px; */
+  height: 500px;
+`;

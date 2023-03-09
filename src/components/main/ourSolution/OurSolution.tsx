@@ -1,7 +1,11 @@
-import React from "react";
+import styled from "styled-components";
 
 const OurSolution = () => {
-  return <div>OurSolution</div>;
+  return <$Wrapper>OurSolution</$Wrapper>;
 };
 
 export default OurSolution;
+
+const $Wrapper = styled.div`
+  height: 500px;
+`;
