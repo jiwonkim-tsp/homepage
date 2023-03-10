@@ -1,5 +1,5 @@
-import styled from "styled-components";
 import NavigationList from "./../navigationList/NavigationList";
+import { $Nav } from "./style";
 
 const navLists = [
   { name: "인증", link: "/awards" },
@@ -31,12 +31,3 @@ const Navigation = ({ setOpenNav }: INavigationProps) => {
 };
 
 export default Navigation;
-
-const $Nav = styled.ul`
-  width: 100vw;
-  height: 100vh;
-  background-color: skyblue;
-  display: flex;
-  gap: 10px;
-  flex-direction: column;
-`;
