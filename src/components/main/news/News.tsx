@@ -10,5 +10,6 @@ const height = window.innerHeight;
 
 const $Wrapper = styled.div`
   /* height: ${height}px; */
+  height: 100vh;
   height: 500px;
 `;

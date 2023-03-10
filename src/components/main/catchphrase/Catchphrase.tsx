@@ -1,5 +1,5 @@
 import AnimatedText from "./AnimatedText";
-import styled, { keyframes } from "styled-components";
+import { $Wrapper, $Phrases } from "./styleCatchphrase";
 
 const Catchphrase = () => {
   const phrases = [
@@ -9,33 +9,16 @@ const Catchphrase = () => {
       text: "AR&XR experience",
     },
   ];
-  const height = window.innerHeight;
-  console.log(height);
 
   return (
-    <$Wrapper height={height}>
-      {phrases.map((phrase, index) => {
-        return <AnimatedText phrase={phrase} key={index} />;
-      })}
+    <$Wrapper>
+      <$Phrases>
+        {phrases.map((phrase, index) => {
+          return <AnimatedText phrase={phrase} key={index} />;
+        })}
+      </$Phrases>
     </$Wrapper>
   );
 };
-
-const delay = keyframes`
-  
-`;
-
-const $Wrapper = styled.div<{ height: number }>`
-  /* background-color: pink; */
-  height: ${({ height }) => height}px;
-  /* height: 500px; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  animation: delay;
-  animation-delay: 2s;
-`;
 
 export default Catchphrase;

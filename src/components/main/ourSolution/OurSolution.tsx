@@ -7,5 +7,7 @@ const OurSolution = () => {
 export default OurSolution;
 
 const $Wrapper = styled.div`
+  height: 100vh;
+  background-color: blue;
   height: 500px;
 `;

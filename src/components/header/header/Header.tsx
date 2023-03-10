@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "../navigation/Navigation";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { TiThMenu, TiThMenuOutline } from "react-icons/ti";
+import { AiOutlineClose } from "react-icons/ai";
+import { TiThMenu } from "react-icons/ti";
 import { $Wrapper, $Header, $Logo, $Toggle } from "./style";
 import logo from "../../../assets/image/logo/KR_가로형_화이트.png";
 
