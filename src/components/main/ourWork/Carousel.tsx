@@ -1,35 +1,38 @@
 import { $Wrapper, $CarouselWrapper, $Item } from "./styleCarousel";
-import loading from "./../../../assets/image/loading/loading.png";
+import arSpot from "./../../../assets/image/ourWork/ourWork0.png";
+import arArt from "./../../../assets/image/ourWork/ourWork1.png";
+import arNav from "./../../../assets/image/ourWork/ourWork2.png";
+import arFace from "./../../../assets/image/ourWork/ourWork3.png";
+import { Link } from "react-router-dom";
 
-const items = [
-  { id: 1, bg: "red" },
-  { id: 2, bg: "orange" },
-  { id: 3, bg: "yellow" },
-  { id: 4, bg: "green" },
-  { id: 5, bg: "blue" },
-  { id: 6, bg: "navy" },
-  { id: 7, bg: "purple" },
-  { id: 8, bg: "black" },
-  { id: 9, bg: "blue" },
-  { id: 10, bg: "black" },
-  { id: 1, bg: "red" },
-  { id: 2, bg: "orange" },
-  { id: 3, bg: "yellow" },
-  { id: 4, bg: "green" },
-  { id: 5, bg: "blue" },
-  { id: 6, bg: "navy" },
-  { id: 7, bg: "purple" },
-  { id: 8, bg: "black" },
-  { id: 9, bg: "blue" },
-  { id: 10, bg: "black" },
+const lists = [
+  { id: 1, src: arSpot, link: "https://www.youtube.com/watch?v=to2l8dx1D_Y" },
+  { id: 2, src: arArt, link: "https://www.youtube.com/watch?v=6a6e6XFq7CQ" },
+  { id: 3, src: arNav, link: "https://www.youtube.com/watch?v=geZt0OQzvAc" },
+  {
+    id: 4,
+    src: arFace,
+    link: "https://www.youtube.com/watch?v=9LaEgpEC_NM&t=1s",
+  },
+  { id: 5, src: arSpot, link: "https://www.youtube.com/watch?v=to2l8dx1D_Y" },
+  { id: 6, src: arArt, link: "https://www.youtube.com/watch?v=6a6e6XFq7CQ" },
+  { id: 7, src: arNav, link: "https://www.youtube.com/watch?v=geZt0OQzvAc" },
+  {
+    id: 8,
+    src: arFace,
+    link: "https://www.youtube.com/watch?v=9LaEgpEC_NM&t=1s",
+  },
 ];
+
 const Carousel = () => {
   return (
     <$Wrapper>
       <$CarouselWrapper>
-        {items.map((item) => (
-          <$Item key={item.id} bg={item.bg}>
-            {item.bg}
+        {lists.map((list) => (
+          <$Item key={list.id}>
+            <Link to={list.link}>
+              <img src={list.src} alt={list.src} />
+            </Link>
           </$Item>
         ))}
       </$CarouselWrapper>
