@@ -28,7 +28,7 @@ export const $Wrapper = styled.div`
 export const $ContentWrapper = styled.div`
   padding: 10vw;
   font-weight: bold;
-  color: #0a3ed1;
+  color: #774ecb;
   z-index: 1;
 `;
 

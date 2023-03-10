@@ -1,11 +1,12 @@
 import NavigationList from "./../navigationList/NavigationList";
-import { $Nav } from "./style";
+import { $Wrapper, $Nav, $Contact, $Title, $Content } from "./style";
 
 const navLists = [
-  { name: "인증", link: "/awards" },
-  { name: "work", link: "/ourwork" },
-  { name: "solutions", link: "/aisolution" },
-  { name: "구매", link: "/products" },
+  { name: "Certificate", link: "/awards" },
+  { name: "Our Work", link: "/ourwork" },
+  { name: "Our Solutions", link: "/aisolution" },
+  { name: "News", link: "/aisolution" },
+  { name: "Products", link: "/products" },
 ];
 
 interface INavigationProps {
@@ -17,16 +18,23 @@ const Navigation = ({ setOpenNav }: INavigationProps) => {
     setOpenNav(false);
   };
   return (
-    <$Nav onClick={handleClick}>
-      {navLists.map((list) => (
-        <NavigationList
-          key={list.name}
-          name={list.name}
-          link={list.link}
-          setOpenNav={setOpenNav}
-        />
-      ))}
-    </$Nav>
+    <$Wrapper>
+      <$Contact>
+        <$Title>Contact</$Title>
+        <$Content>02-5445-3982</$Content>
+        <$Content>연구소 : 서울 강남구 학동로 101길 26</$Content>
+      </$Contact>
+      <$Nav onClick={handleClick}>
+        {navLists.map((list) => (
+          <NavigationList
+            key={list.name}
+            name={list.name}
+            link={list.link}
+            setOpenNav={setOpenNav}
+          />
+        ))}
+      </$Nav>
+    </$Wrapper>
   );
 };
 
