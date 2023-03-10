@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
-export const $Wrapper = styled.div``;
-
 export const $Header = styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
   width: 100%;
   height: 100px;
   padding: 20px 30px;
@@ -10,7 +12,6 @@ export const $Header = styled.header`
   justify-content: space-between;
   align-items: center;
   position: relative;
-  z-index: 2;
   @media screen and (max-width: 600px) {
     height: 80px;
   }

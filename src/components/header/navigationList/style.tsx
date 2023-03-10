@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
 
 const animationgradienttitle = keyframes`
-0% {
+  0% {
       background-position: 0 1600px;
   }
   100% {
@@ -22,7 +22,7 @@ export const $List = styled(motion.li)`
     &:hover {
       background-size: 1600px 200px;
       animation-name: ${animationgradienttitle};
-      animation-duration: 3s;
+      animation-duration: 1s;
     }
   }
 `;

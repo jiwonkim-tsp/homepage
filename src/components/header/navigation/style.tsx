@@ -1,13 +1,12 @@
 import styled from "styled-components";
-import { motion } from "framer-motion";
-import font from "./../../../assets/font/font.css";
+import { motion, useCycle } from "framer-motion";
 
 export const $Wrapper = styled.div`
-  position: absolute;
+  /* position: absolute;
   top: 0;
   z-index: 1;
   width: 100vw;
-  height: 100vh;
+  height: 100vh; */
   padding-bottom: 7%;
   background-color: #fff;
   display: flex;
@@ -24,7 +23,7 @@ export const $Nav = styled(motion.ul)`
 
 export const $Contact = styled.div`
   color: #4c0080;
-  font-size: 2vw;
+  font-size: 2.5vw;
 `;
 
 export const $Title = styled.div`

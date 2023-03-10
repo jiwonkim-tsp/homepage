@@ -4,7 +4,7 @@ import { $List } from "./style";
 interface IlinkProps {
   name: string;
   link: string;
-  setOpenNav: React.Dispatch<React.SetStateAction<boolean>>;
+  // setOpenNav: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const variants = {
@@ -24,17 +24,15 @@ const variants = {
   },
 };
 
-const NavigationList = ({ name, link, setOpenNav }: IlinkProps) => {
-  const handleNavigation = () => setOpenNav(false);
+const NavigationList = ({ name, link }: IlinkProps) => {
+  // const handleNavigation = () => setOpenNav(false);
   return (
     <$List
       variants={variants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-      <Link to={link} onClick={handleNavigation}>
-        {name}
-      </Link>
+      <Link to={link}>{name}</Link>
     </$List>
   );
 };
