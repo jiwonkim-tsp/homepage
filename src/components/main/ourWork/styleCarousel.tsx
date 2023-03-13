@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import Slider from "react-slick";
 
 const dataLength = 10;
 
@@ -13,12 +14,12 @@ export const $Wrapper = styled.div`
   width: 100%;
 `;
 
-export const $CarouselWrapper = styled.div`
+export const $CarouselWrapper = styled(Slider)`
   display: flex;
   gap: 3vw;
   width: calc(25vw * ${dataLength});
   height: 100%;
-  animation: ${infinityCarousel} 5s linear infinite;
+  /* animation: ${infinityCarousel} 5s linear infinite; */
   &:hover {
     animation-play-state: paused;
   }
@@ -27,6 +28,6 @@ export const $CarouselWrapper = styled.div`
 export const $Item = styled.div`
   width: 25vw;
   img {
-    width: 25vw;
+    width: 10vw;
   }
 `;

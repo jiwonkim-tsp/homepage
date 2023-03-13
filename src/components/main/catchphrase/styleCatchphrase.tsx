@@ -8,6 +8,7 @@ export const $Wrapper = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
+  z-index: 1;
 `;
 
 export const $Phrases = styled.div`

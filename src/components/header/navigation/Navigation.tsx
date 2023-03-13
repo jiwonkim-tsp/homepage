@@ -9,14 +9,14 @@ const navLists = [
   { name: "Products", link: "/products" },
 ];
 
-interface INavigationProps {
-  setOpenNav: React.Dispatch<React.SetStateAction<boolean>>;
-}
+// interface INavigationProps {
+//   setOpenNav: React.Dispatch<React.SetStateAction<boolean>>;
+// }
 
-const Navigation = ({ setOpenNav }: INavigationProps) => {
-  const handleClick = () => {
-    setOpenNav(false);
-  };
+const Navigation = () => {
+  // const handleClick = () => {
+  //   setOpenNav(false);
+  // };
   return (
     <$Wrapper>
       <$Contact>
@@ -24,14 +24,9 @@ const Navigation = ({ setOpenNav }: INavigationProps) => {
         <$Content>02-5445-3982</$Content>
         <$Content>연구소 : 서울 강남구 학동로 101길 26</$Content>
       </$Contact>
-      <$Nav onClick={handleClick}>
+      <$Nav>
         {navLists.map((list) => (
-          <NavigationList
-            key={list.name}
-            name={list.name}
-            link={list.link}
-            setOpenNav={setOpenNav}
-          />
+          <NavigationList key={list.name} name={list.name} link={list.link} />
         ))}
       </$Nav>
     </$Wrapper>
