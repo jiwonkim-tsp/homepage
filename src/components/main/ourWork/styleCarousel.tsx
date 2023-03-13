@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { motion } from "framer-motion";
+import Slider from "react-slick";
 
 const dataLength = 10;
 
@@ -8,13 +8,13 @@ const infinityCarousel = keyframes`
 	100% { transform: translateX(calc(-25vw * ${dataLength * 0.5}))}
 `;
 
-export const $Wrapper = styled(motion.div)`
+export const $Wrapper = styled.div`
   position: relative;
   overflow: hidden;
   width: 100%;
 `;
 
-export const $CarouselWrapper = styled(motion.div)`
+export const $CarouselWrapper = styled(Slider)`
   display: flex;
   gap: 3vw;
   width: calc(25vw * ${dataLength});
@@ -28,6 +28,6 @@ export const $CarouselWrapper = styled(motion.div)`
 export const $Item = styled.div`
   width: 25vw;
   img {
-    width: 25vw;
+    width: 10vw;
   }
 `;
