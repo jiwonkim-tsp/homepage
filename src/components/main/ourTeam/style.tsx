@@ -1,28 +1,26 @@
 import styled from "styled-components";
-
-const height = window.innerHeight;
+import { motion } from "framer-motion";
 
 export const $Wrapper = styled.div`
   position: relative;
   background-color: #f1c6db;
-  /* height: ${height}px; */
-  /* height: 100vh; */
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
+  /* background-color: red; */
+  transform: translate3d(0px, -75px, 0px);
+`;
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -100px;
-    width: 100%;
-    height: 200px;
-    border-radius: 50%;
-    background-color: #f1c6db;
-  }
+export const $BorderRadius = styled(motion.div)`
+  width: 100%;
+  height: 200px;
+  background-color: #f1c6db;
+  /* background-color: red; */
+  border-radius: 50%;
+  position: absolute;
+  top: -100px;
 `;
 
 export const $ContentWrapper = styled.div`

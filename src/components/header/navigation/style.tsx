@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { motion, useCycle } from "framer-motion";
+import { MotionValue } from "framer-motion";
 
 export const $Wrapper = styled.div`
   /* position: absolute;

@@ -1,8 +1,37 @@
-import { $Wrapper, $ContentWrapper, $Heading, $Content } from "./style";
+import {
+  $Wrapper,
+  $BorderRadius,
+  $ContentWrapper,
+  $Heading,
+  $Content,
+} from "./style";
+import { motion, useScroll } from "framer-motion";
+import { MotionValue } from "framer-motion";
+import { useEffect, useState, useRef } from "react";
 
-const OurTeam = () => {
+interface ITeamProps {
+  scrollYProgress: MotionValue<number>;
+}
+
+const OurTeam = ({ scrollYProgress }: ITeamProps) => {
+  const [scrollY, setScrollY] = useState(0);
+  const [scrollTop, setScrollTop] = useState(350);
+  const [percent, setPercent] = useState(0);
+  const wrapperRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    scrollYProgress.onChange((value) => setScrollY(0.7 - value * 2));
+  });
+
+  // console.log(scrollY);
+
   return (
-    <$Wrapper>
+    <$Wrapper ref={wrapperRef}>
+      <$BorderRadius
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        style={{ scaleY: scrollY }}
+      />
       <$ContentWrapper>
         <$Heading>Our Team is</$Heading>
         <$Content>

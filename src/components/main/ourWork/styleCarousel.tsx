@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import { motion } from "framer-motion";
 
 const dataLength = 10;
 
@@ -7,18 +8,18 @@ const infinityCarousel = keyframes`
 	100% { transform: translateX(calc(-25vw * ${dataLength * 0.5}))}
 `;
 
-export const $Wrapper = styled.div`
+export const $Wrapper = styled(motion.div)`
   position: relative;
   overflow: hidden;
   width: 100%;
 `;
 
-export const $CarouselWrapper = styled.div`
+export const $CarouselWrapper = styled(motion.div)`
   display: flex;
   gap: 3vw;
   width: calc(25vw * ${dataLength});
   height: 100%;
-  animation: ${infinityCarousel} 5s linear infinite;
+  /* animation: ${infinityCarousel} 5s linear infinite; */
   &:hover {
     animation-play-state: paused;
   }
