@@ -1,13 +1,18 @@
-import styled from "styled-components";
+import { $Wrapper, $Title, $Content } from "./style";
+import { ourSolutionMainData } from "./../../../data/ourAiSolutionsdata";
+import SolutionList from "./SolutionList";
 
 const OurSolution = () => {
-  return <$Wrapper>OurSolution</$Wrapper>;
+  return (
+    <$Wrapper>
+      <$Title>Our AI solutions</$Title>
+      <$Content>
+        {ourSolutionMainData.map((list) => (
+          <SolutionList key={list.id} list={list} />
+        ))}
+      </$Content>
+    </$Wrapper>
+  );
 };
 
 export default OurSolution;
-
-const $Wrapper = styled.div`
-  height: 100vh;
-  background-color: blue;
-  height: 500px;
-`;

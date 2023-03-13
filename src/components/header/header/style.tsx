@@ -1,14 +1,17 @@
 import styled from "styled-components";
 
-export const $Wrapper = styled.div``;
-
 export const $Header = styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
   width: 100%;
   height: 100px;
   padding: 20px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   @media screen and (max-width: 600px) {
     height: 80px;
   }
@@ -32,8 +35,9 @@ export const $Logo = styled.div`
   }
 `;
 
-export const $Toggle = styled.div`
+export const $Toggle = styled.div<{ openNav: boolean }>`
   background-color: rgba(255, 255, 255, 0.7);
+  color: ${({ openNav }) => (openNav ? "#4c0080" : "transparent")};
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -41,10 +45,11 @@ export const $Toggle = styled.div`
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  font-weight: bold;
 
   svg {
     color: #f5d4e4;
-    font-size: 35px;
+    font-size: ${({ openNav }) => (openNav ? "80px" : "35px")};
     /* stroke-width: 5; */
   }
   @media screen and (max-width: 600px) {
