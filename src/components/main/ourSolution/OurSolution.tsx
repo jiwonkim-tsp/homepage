@@ -1,7 +1,16 @@
-import { $Wrapper, $PositionWrapper, $ImgBtnWrapper, $ImgBox } from "./style";
+import {
+  $Wrapper,
+  $PositionWrapper,
+  $ImgBtnWrapper,
+  $ImgBox,
+  $ContentWrapper,
+  $Heading,
+  $Content,
+  $Sentence,
+  $ColoredText,
+} from "./style";
 import img from "./../../../assets/image/ourSolution/LAMP.png";
 import Button from "./../../Button/Button";
-import MainContent from "../mainContent/mainContent";
 
 const OurSolution = () => {
   return (
@@ -17,7 +26,21 @@ const OurSolution = () => {
             bgColor={"purple"}
           />
         </$ImgBtnWrapper>
-        <MainContent solution={true} />
+        <$ContentWrapper>
+          <$Heading>our solutions</$Heading>
+          <$Content>
+            <$Sentence>Enjoy some of our best work</$Sentence>
+            <$Sentence>
+              in immersive<$ColoredText color={"purple"}>web</$ColoredText>
+            </$Sentence>
+            <$Sentence>
+              <$ColoredText color={"green"}>augmented reality</$ColoredText>and
+            </$Sentence>
+            <$Sentence>
+              <$ColoredText color={"yellow"}>new experiences</$ColoredText>
+            </$Sentence>
+          </$Content>
+        </$ContentWrapper>
       </$PositionWrapper>
     </$Wrapper>
   );

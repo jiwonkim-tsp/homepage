@@ -1,6 +1,13 @@
-import { $Wrapper, $ContentWrapper, $ImgBox } from "./style";
+import {
+  $Wrapper,
+  $ImgBox,
+  $ContentWrapper,
+  $Heading,
+  $Content,
+  $Sentence,
+  $ColoredText,
+} from "./style";
 import img from "./../../../assets/image/ourTeam/pose7.png";
-import MainContent from "./../mainContent/MainContent";
 import OurWork from "../ourWork/OurWork";
 
 const OurTeam = () => {
@@ -14,7 +21,19 @@ const OurTeam = () => {
         <img src={img} alt="오리너구리 이미지" />
       </$ImgBox>
       <$ContentWrapper>
-        <MainContent />
+        <$Heading>our team is</$Heading>
+        <$Content>
+          <$Sentence>Enjoy some of our best work</$Sentence>
+          <$Sentence>
+            in immersive<$ColoredText color={"purple"}>web</$ColoredText>
+          </$Sentence>
+          <$Sentence>
+            <$ColoredText color={"green"}>augmented reality</$ColoredText>and
+          </$Sentence>
+          <$Sentence>
+            <$ColoredText color={"yellow"}>new experiences</$ColoredText>
+          </$Sentence>
+        </$Content>
       </$ContentWrapper>
       <OurWork />
     </$Wrapper>

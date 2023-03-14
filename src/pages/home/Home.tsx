@@ -1,11 +1,9 @@
 import Catchphrase from "./../../components/main/catchphrase/Catchphrase";
 import OurTeam from "./../../components/main/ourTeam/OurTeam";
-import OurWork from "./../../components/main/ourWork/OurWork";
+import OurProjects from "./../../components/main/ourProjects/OurProjects";
 import OurSolution from "./../../components/main/ourSolution/OurSolution";
 import News from "./../../components/main/news/News";
 import styled from "styled-components";
-import { useScroll } from "framer-motion";
-import { useState } from "react";
 
 const Home = () => {
   return (
@@ -13,6 +11,7 @@ const Home = () => {
       <Catchphrase />
       <OurTeam />
       <OurSolution />
+      <OurProjects />
       <News />
     </Wrapper>
   );
