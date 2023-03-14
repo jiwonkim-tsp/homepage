@@ -1,16 +1,24 @@
-import { $Wrapper, $Title, $Content } from "./style";
-import { ourSolutionMainData } from "./../../../data/ourAiSolutionsdata";
-import SolutionList from "./SolutionList";
+import { $Wrapper, $PositionWrapper, $ImgBtnWrapper, $ImgBox } from "./style";
+import img from "./../../../assets/image/ourSolution/LAMP.png";
+import Button from "./../../Button/Button";
+import MainContent from "../mainContent/mainContent";
 
 const OurSolution = () => {
   return (
     <$Wrapper>
-      <$Title>Our AI solutions</$Title>
-      <$Content>
-        {ourSolutionMainData.map((list) => (
-          <SolutionList key={list.id} list={list} />
-        ))}
-      </$Content>
+      <$PositionWrapper>
+        <$ImgBtnWrapper>
+          <$ImgBox>
+            <img src={img} alt="전구 이미지" />
+          </$ImgBox>
+          <Button
+            text={"Discover more of our work"}
+            color={"#fff"}
+            bgColor={"purple"}
+          />
+        </$ImgBtnWrapper>
+        <MainContent solution={true} />
+      </$PositionWrapper>
     </$Wrapper>
   );
 };

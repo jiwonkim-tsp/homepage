@@ -8,13 +8,10 @@ import { useScroll } from "framer-motion";
 import { useState } from "react";
 
 const Home = () => {
-  const { scrollYProgress } = useScroll();
-
   return (
     <Wrapper>
       <Catchphrase />
-      <OurTeam scrollYProgress={scrollYProgress} />
-      <OurWork />
+      <OurTeam />
       <OurSolution />
       <News />
     </Wrapper>

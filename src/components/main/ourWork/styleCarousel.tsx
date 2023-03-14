@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Slider from "react-slick";
 
 const dataLength = 10;
 
@@ -15,7 +16,7 @@ export const $Wrapper = styled.div`
   /* transition-timing-function: linear; */
 `;
 
-export const $CarouselWrapper = styled(Swiper)`
+export const $CarouselWrapper = styled(Slider)`
   /* display: flex;
   gap: 3vw; */
   /* width: calc(25vw * ${dataLength});
@@ -25,16 +26,16 @@ export const $CarouselWrapper = styled(Swiper)`
     animation-play-state: paused;
   } */
   /* transition-timing-function : linear; */
-  -webkit-transition-timing-function:linear!important;
+  /* -webkit-transition-timing-function:linear!important;
   -o-transition-timing-function:linear!important;
-  transition-timing-function:linear!important;
+  transition-timing-function:linear!important; */
 `;
 
 export const $Item = styled(SwiperSlide)`
   width: 50vw;
   img {
-    width: 10vw;
-    transition: 0.3 ease all;
+    width: 25vw;
+    /* transition: 0.3 ease all; */
   }
   border: none;
   /* transition-timing-function: linear; */

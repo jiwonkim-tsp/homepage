@@ -25,7 +25,7 @@ const Header = ({ toggle }: IHeaderProps) => {
         </$Logo>
       </Link>
       <$Toggle openNav={openNav} onClick={handleClick}>
-        {openNav ? <CgCloseO /> : <TiThMenu />}
+        {openNav ? <CgCloseO /> : "Our history"}
       </$Toggle>
     </$Header>
   );

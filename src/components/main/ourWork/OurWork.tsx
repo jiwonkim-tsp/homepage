@@ -1,11 +1,16 @@
 import Carousel from "./Carousel";
-import { $Wrapper, $Title } from "./style";
+import { $Wrapper } from "./style";
+import Button from "./../../Button/Button";
 
 const OurWork = () => {
   return (
     <$Wrapper>
-      <$Title>Our work</$Title>
       <Carousel />
+      <Button
+        text={"Discover more of our work"}
+        color={"#fff"}
+        bgColor={"purple"}
+      />
     </$Wrapper>
   );
 };

@@ -1,37 +1,27 @@
 import { $Wrapper, $CarouselWrapper, $Item } from "./styleCarousel";
-import { Link } from "react-router-dom";
-import { ourWorkData } from "./../../../data/ourWorkData";
-import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper";
-import "swiper/css/autoplay";
-
-// Import Swiper styles
-import "swiper/css";
+import { ourWorkData } from "../../../data/ourWorkData";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Carousel = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 3.5,
+    slidesToScroll: 1.5,
+    autoplay: true,
+    speed: 5000,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+  };
   return (
     <$Wrapper>
-      <$CarouselWrapper
-        modules={[Autoplay]}
-        slidesPerView={3.5}
-        // spaceBetween={30}
-        // centeredSlides={true}
-        loop={true}
-        autoplay={{
-          delay: 1000,
-          disableOnInteraction: false,
-        }}
-        speed={5000}
-        // navigation={true}
-      >
+      <$CarouselWrapper {...settings}>
         {ourWorkData.map((list) => (
-          <SwiperSlide key={list.id}>
+          <$Item key={list.id}>
+            {list.id}
             <img src={list.src} alt={list.src} />
-          </SwiperSlide>
+          </$Item>
         ))}
       </$CarouselWrapper>
     </$Wrapper>

@@ -1,19 +1,16 @@
 import styled from "styled-components";
 
-const height = window.innerHeight;
-
 export const $Wrapper = styled.div`
   width: 100%;
-  height: ${height}px;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  position: relative;
-  z-index: 1;
+  align-items: center;
+  gap: 100px;
 `;
 
 export const $Phrases = styled.div`
-  position: absolute;
-  top: 35%;
   display: flex;
   flex-direction: column;
   align-items: center;
