@@ -36,8 +36,7 @@ export const $Logo = styled.div`
 `;
 
 export const $Toggle = styled.div<{ openNav: boolean }>`
-  background-color: rgba(255, 255, 255, 0.7);
-  color: ${({ openNav }) => (openNav ? "#4c0080" : "transparent")};
+  color: ${({ openNav }) => (openNav ? "#4c0080" : "#fff")};
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -46,12 +45,6 @@ export const $Toggle = styled.div<{ openNav: boolean }>`
   justify-content: center;
   cursor: pointer;
   font-weight: bold;
-
-  svg {
-    color: #f5d4e4;
-    font-size: ${({ openNav }) => (openNav ? "80px" : "35px")};
-    /* stroke-width: 5; */
-  }
   @media screen and (max-width: 600px) {
     width: 50px;
     height: 50px;

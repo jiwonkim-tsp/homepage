@@ -1,45 +1,41 @@
 import {
   $Wrapper,
-  $BorderRadius,
+  $ImgBox,
   $ContentWrapper,
   $Heading,
   $Content,
+  $Sentence,
+  $ColoredText,
 } from "./style";
-import { motion, useScroll } from "framer-motion";
-import { MotionValue } from "framer-motion";
-import { useEffect, useState, useRef } from "react";
+import img from "./../../../assets/image/ourTeam/pose7.png";
+import OurWork from "../ourWork/OurWork";
 
-interface ITeamProps {
-  scrollYProgress: MotionValue<number>;
-}
-
-const OurTeam = ({ scrollYProgress }: ITeamProps) => {
-  const [scrollY, setScrollY] = useState(0);
-  const [scrollTop, setScrollTop] = useState(350);
-  const [percent, setPercent] = useState(0);
-  const wrapperRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    scrollYProgress.onChange((value) => setScrollY(0.7 - value * 2));
-  });
-
-  // console.log(scrollY);
-
+const OurTeam = () => {
   return (
-    <$Wrapper ref={wrapperRef}>
-      <$BorderRadius
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        style={{ scaleY: scrollY }}
-      />
+    <$Wrapper>
+      <$ImgBox
+        initial={{ opacity: 0, x: 0 }}
+        whileInView={{ opacity: 1, x: -100 }}
+        transition={{ duration: 3, ease: "easeOut" }}
+      >
+        <img src={img} alt="오리너구리 이미지" />
+      </$ImgBox>
       <$ContentWrapper>
-        <$Heading>Our Team is</$Heading>
+        <$Heading>our team is</$Heading>
         <$Content>
-          Make Your AR & XR Experiences TSP XR is a startup that researchers and
-          developers solution that can implement various spatial information
-          data on an urban and architectural scale through Augmented Reality
+          <$Sentence>Enjoy some of our best work</$Sentence>
+          <$Sentence>
+            in immersive<$ColoredText color={"purple"}>web</$ColoredText>
+          </$Sentence>
+          <$Sentence>
+            <$ColoredText color={"green"}>augmented reality</$ColoredText>and
+          </$Sentence>
+          <$Sentence>
+            <$ColoredText color={"yellow"}>new experiences</$ColoredText>
+          </$Sentence>
         </$Content>
       </$ContentWrapper>
+      <OurWork />
     </$Wrapper>
   );
 };
