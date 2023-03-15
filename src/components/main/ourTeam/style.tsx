@@ -4,14 +4,15 @@ import colors from "./../../../constants/color";
 
 export const $Wrapper = styled.div`
   position: relative;
-  height: 100vh;
   display: flex;
+  padding: 10vw 0;
+  margin-top: 8vw;
 `;
 
 export const $ImgBox = styled(motion.div)`
   position: absolute;
-  top: 20%;
-  right: 0%;
+  top: 10vw;
+  right: -10vw;
   width: 50vw;
   img {
     width: 50vw;
@@ -19,12 +20,12 @@ export const $ImgBox = styled(motion.div)`
 `;
 
 export const $ContentWrapper = styled.div`
-  padding: 10vw;
-  transform: translate(20%, 20%);
+  padding: 4vw;
+  transform: translateX(10vw);
 `;
 
 export const $Heading = styled.h1`
-  font-size: 3vw;
+  font-size: 3.5vw;
   font-weight: bold;
   margin: 25px 0;
   color: ${colors["pink"]};
@@ -32,7 +33,7 @@ export const $Heading = styled.h1`
 `;
 
 export const $Content = styled.div`
-  font-size: 2.5vw;
+  font-size: 3vw;
   line-height: 1.25;
 `;
 

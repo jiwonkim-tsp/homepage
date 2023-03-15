@@ -4,28 +4,27 @@ import colors from "./../../../constants/color";
 
 export const $Wrapper = styled.div`
   position: relative;
-  background-color: red;
-  width: 40%;
+  height: 100%;
+`;
+
+export const $ButtonWrapper = styled.div`
+  position: absolute;
+  transform: translate(65vw, 40vw);
 `;
 
 export const $ImgBox = styled(motion.div)`
   position: absolute;
-  top: 20%;
-  left: -18%;
-  width: 50vw;
+  top: 10vw;
+  left: -10vw;
+  width: 60vw;
   img {
-    width: 50vw;
-    transform: rotate(30deg);
+    width: 60vw;
+    transform: rotate(20deg);
   }
 `;
 
-export const $BtnContentWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
 export const $ContentWrapper = styled.div`
-  /* transform: translate(20%, 20%);/ */
+  transform: translate(50vw, 50vw);
 `;
 
 export const $Heading = styled.h1`

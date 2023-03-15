@@ -1,6 +1,12 @@
 import AnimatedText from "./AnimatedText";
-import { $Wrapper, $Phrases } from "./styleCatchphrase";
+import {
+  $Wrapper,
+  $VideoWrapper,
+  $Phrases,
+  $BtnWrapper,
+} from "./styleCatchphrase";
 import Button from "./../../Button/Button";
+import video from "./../../../assets/image/catchphrase/TSP XR.mp4";
 
 const Catchphrase = () => {
   const phrases = [
@@ -17,12 +23,19 @@ const Catchphrase = () => {
 
   return (
     <$Wrapper>
+      <$VideoWrapper>
+        <video width="100%" autoPlay muted loop>
+          <source src={video} type="video/mp4"></source>
+        </video>
+      </$VideoWrapper>
       <$Phrases>
         {phrases.map((phrase, index) => {
           return <AnimatedText phrase={phrase} key={index} />;
         })}
       </$Phrases>
-      <Button text={"Discover what we do"} color={""} bgColor={"yellow"} />
+      <$BtnWrapper>
+        <Button text={"Discover what we do"} color={""} bgColor={"yellow"} />
+      </$BtnWrapper>
     </$Wrapper>
   );
 };

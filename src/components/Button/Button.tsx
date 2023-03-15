@@ -23,4 +23,6 @@ const $Button = styled.div<{ bgColor: string; color: string }>`
   background-color: ${({ bgColor }) => colors[bgColor]};
   border-radius: 2.5vw;
   font-size: 1.5vw;
+  position: relative;
+  z-index: 1;
 `;
