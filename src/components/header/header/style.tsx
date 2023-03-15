@@ -1,56 +1,55 @@
 import styled from "styled-components";
+import colors from "./../../../constants/color";
 
-export const $Header = styled.header`
+export const $Wrapper = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 10;
   width: 100%;
-  height: 100px;
-  padding: 20px 30px;
+  height: 9vw;
+`;
+
+export const $Header = styled.header<{ openNav: boolean }>`
+  position: fixed;
+  z-index: 15;
+  top: 0;
+  width: 100%;
+  padding: 2vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  @media screen and (max-width: 600px) {
-    height: 80px;
-  }
+  background-color: ${({ openNav }) =>
+    openNav ? colors["beige"] : colors["black"]};
 `;
 
 export const $Logo = styled.div`
   cursor: pointer;
-  width: 300px;
-  height: 80px;
+  width: 15vw;
   img {
-    width: 300px;
-    height: 80px;
-  }
-  @media screen and (max-width: 600px) {
-    width: 200px;
-    height: 50px;
-    img {
-      width: 200px;
-      height: 50px;
-    }
+    width: 15vw;
   }
 `;
 
-export const $Toggle = styled.div<{ openNav: boolean }>`
-  color: ${({ openNav }) => (openNav ? "#4c0080" : "#fff")};
-  width: 70px;
-  height: 70px;
+export const $BtnWrapper = styled.div`
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+`;
+
+export const $ToggleBtn = styled.div<{ openNav: boolean }>`
+  width: 3.5vw;
+  height: 3.5vw;
+  border: 2px solid ${colors["purple"]};
   border-radius: 50%;
+  background-color: ${({ openNav }) => (openNav ? "#ffff" : colors["purple"])};
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   font-weight: bold;
-  @media screen and (max-width: 600px) {
-    width: 50px;
-    height: 50px;
-    svg {
-      color: #f5d4e4;
-      font-size: 20px;
-    }
+  svg {
+    color: ${({ openNav }) => (openNav ? "#000" : "#fff")};
+    font-size: 1.5vw;
   }
 `;

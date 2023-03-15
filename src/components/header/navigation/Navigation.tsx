@@ -1,32 +1,53 @@
-import NavigationList from "./../navigationList/NavigationList";
-import { $Wrapper, $Nav, $Contact, $Title, $Content } from "./style";
+import NavigationList from "./NavigationList";
+import { $Wrapper, $Nav } from "./style";
+import { useRecoilValue } from "recoil";
+import { ToggleState } from "./../../../recoil/atom";
 
 const navLists = [
-  { name: "Certificate", link: "/awards" },
-  { name: "Our Work", link: "/ourwork" },
-  { name: "Our Solutions", link: "/aisolution" },
-  { name: "News", link: "/aisolution" },
-  { name: "Products", link: "/products" },
+  { name: "company", link: "/awards", color: "purple" },
+  { name: "work", link: "/ourwork", color: "yellow" },
+  { name: "solutions", link: "/aisolution", color: "pink" },
+  { name: "products", link: "/products", color: "green" },
+  { name: "news", link: "/", color: "black" },
 ];
 
-// interface INavigationProps {
-//   setOpenNav: React.Dispatch<React.SetStateAction<boolean>>;
-// }
+const container = {
+  hidden: {
+    opacity: 0,
+    y: -80,
+    transition: {
+      type: "spring",
+      stiffness: 100,
+      damping: 24,
+      delay: 1,
+    },
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
+      type: "spring",
+      damping: 10,
+      stiffness: 100,
+    },
+  },
+};
 
 const Navigation = () => {
-  // const handleClick = () => {
-  //   setOpenNav(false);
-  // };
+  const toggleState = useRecoilValue(ToggleState);
+  console.log(toggleState);
   return (
-    <$Wrapper>
-      <$Contact>
-        <$Title>Contact</$Title>
-        <$Content>02-5445-3982</$Content>
-        <$Content>연구소 : 서울 강남구 학동로 101길 26</$Content>
-      </$Contact>
+    <$Wrapper variants={container} initial="hidden" animate="visible">
       <$Nav>
         {navLists.map((list) => (
-          <NavigationList key={list.name} name={list.name} link={list.link} />
+          <NavigationList
+            key={list.name}
+            name={list.name}
+            link={list.link}
+            color={list.color}
+          />
         ))}
       </$Nav>
     </$Wrapper>

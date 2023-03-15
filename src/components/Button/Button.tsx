@@ -5,11 +5,16 @@ interface IBtnProps {
   text: string;
   color: string;
   bgColor: string;
+  border?: string;
 }
 
-const Button = ({ text, color, bgColor }: IBtnProps) => {
+const Button = ({ text, color, bgColor, border }: IBtnProps) => {
   return (
-    <$Button bgColor={bgColor} color={color}>
+    <$Button
+      bgColor={bgColor}
+      color={color}
+      border={typeof border !== "string" ? bgColor : border}
+    >
       {text}
     </$Button>
   );
@@ -17,9 +22,10 @@ const Button = ({ text, color, bgColor }: IBtnProps) => {
 
 export default Button;
 
-const $Button = styled.div<{ bgColor: string; color: string }>`
-  padding: 1.5vw 2.8vw;
+const $Button = styled.div<{ bgColor: string; color: string; border: string }>`
+  padding: 1vw 2vw;
   color: ${({ color }) => (color ? color : "#000")};
+  border: 1px solid ${({ border }) => colors[border]};
   background-color: ${({ bgColor }) => colors[bgColor]};
   border-radius: 2.5vw;
   font-size: 1.5vw;

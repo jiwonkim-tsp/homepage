@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const $Wrapper = styled.div`
   position: relative;
+  top: 9vw;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 8vw;
-  background-color: pink;
 `;
 
 export const $VideoWrapper = styled.div`
@@ -16,7 +16,6 @@ export const $VideoWrapper = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  background-color: pink;
   video {
     position: absolute;
     top: 0;

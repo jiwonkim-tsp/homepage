@@ -1,5 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import ResetStyle from "./resetStyle";
+import GothamBlack from "./../assets/font/GothamBlack.otf";
+import GothamBlackTtf from "./../assets/font/Gotham-Black.ttf";
 import GothamBold from "./../assets/font/Gotham-Bold.otf";
 import GothamTtfBold from "./../assets/font/Gotham-Bold.ttf";
 import GothamBook from "./../assets/font/Gotham-Book.otf";
@@ -11,6 +13,14 @@ import NanumSquareTtf from "./../assets/font/NanumSquareR.ttf";
 
 const GlobalStyle = createGlobalStyle`
   ${ResetStyle}
+
+  @font-face {
+  font-family: "GothamBlack";
+  src: url(${GothamBlackTtf}) format("truetype"),
+      url(${GothamBlack}) format("opentype");
+  font-weight: bold;
+  font-style: normal;
+  }
 
   @font-face {
   font-family: "Gotham";

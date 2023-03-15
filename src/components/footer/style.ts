@@ -45,7 +45,7 @@ export const $Content = styled.div`
 `;
 
 export const $Word = styled.div`
-  font-weight: bold;
+  font-family: "GothamBlack";
 `;
 
 export const $ImgBox = styled(motion.div)`
