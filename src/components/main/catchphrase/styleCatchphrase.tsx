@@ -1,13 +1,25 @@
 import styled from "styled-components";
 
 export const $Wrapper = styled.div`
+  position: relative;
+  top: 9vw;
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 8vw;
+`;
+
+export const $VideoWrapper = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  video {
+    position: absolute;
+    top: 0;
+  }
 `;
 
 export const $Phrases = styled.div`
@@ -17,4 +29,14 @@ export const $Phrases = styled.div`
   gap: 30px;
   animation: delay;
   animation-delay: 2s;
+`;
+
+export const $BtnWrapper = styled.div`
+  transform: translateY(1vw);
+  @media screen and (max-width: 800px) {
+    transform: translateY(-3vw);
+  }
+  @media screen and (max-width: 600px) {
+    transform: translateY(-5vw);
+  }
 `;

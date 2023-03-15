@@ -11,15 +11,11 @@ const waviy = keyframes`
   }
 `;
 
-export const $Wrapper = styled.div`
-  @media screen and (max-width: 600px) {
-    font-size: 40px;
-  }
-`;
+export const $Wrapper = styled.div``;
 
 export const $Letter = styled.span<{ delay: number }>`
+  font-family: "GothamBlack";
   font-size: 11vw;
-  font-weight: bold;
   display: inline-block;
   color: #fff;
   animation: ${waviy} 1s;

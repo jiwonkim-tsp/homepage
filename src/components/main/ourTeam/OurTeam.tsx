@@ -15,7 +15,7 @@ const OurTeam = () => {
     <$Wrapper>
       <$ImgBox
         initial={{ opacity: 0, x: 0 }}
-        whileInView={{ opacity: 1, x: -100 }}
+        whileInView={{ opacity: 1, x: -50 }}
         transition={{ duration: 3, ease: "easeOut" }}
       >
         <img src={img} alt="오리너구리 이미지" />

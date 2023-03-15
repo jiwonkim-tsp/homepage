@@ -1,7 +1,7 @@
 import {
   $Wrapper,
+  $ButtonWrapper,
   $ImgBox,
-  $BtnContentWrapper,
   $ContentWrapper,
   $Heading,
   $Content,
@@ -14,6 +14,13 @@ import Button from "./../../Button/Button";
 const OurProjects = () => {
   return (
     <$Wrapper>
+      <$ButtonWrapper>
+        <Button
+          text={"Discover more of our work"}
+          color={"#fff"}
+          bgColor={"purple"}
+        />
+      </$ButtonWrapper>
       <$ImgBox
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -21,28 +28,21 @@ const OurProjects = () => {
       >
         <img src={img} alt="제품 이미지" />
       </$ImgBox>
-      <$BtnContentWrapper>
-        <Button
-          text={"Discover more of our work"}
-          color={"#fff"}
-          bgColor={"purple"}
-        />
-        <$ContentWrapper>
-          <$Heading>our team is</$Heading>
-          <$Content>
-            <$Sentence>Enjoy some of our best work</$Sentence>
-            <$Sentence>
-              in immersive<$ColoredText color={"purple"}>web</$ColoredText>
-            </$Sentence>
-            <$Sentence>
-              <$ColoredText color={"green"}>augmented reality</$ColoredText>and
-            </$Sentence>
-            <$Sentence>
-              <$ColoredText color={"yellow"}>new experiences</$ColoredText>
-            </$Sentence>
-          </$Content>
-        </$ContentWrapper>
-      </$BtnContentWrapper>
+      <$ContentWrapper>
+        <$Heading>our projects</$Heading>
+        <$Content>
+          <$Sentence>Enjoy some of our best work</$Sentence>
+          <$Sentence>
+            in immersive<$ColoredText color={"purple"}>web</$ColoredText>
+          </$Sentence>
+          <$Sentence>
+            <$ColoredText color={"green"}>augmented reality</$ColoredText>and
+          </$Sentence>
+          <$Sentence>
+            <$ColoredText color={"yellow"}>new experiences</$ColoredText>
+          </$Sentence>
+        </$Content>
+      </$ContentWrapper>
     </$Wrapper>
   );
 };

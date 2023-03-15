@@ -2,7 +2,6 @@ import styled from "styled-components";
 import colors from "./../../../constants/color";
 
 export const $Wrapper = styled.div`
-  /* background-color: red; */
   width: 100%;
   height: 70vw;
   display: flex;
@@ -14,7 +13,7 @@ export const $Wrapper = styled.div`
 export const $PositionWrapper = styled.div`
   width: 100%;
   position: absolute;
-  top: 30%;
+  top: 28vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

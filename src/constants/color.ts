@@ -7,6 +7,8 @@ const colors: IColors = {
   pink: "#EA43B8",
   green: "#36EB4A",
   purple: "#9F70B6",
+  beige: "#f7f7f3",
+  black: "#1d1d20",
 };
 
 export default colors;
