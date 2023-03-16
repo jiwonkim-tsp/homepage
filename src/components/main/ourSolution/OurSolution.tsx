@@ -17,7 +17,11 @@ const OurSolution = () => {
     <$Wrapper>
       <$PositionWrapper>
         <$ImgBtnWrapper>
-          <$ImgBox>
+          <$ImgBox
+            initial={{ opacity: 0, scale: 1 }}
+            whileInView={{ opacity: 1, scale: 1.2 }}
+            transition={{ duration: 2, ease: "easeOut" }}
+          >
             <img src={img} alt="전구 이미지" />
           </$ImgBox>
           <Button

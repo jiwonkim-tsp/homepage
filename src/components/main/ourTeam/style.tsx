@@ -3,9 +3,10 @@ import { motion } from "framer-motion";
 import colors from "./../../../constants/color";
 
 export const $Wrapper = styled.div`
+  background-color: ${colors["black"]};
   position: relative;
   display: flex;
-  padding: 10vw 0;
+  padding: 12vw 0;
   margin-top: 8vw;
 `;
 
@@ -33,6 +34,7 @@ export const $Heading = styled.h1`
 `;
 
 export const $Content = styled.div`
+  font-family: "GothamBook";
   font-size: 3vw;
   line-height: 1.25;
 `;

@@ -6,7 +6,6 @@ export const $Wrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 8vw;
 `;
@@ -19,24 +18,20 @@ export const $VideoWrapper = styled.div`
   video {
     position: absolute;
     top: 0;
+    left: 0;
   }
 `;
 
 export const $Phrases = styled.div`
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
-  animation: delay;
+  transform: translateY(6vw);
   animation-delay: 2s;
 `;
 
 export const $BtnWrapper = styled.div`
-  transform: translateY(1vw);
-  @media screen and (max-width: 800px) {
-    transform: translateY(-3vw);
-  }
-  @media screen and (max-width: 600px) {
-    transform: translateY(-5vw);
-  }
+  transform: translateY(6vw);
 `;

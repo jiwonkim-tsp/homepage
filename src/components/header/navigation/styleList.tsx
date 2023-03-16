@@ -16,7 +16,7 @@ export const $List = styled(motion.li)<{ color: string }>`
   }
   a {
     font-family: "GothamBlack";
-    font-size: 9vw;
+    font-size: 7vw;
     text-decoration: none;
     color: ${colors["black"]};
   }

@@ -31,6 +31,26 @@ export const ourSolutionMainData: ISolutionData[] = [
     title: "딥러닝 기반 체험형 AR 콘텐츠",
     content: "딥러닝을 통한 물체 인식, 얼굴 인식, 포즈 인식 등 다양한 시도",
   },
+  {
+    id: 4,
+    src: arSpot,
+    title: "스마트기기에서 활용 가능한 웹 기반 시각적 위치 결정 시스템",
+    content:
+      "특징점 기반 마커 인식과 딥러닝 기반의 6-DoF 물체 인식을 결합한 하이브리드 방식으로 공간상 현재 위치를 추적",
+  },
+  {
+    id: 5,
+    src: arArt,
+    title: "딥러닝을 이용한 전광판 광고",
+    content:
+      "모바일 웹 환경에서 스마트폰 카메라를 통해 이미지 정보를 각 프레임마다 딥러닝모델이 분석.",
+  },
+  {
+    id: 6,
+    src: arNav,
+    title: "딥러닝 기반 체험형 AR 콘텐츠",
+    content: "딥러닝을 통한 물체 인식, 얼굴 인식, 포즈 인식 등 다양한 시도",
+  },
 ];
 
 export const ourSolutionData: ISolutionData[] = [
