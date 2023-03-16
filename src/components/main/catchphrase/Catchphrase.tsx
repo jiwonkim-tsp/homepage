@@ -10,7 +10,7 @@ import video from "./../../../assets/image/catchphrase/TSP XR.mp4";
 
 const Catchphrase = () => {
   const phrases = [
-    { id: 1, text: "Begin Your" },
+    { id: 1, text: "Begin your" },
     {
       id: 2,
       text: "new",

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const $Wrapper = styled.div`
   position: relative;
@@ -7,11 +8,13 @@ export const $Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8vw;
+  gap: 4vw;
 `;
 
 export const $VideoWrapper = styled.div`
   position: absolute;
+  z-index: 1;
+  height: 50vw;
   top: 0;
   left: 0;
   width: 100%;
@@ -24,14 +27,14 @@ export const $VideoWrapper = styled.div`
 
 export const $Phrases = styled.div`
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: translateY(6vw);
-  animation-delay: 2s;
+  transform: translateY(6vw) rotate(-10deg);
 `;
 
 export const $BtnWrapper = styled.div`
-  transform: translateY(6vw);
+  z-index: 1;
+  transform: translateY(10vw);
 `;

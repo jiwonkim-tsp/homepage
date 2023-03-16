@@ -16,12 +16,12 @@ const News = () => {
     arrows: false,
     dots: true,
     infinite: true,
-    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
-    // cssEase: "linear",
+    speed: 9000,
+    autoplaySpeed: 0,
+    cssEase: "linear",
   };
   return (
     <$Wrapper>
