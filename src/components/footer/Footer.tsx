@@ -54,8 +54,8 @@ const Footer = () => {
           </$LogoBox>
           <$SnsBox>
             {contactInfo.map((item) => (
-              <Link to={item.url}>
-                <$SnsList key={item.id}>{item.icon}</$SnsList>
+              <Link to={item.url} key={item.id}>
+                <$SnsList>{item.icon}</$SnsList>
               </Link>
             ))}
           </$SnsBox>

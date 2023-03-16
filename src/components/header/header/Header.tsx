@@ -1,7 +1,6 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Button from "./../../Button/Button";
-import Navigation from "../navigation/Navigation";
 import { $Wrapper, $Header, $Logo, $BtnWrapper, $ToggleBtn } from "./style";
 import { HiMenu } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
@@ -12,6 +11,7 @@ import { ToggleState } from "./../../../recoil/atom";
 const Header = () => {
   const toggleState = useRecoilValue(ToggleState);
   const [toggle, setToggle] = useRecoilState(ToggleState);
+  const navigate = useNavigate();
 
   const handleClick = () => {
     setToggle((prev) => !prev);
@@ -29,12 +29,14 @@ const Header = () => {
           {toggleState ? (
             ""
           ) : (
-            <Button
-              text={"Our history"}
-              color={"#fff"}
-              bgColor={""}
-              border={"purple"}
-            />
+            <Link to="/company">
+              <Button
+                text={"Our history"}
+                color={"#fff"}
+                bgColor={""}
+                border={"purple"}
+              />
+            </Link>
           )}
           <$ToggleBtn openNav={toggleState} onClick={handleClick}>
             {toggleState ? <IoMdClose /> : <HiMenu />}

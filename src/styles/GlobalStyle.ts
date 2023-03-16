@@ -18,7 +18,6 @@ const GlobalStyle = createGlobalStyle`
   font-family: "GothamBlack";
   src: url(${GothamBlackTtf}) format("truetype"),
       url(${GothamBlack}) format("opentype");
-  font-weight: bold;
   font-style: normal;
   }
 
@@ -31,10 +30,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   @font-face {
-  font-family: "Gotham";
+  font-family: "GothamBook";
   src: url(${GothamTtfBook}) format("truetype"),
       url(${GothamBook}) format("opentype");
-  font-weight: lighter;
   font-style: normal;
   }
 
@@ -43,14 +41,6 @@ const GlobalStyle = createGlobalStyle`
   src: url(${GothamTtfMedium}) format("truetype"),
       url(${GothamMedium}) format("opentype");
   font-weight: normal;
-  font-style: normal;
-  }
-
-  @font-face {
-  font-family: "Gotham";
-  src: url(${GothamTtfMedium}) format("truetype"),
-      url(${GothamMedium}) format("opentype");
-  font-weight: medium;
   font-style: normal;
   }
 

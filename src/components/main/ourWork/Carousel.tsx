@@ -5,12 +5,13 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Carousel = () => {
   const settings = {
+    arrows: false,
     dots: false,
     infinite: true,
-    slidesToShow: 3.5,
-    slidesToScroll: 1.5,
+    slidesToShow: 3,
+    slidesToScroll: 1,
     autoplay: true,
-    speed: 5000,
+    speed: 9000,
     autoplaySpeed: 0,
     cssEase: "linear",
   };
@@ -19,7 +20,6 @@ const Carousel = () => {
       <$CarouselWrapper {...settings}>
         {ourWorkData.map((list) => (
           <$Item key={list.id}>
-            {list.id}
             <img src={list.src} alt={list.src} />
           </$Item>
         ))}

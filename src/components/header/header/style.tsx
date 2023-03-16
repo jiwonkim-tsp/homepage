@@ -35,6 +35,9 @@ export const $BtnWrapper = styled.div`
   display: flex;
   gap: 2vw;
   align-items: center;
+  a {
+    text-decoration: none;
+  }
 `;
 
 export const $ToggleBtn = styled.div<{ openNav: boolean }>`

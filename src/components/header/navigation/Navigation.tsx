@@ -4,11 +4,11 @@ import { useRecoilValue } from "recoil";
 import { ToggleState } from "./../../../recoil/atom";
 
 const navLists = [
-  { name: "company", link: "/awards", color: "purple" },
-  { name: "work", link: "/ourwork", color: "yellow" },
-  { name: "solutions", link: "/aisolution", color: "pink" },
+  { name: "company", link: "/company", color: "purple" },
+  { name: "work", link: "/work", color: "yellow" },
+  { name: "solutions", link: "/solution", color: "pink" },
   { name: "products", link: "/products", color: "green" },
-  { name: "news", link: "/", color: "black" },
+  { name: "news", link: "/news", color: "black" },
 ];
 
 const container = {

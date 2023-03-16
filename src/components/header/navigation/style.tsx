@@ -8,8 +8,9 @@ export const $Wrapper = styled(motion.div)`
   position: fixed;
   z-index: 11;
   top: 6vw;
-  width: 100vw;
+  width: 100%;
   height: ${height};
+  height: 100vh;
   background-color: ${colors["beige"]};
 `;
 
@@ -18,6 +19,7 @@ export const $Nav = styled(motion.ul)`
   flex-direction: column;
   align-items: flex-start;
   padding: 150px;
-  transform: translate(38vw, -0.5vw);
-  /* position: absolute; */
+  position: absolute;
+  right: 1.5vw;
+  bottom: 0vw;
 `;

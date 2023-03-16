@@ -28,7 +28,7 @@ export const $ContentWrapper = styled.div`
 `;
 
 export const $Heading = styled.h1`
-  font-size: 3vw;
+  font-size: 3.5vw;
   font-weight: bold;
   margin: 25px 0;
   color: ${colors["pink"]};
@@ -36,7 +36,8 @@ export const $Heading = styled.h1`
 `;
 
 export const $Content = styled.div`
-  font-size: 2.5vw;
+  font-family: "GothamBook";
+  font-size: 3vw;
   line-height: 1.25;
 `;
 
