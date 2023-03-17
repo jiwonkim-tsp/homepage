@@ -10,7 +10,7 @@ export interface ISolutionData {
   content: string;
 }
 
-export const ourSolutionMainData: ISolutionData[] = [
+export const solutionMainData: ISolutionData[] = [
   {
     id: 1,
     src: arSpot,
@@ -53,7 +53,7 @@ export const ourSolutionMainData: ISolutionData[] = [
   },
 ];
 
-export const ourSolutionData: ISolutionData[] = [
+export const solutionData: ISolutionData[] = [
   {
     id: 1,
     src: arSpot,

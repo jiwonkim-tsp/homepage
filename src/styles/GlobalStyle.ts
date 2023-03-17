@@ -10,6 +10,8 @@ import GothamMedium from "./../assets/font/Gotham-Medium.otf";
 import GothamTtfMedium from "./../assets/font/Gotham-Medium.ttf";
 import NanumSquare from "./../assets/font/NanumSquareR.otf";
 import NanumSquareTtf from "./../assets/font/NanumSquareR.ttf";
+import NanumSquareAc from "./../assets/font/NanumSquareOTF_acB.otf";
+import NanumSquareAcTtf from "./../assets/font/NanumSquare_acB.ttf";
 
 const GlobalStyle = createGlobalStyle`
   ${ResetStyle}
@@ -41,7 +43,6 @@ const GlobalStyle = createGlobalStyle`
   src: url(${GothamTtfMedium}) format("truetype"),
       url(${GothamMedium}) format("opentype");
   font-weight: normal;
-  font-style: normal;
   }
 
   @font-face {
@@ -52,7 +53,12 @@ const GlobalStyle = createGlobalStyle`
   font-style: normal;
   }
 
-
+  @font-face {
+  font-family: "NanumSquareAc";
+  src: url(${NanumSquareAcTtf}) format("truetype"),
+      url(${NanumSquareAc}) format("opentype");
+  font-weight: normal;
+  }
 
   * {
     box-sizing: border-box;

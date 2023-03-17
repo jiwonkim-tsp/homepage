@@ -11,15 +11,22 @@ import {
 } from "./style";
 import img from "./../../../assets/image/ourSolution/LAMP.png";
 import Button from "./../../Button/Button";
+import { useNavigate } from "react-router-dom";
 
 const OurSolution = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/solution");
+  };
+
   return (
     <$Wrapper>
       <$PositionWrapper>
         <$ImgBtnWrapper>
           <$ImgBox
-            initial={{ opacity: 0, scale: 1 }}
-            whileInView={{ opacity: 1, scale: 1.2 }}
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 2, ease: "easeOut" }}
           >
             <img src={img} alt="전구 이미지" />
@@ -28,6 +35,7 @@ const OurSolution = () => {
             text={"Discover more of our work"}
             color={"#fff"}
             bgColor={"purple"}
+            handleClick={handleClick}
           />
         </$ImgBtnWrapper>
         <$ContentWrapper>

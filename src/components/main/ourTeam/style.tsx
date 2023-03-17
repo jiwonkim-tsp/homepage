@@ -28,7 +28,7 @@ export const $ContentWrapper = styled.div`
 export const $Heading = styled.h1`
   font-size: 3.5vw;
   font-weight: bold;
-  margin: 25px 0;
+  margin: 2vw 0;
   color: ${colors["pink"]};
   text-transform: uppercase;
 `;

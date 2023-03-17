@@ -10,8 +10,14 @@ import {
 } from "./style";
 import img from "./../../../assets/image/ourProjects/product_sensor_alpha.png";
 import Button from "./../../Button/Button";
+import { useNavigate } from "react-router-dom";
 
 const OurProjects = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/company");
+  };
   return (
     <$Wrapper>
       <$ButtonWrapper>
@@ -19,6 +25,7 @@ const OurProjects = () => {
           text={"Discover more of our work"}
           color={"#fff"}
           bgColor={"purple"}
+          handleClick={handleClick}
         />
       </$ButtonWrapper>
       <$ImgBox

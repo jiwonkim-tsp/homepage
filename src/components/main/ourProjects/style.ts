@@ -5,11 +5,15 @@ import colors from "./../../../constants/color";
 export const $Wrapper = styled.div`
   position: relative;
   height: 100%;
+  /* background-color: pink; */
 `;
 
 export const $ButtonWrapper = styled.div`
   position: absolute;
-  transform: translate(65vw, 40vw);
+  transform: translate(65vw, 30vw);
+  @media screen and (max-width: 520px) {
+    width: 30vw;
+  }
 `;
 
 export const $ImgBox = styled(motion.div)`
@@ -24,13 +28,16 @@ export const $ImgBox = styled(motion.div)`
 `;
 
 export const $ContentWrapper = styled.div`
-  transform: translate(50vw, 50vw);
+  transform: translate(48vw, 38vw);
+  @media screen and (max-width: 520px) {
+    padding-top: 0.5vw;
+  }
 `;
 
 export const $Heading = styled.h1`
   font-size: 3.5vw;
   font-weight: bold;
-  margin: 25px 0;
+  margin: 2vw 0;
   color: ${colors["pink"]};
   text-transform: uppercase;
 `;

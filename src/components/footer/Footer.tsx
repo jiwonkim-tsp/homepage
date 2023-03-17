@@ -30,16 +30,22 @@ const contactInfo = [
 ];
 
 const Footer = () => {
+  const handleClick = () => {};
   return (
     <$Wrapper>
       <$PositionWrapper>
+        <$BtnWrapper>
+          <Button
+            text={"Get in touch"}
+            color={""}
+            bgColor={"green"}
+            handleClick={handleClick}
+          />
+        </$BtnWrapper>
         <$Content>
-          <$BtnWrapper>
-            <Button text={"Get in touch"} color={""} bgColor={"green"} />
-          </$BtnWrapper>
           <$Word>Let's make</$Word>
-          <$Word>new</$Word>
           <$Word>something</$Word>
+          <$Word>new</$Word>
         </$Content>
         <$ImgBox
           initial={{ opacity: 0, x: -100 }}
