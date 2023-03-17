@@ -5,10 +5,12 @@ import OurSolution from "./../../components/main/ourSolution/OurSolution";
 import News from "./../../components/main/news/News";
 import Footer from "./../../components/footer/Footer";
 import styled from "styled-components";
+import Loading from "./../../components/main/Loading/Loading";
 
 const Home = () => {
   return (
     <Wrapper>
+      <Loading />
       <Catchphrase />
       <OurTeam />
       <OurSolution />
