@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   $Wrapper,
   $Title,
@@ -12,15 +12,20 @@ import {
 import { ourWorkData } from "./../../data/ourWorkData";
 import WorkList from "./WorkList";
 import Button from "./../../components/Button/Button";
+import { useAnimation, useAnimationControls } from "framer-motion";
 
 const container = {
-  hidden: { opacity: 1, scale: 0 },
+  hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    scale: 1,
     transition: {
-      delayChildren: 0.3,
-      staggerChildren: 0.2,
+      delay: 0.5,
+      duration: 5,
+      ease: "linear",
+      type: "spring",
+      damping: 300,
+      delayChildren: 0.5,
+      staggerChildren: 0.8,
     },
   },
 };

@@ -26,14 +26,15 @@ export const $ContentBox = styled.div`
 `;
 
 export const $Tag = styled.div`
-  color: ${colors["green"]};
+  font-weight: bold;
+  color: ${colors["pink"]};
   font-size: 1.15vw;
 `;
 
 export const $Title = styled.div`
   color: ${colors["yellow"]};
-  font-family: "NanumSquareAc";
-  font-size: 2.6vw;
+  font-family: "NanumSquareBold";
+  font-size: 2.4vw;
 `;
 
 export const $LocaPerBox = styled.div`

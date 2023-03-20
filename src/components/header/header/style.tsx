@@ -2,18 +2,18 @@ import styled from "styled-components";
 import colors from "./../../../constants/color";
 
 export const $Wrapper = styled.div`
-  position: fixed;
+  /* position: fixed;
   top: 0;
-  left: 0;
-  z-index: 10;
+  left: 0; 
+  z-index: 10;*/
   width: 100%;
   height: 9vw;
 `;
 
 export const $Header = styled.header<{ openNav: boolean }>`
-  position: fixed;
+  /* position: fixed;
   z-index: 15;
-  top: 0;
+  top: 0; */
   width: 100%;
   padding: 2vw;
   display: flex;

@@ -6,11 +6,18 @@ import News from "./../../components/main/news/News";
 import Footer from "./../../components/footer/Footer";
 import styled from "styled-components";
 import Loading from "./../../components/main/Loading/Loading";
+import { useState, useEffect } from "react";
 
 const Home = () => {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 30000);
+  }, []);
   return (
     <Wrapper>
-      <Loading />
+      {/* {loading ? <Loading /> : ""} */}
       <Catchphrase />
       <OurTeam />
       <OurSolution />
