@@ -7,10 +7,13 @@ import {
 } from "./styleCatchphrase";
 import Button from "./../../Button/Button";
 import video from "./../../../assets/image/catchphrase/TSP XR.mp4";
+import { useNavigate } from "react-router-dom";
 
 const Catchphrase = () => {
+  const navigate = useNavigate();
+
   const phrases = [
-    { id: 1, text: "Begin Your" },
+    { id: 1, text: "Begin your" },
     {
       id: 2,
       text: "new",
@@ -21,10 +24,14 @@ const Catchphrase = () => {
     },
   ];
 
+  const handleClick = () => {
+    navigate("/work");
+  };
+
   return (
     <$Wrapper>
       <$VideoWrapper>
-        <video width="100%" autoPlay muted loop>
+        <video width="100%" autoPlay muted loop playsInline>
           <source src={video} type="video/mp4"></source>
         </video>
       </$VideoWrapper>
@@ -34,7 +41,12 @@ const Catchphrase = () => {
         })}
       </$Phrases>
       <$BtnWrapper>
-        <Button text={"Discover what we do"} color={""} bgColor={"yellow"} />
+        <Button
+          text={"Discover what we do"}
+          color={""}
+          bgColor={"yellow"}
+          handleClick={handleClick}
+        />
       </$BtnWrapper>
     </$Wrapper>
   );

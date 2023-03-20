@@ -27,10 +27,8 @@ export const $Title = styled.div`
 `;
 
 export const $Slider = styled(Slider)`
-  transform: translateX(4vw);
   width: 100%;
   .slick-dots {
-    transform: translateX(-8vw);
     position: absolute;
     bottom: -10vw;
     width: 100%;
@@ -51,5 +49,5 @@ export const $Slider = styled(Slider)`
 `;
 
 export const $BtnWrapper = styled.div`
-  transform: translate(-3.5vw, 8vw);
+  transform: translateY(7vw);
 `;

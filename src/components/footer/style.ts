@@ -27,25 +27,27 @@ export const $PositionWrapper = styled.div`
 `;
 
 export const $BtnWrapper = styled.div`
-  transform: translate(22vw, 18vw);
+  /* position: relative;
+  z-index: 1; */
+  transform: translate(58vw, 14vw);
 `;
 
 export const $Content = styled.div`
-  font-weight: bold;
   position: absolute;
   z-index: 1;
-  top: -5vw;
-  left: 0;
+  top: -10vw;
+  left: 25vw;
   color: #fff;
   font-size: 10vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  transform: translate(20vw, -10vw);
 `;
 
 export const $Word = styled.div`
   font-family: "GothamBlack";
+  &:nth-child(3) {
+    transform: translateX(10vw);
+  }
 `;
 
 export const $ImgBox = styled(motion.div)`

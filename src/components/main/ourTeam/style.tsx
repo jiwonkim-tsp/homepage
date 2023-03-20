@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 import colors from "./../../../constants/color";
 
 export const $Wrapper = styled.div`
-  background-color: ${colors["black"]};
   position: relative;
+  z-index: 2;
   display: flex;
   padding: 12vw 0;
-  margin-top: 8vw;
+  margin-top: 25vw;
 `;
 
 export const $ImgBox = styled(motion.div)`
@@ -28,7 +28,7 @@ export const $ContentWrapper = styled.div`
 export const $Heading = styled.h1`
   font-size: 3.5vw;
   font-weight: bold;
-  margin: 25px 0;
+  margin: 2vw 0;
   color: ${colors["pink"]};
   text-transform: uppercase;
 `;
@@ -36,7 +36,7 @@ export const $Heading = styled.h1`
 export const $Content = styled.div`
   font-family: "GothamBook";
   font-size: 3vw;
-  line-height: 1.25;
+  line-height: 1.1;
 `;
 
 export const $Sentence = styled.p`

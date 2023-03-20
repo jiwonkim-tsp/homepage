@@ -15,8 +15,6 @@ export const $List = styled(motion.li)<{ color: string }>`
     border-radius: 50%;
   }
   a {
-    font-family: "GothamBlack";
-    font-size: 7vw;
     text-decoration: none;
     color: ${colors["black"]};
   }

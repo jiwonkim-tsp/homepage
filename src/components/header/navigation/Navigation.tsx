@@ -1,7 +1,5 @@
 import NavigationList from "./NavigationList";
 import { $Wrapper, $Nav } from "./style";
-import { useRecoilValue } from "recoil";
-import { ToggleState } from "./../../../recoil/atom";
 
 const navLists = [
   { name: "company", link: "/company", color: "purple" },
@@ -36,8 +34,6 @@ const container = {
 };
 
 const Navigation = () => {
-  const toggleState = useRecoilValue(ToggleState);
-  console.log(toggleState);
   return (
     <$Wrapper variants={container} initial="hidden" animate="visible">
       <$Nav>
