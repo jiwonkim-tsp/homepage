@@ -2,28 +2,28 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import colors from "@Constants/color";
 
-export const $List = styled.li<{ id: number }>`
+export const $List = styled.li<{ order: number }>`
   display: flex;
   align-items: center;
 `;
 
-export const $ImgBox = styled(motion.div)<{ id: number }>`
+export const $ImgBox = styled(motion.div)<{ order: number }>`
   img {
     width: 50vw;
-    transform: ${({ id }) =>
-      id % 2 === 0
+    transform: ${({ order }) =>
+      order % 2 === 0
         ? "rotate(15deg) translateX(10vw)"
         : "rotate(-15deg) translateX(-10vw)"};
   }
 `;
 
-export const $ProductInfo = styled.div<{ id: number }>`
+export const $ProductInfo = styled.div<{ order: number }>`
   width: 50vw;
   position: relative;
   z-index: 1;
-  transform: ${({ id }) =>
-    id % 2 === 0 ? "translate(10vw, -10vw)" : "translate(-5vw, -10vw)"};
-  order: ${({ id }) => (id % 2 === 0 ? "-1" : "")};
+  transform: ${({ order }) =>
+    order % 2 === 0 ? "translate(10vw, -10vw)" : "translate(-5vw, -10vw)"};
+  order: ${({ order }) => (order % 2 === 0 ? "-1" : "")};
 `;
 
 export const $Title = styled.h1`

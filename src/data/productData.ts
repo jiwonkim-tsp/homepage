@@ -7,7 +7,7 @@ export interface ISentence {
 }
 
 interface IProduct {
-  id: number;
+  order: number;
   img: string;
   title: string;
   sentence: ISentence[];
@@ -15,7 +15,7 @@ interface IProduct {
 
 export const productData: IProduct[] = [
   {
-    id: 1,
+    order: 1,
     img: product1,
     title: "our solutions",
     sentence: [
@@ -47,7 +47,7 @@ export const productData: IProduct[] = [
     ],
   },
   {
-    id: 2,
+    order: 2,
     img: product1,
     title: "our solutions",
     sentence: [
@@ -79,7 +79,7 @@ export const productData: IProduct[] = [
     ],
   },
   {
-    id: 3,
+    order: 3,
     img: product1,
     title: "our solutions",
     sentence: [
