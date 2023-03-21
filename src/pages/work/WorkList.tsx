@@ -15,19 +15,17 @@ interface IListProps {
   title: string;
   location: string;
   period: string;
+  link: string;
 }
 
 const item = {
-  hidden: { opacity: 0, scale: 0 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-  },
+  hidden: { opacity: 0, scale: 0.5 },
+  visible: { opacity: 1, scale: 1 },
 };
 
-const WorkList = ({ img, tag, title, location, period }: IListProps) => {
+const WorkList = ({ img, tag, title, location, period, link }: IListProps) => {
   return (
-    <$List variants={item}>
+    <$List variants={item} onClick={() => window.open(link)}>
       <$ImgBox>
         <img src={img} alt={title} />
       </$ImgBox>

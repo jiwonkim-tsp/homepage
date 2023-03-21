@@ -5,19 +5,17 @@ import {
   $Slider,
   $BtnWrapper,
 } from "./style";
-import { solutionMainData } from "../../../data/solutionData";
-import Button from "./../../Button/Button";
+import { solutionMainData } from "@Data/solutionData";
+import Button from "@Components/Button/Button";
 import NewsList from "./NewsList";
+import { useNavigate } from "react-router-dom";
+//slick css
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useNavigate } from "react-router-dom";
 
 const News = () => {
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate("/news");
-  };
   const settings = {
     arrows: false,
     dots: true,
@@ -43,7 +41,7 @@ const News = () => {
             text={"Discover more of our work"}
             color={"#fff"}
             bgColor={"purple"}
-            handleClick={handleClick}
+            handleClick={() => navigate("/news")}
           />
         </$BtnWrapper>
       </$PositionWrapper>

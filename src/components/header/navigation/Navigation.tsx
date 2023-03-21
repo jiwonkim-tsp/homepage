@@ -1,5 +1,6 @@
 import NavigationList from "./NavigationList";
 import { $Wrapper, $Nav } from "./style";
+import useScroll from "@Hooks/useScroll";
 
 const navLists = [
   { name: "company", link: "/company", color: "purple" },
@@ -34,6 +35,10 @@ const container = {
 };
 
 const Navigation = () => {
+  //스크롤 비활성화
+  const { enableScroll } = useScroll();
+  enableScroll();
+
   return (
     <$Wrapper variants={container} initial="hidden" animate="visible">
       <$Nav>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   $Wrapper,
   $Title,
@@ -9,33 +9,50 @@ import {
   $Sentence,
   $Word,
 } from "./style";
-import { ourWorkData } from "./../../data/ourWorkData";
+import { ourWorkData } from "@Data/ourWorkData";
 import WorkList from "./WorkList";
-import Button from "./../../components/Button/Button";
+import Button from "@Components/Button/Button";
+import { useAnimationControls } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const container = {
-  hidden: { opacity: 1, scale: 0 },
+  hidden: { opacity: 1 },
   visible: {
     opacity: 1,
-    scale: 1,
     transition: {
-      delayChildren: 0.3,
-      staggerChildren: 0.2,
+      type: "tween",
+      duration: 1,
+      delay: 0.5,
+      ease: [0, 0.71, 0.2, 1.01],
+      delayChildren: 0.8,
+      staggerChildren: 0.3,
     },
   },
 };
 
 const Work = () => {
+  const navigate = useNavigate();
   const [dataNum, setDataNum] = useState(4);
   const slicedData = ourWorkData.slice(0, dataNum);
+  const controls = useAnimationControls();
+
   const handleClick = () => {
     setDataNum((prev) => prev + 4);
   };
 
+  useEffect(() => {
+    controls.start("visible");
+  }, [dataNum]);
+
   return (
     <$Wrapper>
       <$Title>our works</$Title>
-      <$Works variants={container} initial="hidden" animate="visible">
+      <$Works
+        variants={container}
+        initial="hidden"
+        animate={controls}
+        onAnimationStart={() => console.log("animation started")}
+      >
         {slicedData.map((list) => (
           <WorkList
             key={list.id}
@@ -44,6 +61,7 @@ const Work = () => {
             title={list.title}
             location={list.location}
             period={list.period}
+            link={list.link}
           />
         ))}
       </$Works>
@@ -67,7 +85,7 @@ const Work = () => {
             text={"Get in touch"}
             color={""}
             bgColor={"green"}
-            handleClick={handleClick}
+            handleClick={() => navigate("/solutions")}
           />
         </$ContentBtnWrapper>
         <$Sentence>

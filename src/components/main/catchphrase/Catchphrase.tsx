@@ -5,8 +5,8 @@ import {
   $Phrases,
   $BtnWrapper,
 } from "./styleCatchphrase";
-import Button from "./../../Button/Button";
-import video from "./../../../assets/image/catchphrase/TSP XR.mp4";
+import Button from "@Components/Button/Button";
+import video from "@Assets/image/catchphrase/TSP XR.mp4";
 import { useNavigate } from "react-router-dom";
 
 const Catchphrase = () => {

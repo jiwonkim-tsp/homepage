@@ -15,7 +15,18 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": "src"
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["*"],
+      "@Components/*": ["src/components/*"],
+      "@Assets/*": ["src/assets/*"],
+      "@Constants/*": ["src/constants/*"],
+      "@Data/*": ["src/data/*"],
+      "@Pages/*": ["src/pages/*"],
+      "@Recoil/*": ["src/recoil/*"],
+      "@Styles/*": ["src/styles/*"],
+      "@Hooks/*": ["src/hooks/*"]
+    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

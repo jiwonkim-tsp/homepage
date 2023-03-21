@@ -12,7 +12,6 @@
   "dependencies": {
     "@types/react-slick": "^0.23.10",
     "framer-motion": "^10.0.2",
-    "module-alias": "^2.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",

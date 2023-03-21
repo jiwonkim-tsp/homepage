@@ -7,7 +7,7 @@ import {
   $Sentence,
   $ColoredText,
 } from "./style";
-import img from "./../../../assets/image/ourTeam/pose7.png";
+import img from "@Assets/image/ourTeam/pose7.png";
 import OurWork from "../ourWork/OurWork";
 
 const OurTeam = () => {

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import colors from "./../../../constants/color";
+import colors from "@Constants/color";
 import Slider from "react-slick";
 
 export const $Wrapper = styled.div`

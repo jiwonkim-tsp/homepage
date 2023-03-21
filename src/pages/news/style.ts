@@ -16,14 +16,10 @@ export const $Title = styled.h1`
   margin-bottom: 10vw;
 `;
 
-export const $Works = styled(motion.ul)`
+export const $News = styled(motion.ul)`
   display: grid;
   column-gap: 9vw;
-  grid-template-columns: 30vw 30vw;
-`;
-
-export const $BtnWrapper = styled.div`
-  margin-bottom: 8vw;
+  grid-template-columns: 35vw 35vw;
 `;
 
 export const $Content = styled.div`

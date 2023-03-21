@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import colors from "./../../../constants/color";
+import colors from "@Constants/color";
 
 export const $List = styled.li`
   width: 25vw;
@@ -16,7 +16,7 @@ export const $Title = styled.div`
 
 export const $Content = styled.div`
   word-break: keep-all;
-  font-size: 2.5vw;
+  font-size: 2.2vw;
   line-height: 1.2;
   height: 15vw;
   overflow: hidden;

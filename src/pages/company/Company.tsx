@@ -1,6 +1,6 @@
-import img from "./../../assets/image/company/pose6.png";
-import img2 from "./../../assets/image/company/pose7.png";
-import logo from "./../../assets/image/logo/KR_문자형_화이트.png";
+import img from "@Assets/image/company/pose6.png";
+import img2 from "@Assets/image/company/pose7.png";
+import logo from "@Assets/image/logo/KR_문자형_화이트.png";
 import {
   $Wrapper,
   $ImgBox,

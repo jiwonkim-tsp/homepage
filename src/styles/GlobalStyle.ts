@@ -1,17 +1,19 @@
 import { createGlobalStyle } from "styled-components";
 import ResetStyle from "./resetStyle";
-import GothamBlack from "./../assets/font/GothamBlack.otf";
-import GothamBlackTtf from "./../assets/font/Gotham-Black.ttf";
-import GothamBold from "./../assets/font/Gotham-Bold.otf";
-import GothamTtfBold from "./../assets/font/Gotham-Bold.ttf";
-import GothamBook from "./../assets/font/Gotham-Book.otf";
-import GothamTtfBook from "./../assets/font/Gotham-Book.ttf";
-import GothamMedium from "./../assets/font/Gotham-Medium.otf";
-import GothamTtfMedium from "./../assets/font/Gotham-Medium.ttf";
-import NanumSquare from "./../assets/font/NanumSquareR.otf";
-import NanumSquareTtf from "./../assets/font/NanumSquareR.ttf";
-import NanumSquareAc from "./../assets/font/NanumSquareOTF_acB.otf";
-import NanumSquareAcTtf from "./../assets/font/NanumSquare_acB.ttf";
+import GothamBlack from "@Assets/font/GothamBlack.otf";
+import GothamBlackTtf from "@Assets/font/Gotham-Black.ttf";
+import GothamBold from "@Assets/font/Gotham-Bold.otf";
+import GothamTtfBold from "@Assets/font/Gotham-Bold.ttf";
+import GothamBook from "@Assets/font/Gotham-Book.otf";
+import GothamTtfBook from "@Assets/font/Gotham-Book.ttf";
+import GothamMedium from "@Assets/font/Gotham-Medium.otf";
+import GothamTtfMedium from "@Assets/font/Gotham-Medium.ttf";
+import NanumSquare from "@Assets/font/NanumSquareR.otf";
+import NanumSquareTtf from "@Assets/font/NanumSquareR.ttf";
+import NanumSquareacB from "@Assets/font/NanumSquareOTF_acB.otf";
+import NanumSquareacBTtf from "@Assets/font/NanumSquare_acB.ttf";
+import NanumSquareacEB from "@Assets/font/NanumSquareOTF_acEB.otf";
+import NanumSquareacEBTtf from "@Assets/font/NanumSquare_acEB.ttf";
 
 const GlobalStyle = createGlobalStyle`
   ${ResetStyle}
@@ -54,9 +56,16 @@ const GlobalStyle = createGlobalStyle`
   }
 
   @font-face {
-  font-family: "NanumSquareAc";
-  src: url(${NanumSquareAcTtf}) format("truetype"),
-      url(${NanumSquareAc}) format("opentype");
+  font-family: "NanumSquare";
+  src: url(${NanumSquareacB}) format("truetype"),
+      url(${NanumSquareacBTtf}) format("opentype");
+  font-weight: bold;
+  }
+
+  @font-face {
+  font-family: "NanumSquareBold";
+  src: url(${NanumSquareacEBTtf}) format("truetype"),
+      url(${NanumSquareacEB}) format("opentype");
   font-weight: normal;
   }
 

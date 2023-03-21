@@ -1,13 +1,19 @@
-import { useState, useEffect } from "react";
+import { $Wrapper } from "./style";
+import loading from "@Assets/image/loading/loading.mp4";
+import useScroll from "@Hooks/useScroll";
 
 const Loading = () => {
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 1000);
-  }, []);
-  return <div>로딩</div>;
+  //스크롤 비활성화
+  const { enableScroll } = useScroll();
+  enableScroll();
+
+  return (
+    <$Wrapper>
+      <video autoPlay muted loop playsInline>
+        <source src={loading} type="video/mp4" />
+      </video>
+    </$Wrapper>
+  );
 };
 
 export default Loading;

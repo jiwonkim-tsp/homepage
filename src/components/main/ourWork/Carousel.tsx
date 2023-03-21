@@ -1,5 +1,6 @@
 import { $Wrapper, $CarouselWrapper, $Item } from "./styleCarousel";
-import { ourWorkMainData } from "../../../data/ourWorkData";
+import { ourWorkMainData } from "@Data/ourWorkData";
+//slick css
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 

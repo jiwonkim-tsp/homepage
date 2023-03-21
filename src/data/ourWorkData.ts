@@ -1,7 +1,7 @@
-import arSpot from "./../assets/image/ourWork/ourWork0.png";
-import arArt from "./../assets/image/ourWork/ourWork1.png";
-import arNav from "./../assets/image/ourWork/ourWork2.png";
-import arFace from "./../assets/image/ourWork/ourWork3.png";
+import arSpot from "@Assets/image/ourWork/ourWork0.png";
+import arArt from "@Assets/image/ourWork/ourWork1.png";
+import arNav from "@Assets/image/ourWork/ourWork2.png";
+import arFace from "@Assets/image/ourWork/ourWork3.png";
 
 interface IOurWorkMainData {
   id: number;
@@ -16,6 +16,7 @@ interface IOurWorkData {
   title: string;
   location: string;
   period: string;
+  link: string;
 }
 
 export const ourWorkMainData: IOurWorkMainData[] = [
@@ -45,6 +46,7 @@ export const ourWorkData: IOurWorkData[] = [
     title: "디지털 트윈 모니터링 시스템",
     location: "부산 EDC 스마트 정수장",
     period: "2022~2023",
+    link: "",
   },
   {
     id: 2,
@@ -53,6 +55,7 @@ export const ourWorkData: IOurWorkData[] = [
     title: "AR 도슨트 서비스",
     location: "서울 역사박물관 공평도시유적전시관",
     period: "2022",
+    link: "https://youtu.be/8l-uzgjgUBE",
   },
   {
     id: 3,
@@ -61,6 +64,7 @@ export const ourWorkData: IOurWorkData[] = [
     title: "AR 실내 내비게이션",
     location: "노원 시립청소년 미래진로센터",
     period: "2022",
+    link: "https://www.youtube.com/watch?v=geZt0OQzvAc",
   },
   {
     id: 4,
@@ -69,6 +73,7 @@ export const ourWorkData: IOurWorkData[] = [
     title: "AR 아트 서비스",
     location: "갤러리 바톤",
     period: "2022",
+    link: "https://youtu.be/6a6e6XFq7CQ",
   },
   {
     id: 5,
@@ -77,6 +82,7 @@ export const ourWorkData: IOurWorkData[] = [
     title: "AR 광고 서비스",
     location: "남산서울타워",
     period: "2022",
+    link: "https://youtu.be/to2l8dx1D_Y",
   },
   {
     id: 6,
@@ -85,6 +91,7 @@ export const ourWorkData: IOurWorkData[] = [
     title: "AR 댄스 챌린지",
     location: "YG 엔터테인먼트 트레저콘서트",
     period: "2022",
+    link: "",
   },
   {
     id: 7,
@@ -93,6 +100,7 @@ export const ourWorkData: IOurWorkData[] = [
     title: "AR 연등제",
     location: "봉은사",
     period: "2021",
+    link: "http://news.bbsi.co.kr/news/articleView.html?idxno=3032527",
   },
   {
     id: 8,
@@ -101,45 +109,42 @@ export const ourWorkData: IOurWorkData[] = [
     title: "AR 포토부스",
     location: "WSCE 기업공동전시관",
     period: "2022",
+    link: "https://youtu.be/9LaEgpEC_NM",
   },
   {
     id: 9,
     img: arSpot,
     tag: "Agumented Reality Digital twin Photography 3D",
-    title: "AR 포토부스",
-    location: "WSCE 기업공동전시관",
-    period: "2022",
+    title: "AR 상황판",
+    location: "서울스마트시티센터",
+    period: "2021",
+    link: "",
   },
   {
     id: 10,
     img: arSpot,
     tag: "Agumented Reality Digital twin Photography 3D",
-    title: "AR 상황판",
-    location: "서울스마트시티센터",
-    period: "2021",
+    title: "AR 갤러리",
+    location: "WTC SEOUL",
+    period: "2022",
+    link: "",
   },
   {
     id: 11,
     img: arSpot,
     tag: "Agumented Reality Digital twin Photography 3D",
-    title: "AR 갤러리",
-    location: "WTC SEOUL",
+    title: "ARBi",
+    location: "Under development",
     period: "2022",
+    link: "",
   },
   {
     id: 12,
     img: arSpot,
     tag: "Agumented Reality Digital twin Photography 3D",
-    title: "ARBi",
-    location: "Under development",
-    period: "2022",
-  },
-  {
-    id: 13,
-    img: arSpot,
-    tag: "Agumented Reality Digital twin Photography 3D",
     title: "XR FIT",
     location: "Under development",
     period: "2022",
+    link: "https://youtu.be/CR65HoGYVh4",
   },
 ];

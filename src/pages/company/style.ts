@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import colors from "./../../constants/color";
+import colors from "@Constants/color";
 import { motion } from "framer-motion";
 
 export const $Wrapper = styled.div`
   position: relative;
-  margin-top: 20vw;
+  margin-top: 10vw;
   display: flex;
   justify-content: center;
   margin-bottom: 210vw;

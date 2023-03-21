@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import Button from "./../../Button/Button";
+import Button from "@Components/Button/Button";
 import { $Wrapper, $Header, $Logo, $BtnWrapper, $ToggleBtn } from "./style";
 import { HiMenu } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
-import logo from "../../../assets/image/logo/mainLogo.png";
+import logo from "@Assets/image/logo/mainLogo.png";
 import { useRecoilValue, useRecoilState } from "recoil";
-import { ToggleState } from "./../../../recoil/atom";
+import { ToggleState } from "@Recoil/atom";
 
 const Header = () => {
   const toggleState = useRecoilValue(ToggleState);

@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import colors from "./../../constants/color";
+import colors from "@Constants/color";
 import { motion } from "framer-motion";
 
 export const $List = styled(motion.li)`
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   gap: 1.1vw;
@@ -26,14 +27,15 @@ export const $ContentBox = styled.div`
 `;
 
 export const $Tag = styled.div`
-  color: ${colors["green"]};
+  font-weight: bold;
+  color: ${colors["pink"]};
   font-size: 1.15vw;
 `;
 
 export const $Title = styled.div`
   color: ${colors["yellow"]};
-  font-family: "NanumSquareAc";
-  font-size: 2.6vw;
+  font-family: "NanumSquareBold";
+  font-size: 2.4vw;
 `;
 
 export const $LocaPerBox = styled.div`

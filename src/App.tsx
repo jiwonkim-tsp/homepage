@@ -1,8 +1,8 @@
-import HeaderNav from "./components/header/HeaderNav";
+import HeaderNav from "@Components/header/HeaderNav";
 import GlobalStyle from "./styles/GlobalStyle";
 import { Outlet } from "react-router-dom";
 import { RecoilRoot } from "recoil";
-import ScrollTop from "./../src/hooks/ScrollTop";
+import ScrollTop from "@Hooks/ScrollTop";
 
 function App() {
   return (

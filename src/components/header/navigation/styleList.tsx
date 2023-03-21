@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import colors from "./../../../constants/color";
+import colors from "@Constants/color";
 
 export const $List = styled(motion.li)<{ color: string }>`
   position: relative;
