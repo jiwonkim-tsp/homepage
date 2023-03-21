@@ -6,11 +6,12 @@ import News from "@Components/main/news/News";
 import Footer from "@Components/footer/Footer";
 import styled from "styled-components";
 import Loading from "@Components/main/Loading/Loading";
-import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { useRecoilState } from "recoil";
+import { LoadingState } from "@Recoil/atom";
 
 const Home = () => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useRecoilState(LoadingState);
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
