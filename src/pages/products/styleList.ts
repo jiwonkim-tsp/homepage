@@ -17,7 +17,7 @@ export const $ImgBox = styled(motion.div)<{ id: number }>`
   }
 `;
 
-export const $ContentWrapper = styled.div<{ id: number }>`
+export const $ProductInfo = styled.div<{ id: number }>`
   width: 50vw;
   position: relative;
   z-index: 1;

@@ -1,14 +1,13 @@
 import {
-  // $List,
-  // $ImgBox,
-  // $ContentWrapper,
+  $List,
+  $ImgBox,
+  $ProductInfo,
   $Title,
   $Content,
   $Sentence,
   $ColoredText,
 } from "./styleList";
 import { ISentence } from "@Data/productData";
-import styled from "styled-components";
 
 interface IListProps {
   id: number;
@@ -18,13 +17,26 @@ interface IListProps {
 }
 
 const ProductList = ({ id, title, img, sentence }: IListProps) => {
-  console.log(id);
+  const variants = {
+    hidden: {
+      opacity: 0,
+      x: id % 2 !== 0 ? -100 : 0,
+    },
+    visible: {
+      opacity: 1,
+      x: id % 2 !== 0 ? 0 : -50,
+      transition: {
+        duration: 3,
+        ease: "easeOut",
+      },
+    },
+  };
   return (
     <$List id={id}>
-      <$ImgBox id={id}>
+      <$ImgBox id={id} variants={variants} initial="hidden" animate="visible">
         <img src={img} alt={title} />
       </$ImgBox>
-      <$ContentWrapper id={id}>
+      <$ProductInfo id={id}>
         <$Title>{title}</$Title>
         <$Content>
           {sentence.map((list) => (
@@ -33,33 +45,9 @@ const ProductList = ({ id, title, img, sentence }: IListProps) => {
             </$Sentence>
           ))}
         </$Content>
-      </$ContentWrapper>
+      </$ProductInfo>
     </$List>
   );
 };
 
 export default ProductList;
-
-export const $List = styled.li<{ id: number }>`
-  display: flex;
-  align-items: center;
-`;
-
-export const $ImgBox = styled.div<{ id: number }>`
-  img {
-    width: 50vw;
-    transform: ${({ id }) =>
-      id % 2 === 0
-        ? "rotate(15deg) translateX(10vw)"
-        : "rotate(-15deg) translateX(-10vw)"};
-  }
-`;
-
-export const $ContentWrapper = styled.div<{ id: number }>`
-  width: 50vw;
-  position: relative;
-  z-index: 1;
-  transform: ${({ id }) =>
-    id % 2 === 0 ? "translate(10vw, -10vw)" : "translate(-5vw, -10vw)"};
-  order: ${({ id }) => (id % 2 === 0 ? "-1" : "")};
-`;
