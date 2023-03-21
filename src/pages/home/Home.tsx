@@ -7,6 +7,7 @@ import Footer from "@Components/footer/Footer";
 import styled from "styled-components";
 import Loading from "@Components/main/Loading/Loading";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -24,7 +25,7 @@ const Home = () => {
       <OurSolution />
       <OurProjects />
       <News />
-      <Footer />
+      <Footer main={true} />
     </Wrapper>
   );
 };

@@ -7,13 +7,13 @@ export const $Wrapper = styled.div`
   position: relative;
 `;
 
-export const $PositionWrapper = styled.div`
+export const $PositionWrapper = styled.div<{ main: boolean }>`
   background-color: ${colors["purple"]};
   position: absolute;
   width: 100%;
   height: 100%;
   height: 30vw;
-  top: 140vw;
+  top: ${({ main }) => (main ? "140vw" : "40vw")};
   &:before {
     content: "";
     position: absolute;
@@ -22,12 +22,13 @@ export const $PositionWrapper = styled.div`
     overflow: hidden;
     background-color: ${colors["purple"]};
     border-radius: 50%;
-    top: -18vw;
+    top: -17vw;
   }
 `;
 
-export const $BtnWrapper = styled.div`
-  transform: translate(58vw, 14vw);
+export const $BtnWrapper = styled.div<{ main: boolean }>`
+  transform: ${({ main }) =>
+    main ? "translate(58vw, 14vw)" : "translate(15vw, -3.5vw)"};
 `;
 
 export const $Content = styled.div`
@@ -56,6 +57,39 @@ export const $ImgBox = styled(motion.div)`
   img {
     width: 50vw;
   }
+`;
+
+export const $Contact = styled.form`
+  transform: translate(20vw, -7vw);
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5vw;
+  position: relative;
+  z-index: 1;
+`;
+
+export const $List = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  input {
+    border: none;
+    height: 4vw;
+    width: 70vw;
+    padding-left: 1vw;
+    font-size: 1.5vw;
+  }
+  input:focus {
+    outline: none;
+  }
+`;
+
+export const $Label = styled.label`
+  font-size: 1.5vw;
+  color: #fff;
+  text-transform: uppercase;
 `;
 
 export const $CompanyInfo = styled.div`

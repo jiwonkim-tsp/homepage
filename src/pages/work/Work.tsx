@@ -16,14 +16,16 @@ import { useAnimationControls } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
 const container = {
-  hidden: { opacity: 0 },
+  hidden: { opacity: 1 },
   visible: {
     opacity: 1,
     transition: {
-      duration: 5,
-      ease: "linear",
-      delayChildren: 0.5,
-      staggerChildren: 0.5,
+      type: "tween",
+      duration: 1,
+      delay: 0.5,
+      ease: [0, 0.71, 0.2, 1.01],
+      delayChildren: 0.8,
+      staggerChildren: 0.3,
     },
   },
 };
@@ -40,12 +42,17 @@ const Work = () => {
 
   useEffect(() => {
     controls.start("visible");
-  }, [dataNum, controls]);
+  }, [dataNum]);
 
   return (
     <$Wrapper>
       <$Title>our works</$Title>
-      <$Works variants={container} initial="hidden" animate={controls}>
+      <$Works
+        variants={container}
+        initial="hidden"
+        animate={controls}
+        onAnimationStart={() => console.log("animation started")}
+      >
         {slicedData.map((list) => (
           <WorkList
             key={list.id}
