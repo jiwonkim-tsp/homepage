@@ -8,8 +8,8 @@ import {
   $Sentence,
   $ColoredText,
 } from "./style";
-import img from "./../../../assets/image/ourProjects/product_sensor_alpha.png";
-import Button from "./../../Button/Button";
+import img from "@Assets/image/ourProjects/product_sensor_alpha.png";
+import Button from "@Components/Button/Button";
 import { useNavigate } from "react-router-dom";
 
 const OurProjects = () => {

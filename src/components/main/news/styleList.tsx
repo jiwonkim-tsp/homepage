@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import colors from "./../../../constants/color";
+import colors from "@Constants/color";
 
 export const $List = styled.li`
   width: 25vw;

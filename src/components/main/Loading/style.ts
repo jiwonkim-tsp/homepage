@@ -1,8 +1,6 @@
 import styled from "styled-components";
-import colors from "./../../../constants/color";
-import { motion } from "framer-motion";
 
-export const $Wrapper = styled(motion.div)`
+export const $Wrapper = styled.div`
   width: 100vw;
   height: 100vh;
   background-color: #342e35;

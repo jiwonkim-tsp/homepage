@@ -1,6 +1,6 @@
 import Carousel from "./Carousel";
 import { $Wrapper } from "./style";
-import Button from "./../../Button/Button";
+import Button from "@Components/Button/Button";
 import { useNavigate } from "react-router-dom";
 
 const OurWork = () => {

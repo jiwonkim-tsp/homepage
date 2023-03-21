@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { $List } from "./styleList";
 import { useRecoilState } from "recoil";
-import { ToggleState } from "./../../../recoil/atom";
+import { ToggleState } from "@Recoil/atom";
 
 interface IlinkProps {
   name: string;

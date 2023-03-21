@@ -1,7 +1,5 @@
 import NavigationList from "./NavigationList";
 import { $Wrapper, $Nav } from "./style";
-import { useRecoilValue } from "recoil";
-import { ToggleState } from "./../../../recoil/atom";
 import { useEffect } from "react";
 
 const navLists = [

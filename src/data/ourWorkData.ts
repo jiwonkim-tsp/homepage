@@ -1,7 +1,7 @@
-import arSpot from "./../assets/image/ourWork/ourWork0.png";
-import arArt from "./../assets/image/ourWork/ourWork1.png";
-import arNav from "./../assets/image/ourWork/ourWork2.png";
-import arFace from "./../assets/image/ourWork/ourWork3.png";
+import arSpot from "@Assets/image/ourWork/ourWork0.png";
+import arArt from "@Assets/image/ourWork/ourWork1.png";
+import arNav from "@Assets/image/ourWork/ourWork2.png";
+import arFace from "@Assets/image/ourWork/ourWork3.png";
 
 interface IOurWorkMainData {
   id: number;

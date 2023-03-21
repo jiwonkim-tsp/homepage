@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import {
   $Wrapper,
   $Title,
@@ -9,9 +9,9 @@ import {
   $Sentence,
   $Word,
 } from "./style";
-import { ourWorkData } from "./../../data/ourWorkData";
+import { ourWorkData } from "@Data/ourWorkData";
 import WorkList from "./WorkList";
-import Button from "./../../components/Button/Button";
+import Button from "@Components/Button/Button";
 import { AnimatePresence, useAnimationControls } from "framer-motion";
 
 const container = {

@@ -11,9 +11,9 @@ import {
   $SnsList,
 } from "./style";
 import { Link } from "react-router-dom";
-import img from "./../../assets/image/footer/pose1.png";
-import Button from "./../Button/Button";
-import logo from "./../../assets/image/logo/KR_문자형_화이트.png";
+import img from "@Assets/image/footer/pose1.png";
+import Button from "@Components/Button/Button";
+import logo from "@Assets/image/logo/KR_문자형_화이트.png";
 import { FaInstagramSquare, FaYoutube } from "react-icons/fa";
 
 const contactInfo = [

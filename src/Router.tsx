@@ -1,12 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
-import Home from "./pages/home/Home";
-import Company from "./pages/company/Company";
-import Work from "./pages/work/Work";
-import Solution from "./pages/solution/Solution";
-import Products from "./pages/products/Products";
-import ProductDetail from "./pages/productDetail/ProductDetail";
-import News from "./pages/news/News";
+import Home from "@Pages/home/Home";
+import Company from "@Pages/company/Company";
+import Work from "@Pages/work/Work";
+import Solution from "@Pages/solution/Solution";
+import Products from "@Pages/products/Products";
+import ProductDetail from "@Pages/productDetail/ProductDetail";
+import News from "@Pages/news/News";
 
 const router = createBrowserRouter([
   {

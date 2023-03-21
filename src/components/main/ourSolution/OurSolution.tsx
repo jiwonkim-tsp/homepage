@@ -9,8 +9,8 @@ import {
   $Sentence,
   $ColoredText,
 } from "./style";
-import img from "./../../../assets/image/ourSolution/LAMP.png";
-import Button from "./../../Button/Button";
+import img from "@Assets/image/ourSolution/LAMP.png";
+import Button from "@Components/Button/Button";
 import { useNavigate } from "react-router-dom";
 
 const OurSolution = () => {

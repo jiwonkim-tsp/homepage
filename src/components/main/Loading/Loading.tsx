@@ -1,5 +1,5 @@
 import { $Wrapper } from "./style";
-import loading from "./../../../assets/image/loading/loading.mp4";
+import loading from "@Assets/image/loading/loading.mp4";
 
 const Loading = () => {
   return (

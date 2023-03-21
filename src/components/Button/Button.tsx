@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import colors from "./../../constants/color";
+import colors from "@Constants/color";
 
 interface IBtnProps {
   text: string;

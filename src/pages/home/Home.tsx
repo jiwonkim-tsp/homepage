@@ -1,11 +1,11 @@
-import Catchphrase from "./../../components/main/catchphrase/Catchphrase";
-import OurTeam from "./../../components/main/ourTeam/OurTeam";
-import OurProjects from "./../../components/main/ourProjects/OurProjects";
-import OurSolution from "./../../components/main/ourSolution/OurSolution";
-import News from "./../../components/main/news/News";
-import Footer from "./../../components/footer/Footer";
+import Catchphrase from "@Components/main/catchphrase/Catchphrase";
+import OurTeam from "@Components/main/ourTeam/OurTeam";
+import OurProjects from "@Components/main/ourProjects/OurProjects";
+import OurSolution from "@Components/main/ourSolution/OurSolution";
+import News from "@Components/main/news/News";
+import Footer from "@Components/footer/Footer";
 import styled from "styled-components";
-import Loading from "./../../components/main/Loading/Loading";
+import Loading from "@Components/main/Loading/Loading";
 import { useState, useEffect } from "react";
 
 const Home = () => {

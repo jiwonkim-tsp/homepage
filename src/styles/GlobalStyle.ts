@@ -1,19 +1,19 @@
 import { createGlobalStyle } from "styled-components";
 import ResetStyle from "./resetStyle";
-import GothamBlack from "./../assets/font/GothamBlack.otf";
-import GothamBlackTtf from "./../assets/font/Gotham-Black.ttf";
-import GothamBold from "./../assets/font/Gotham-Bold.otf";
-import GothamTtfBold from "./../assets/font/Gotham-Bold.ttf";
-import GothamBook from "./../assets/font/Gotham-Book.otf";
-import GothamTtfBook from "./../assets/font/Gotham-Book.ttf";
-import GothamMedium from "./../assets/font/Gotham-Medium.otf";
-import GothamTtfMedium from "./../assets/font/Gotham-Medium.ttf";
-import NanumSquare from "./../assets/font/NanumSquareR.otf";
-import NanumSquareTtf from "./../assets/font/NanumSquareR.ttf";
-import NanumSquareacB from "./../assets/font/NanumSquareOTF_acB.otf";
-import NanumSquareacBTtf from "./../assets/font/NanumSquare_acB.ttf";
-import NanumSquareacEB from "./../assets/font/NanumSquareOTF_acEB.otf";
-import NanumSquareacEBTtf from "./../assets/font/NanumSquare_acEB.ttf";
+import GothamBlack from "@Assets/font/GothamBlack.otf";
+import GothamBlackTtf from "@Assets/font/Gotham-Black.ttf";
+import GothamBold from "@Assets/font/Gotham-Bold.otf";
+import GothamTtfBold from "@Assets/font/Gotham-Bold.ttf";
+import GothamBook from "@Assets/font/Gotham-Book.otf";
+import GothamTtfBook from "@Assets/font/Gotham-Book.ttf";
+import GothamMedium from "@Assets/font/Gotham-Medium.otf";
+import GothamTtfMedium from "@Assets/font/Gotham-Medium.ttf";
+import NanumSquare from "@Assets/font/NanumSquareR.otf";
+import NanumSquareTtf from "@Assets/font/NanumSquareR.ttf";
+import NanumSquareacB from "@Assets/font/NanumSquareOTF_acB.otf";
+import NanumSquareacBTtf from "@Assets/font/NanumSquare_acB.ttf";
+import NanumSquareacEB from "@Assets/font/NanumSquareOTF_acEB.otf";
+import NanumSquareacEBTtf from "@Assets/font/NanumSquare_acEB.ttf";
 
 const GlobalStyle = createGlobalStyle`
   ${ResetStyle}

@@ -1,4 +1,4 @@
-import { newsData } from "./../../data/newsData";
+import { newsData } from "@Data/newsData";
 import {
   $Wrapper,
   $Title,
@@ -9,7 +9,7 @@ import {
   $Sentence,
   $Word,
 } from "./style";
-import Button from "./../../components/Button/Button";
+import Button from "@Components/Button/Button";
 import NewsList from "./NewsList";
 
 const News = () => {
