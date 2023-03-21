@@ -13,11 +13,12 @@ const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 30000);
+    }, 3000);
   }, []);
+
   return (
     <Wrapper>
-      {/* {loading ? <Loading /> : ""} */}
+      {loading ? <Loading /> : ""}/
       <Catchphrase />
       <OurTeam />
       <OurSolution />

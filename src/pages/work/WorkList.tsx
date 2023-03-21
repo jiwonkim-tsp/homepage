@@ -15,6 +15,7 @@ interface IListProps {
   title: string;
   location: string;
   period: string;
+  link: string;
 }
 
 const item = {
@@ -25,9 +26,9 @@ const item = {
   },
 };
 
-const WorkList = ({ img, tag, title, location, period }: IListProps) => {
+const WorkList = ({ img, tag, title, location, period, link }: IListProps) => {
   return (
-    <$List variants={item}>
+    <$List variants={item} onClick={() => window.open(link)}>
       <$ImgBox>
         <img src={img} alt={title} />
       </$ImgBox>

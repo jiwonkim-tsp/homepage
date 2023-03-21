@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   $Wrapper,
   $Title,
@@ -12,46 +12,54 @@ import {
 import { ourWorkData } from "./../../data/ourWorkData";
 import WorkList from "./WorkList";
 import Button from "./../../components/Button/Button";
-import { useAnimation, useAnimationControls } from "framer-motion";
+import { AnimatePresence, useAnimationControls } from "framer-motion";
 
 const container = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      delay: 0.5,
       duration: 5,
       ease: "linear",
-      type: "spring",
-      damping: 300,
       delayChildren: 0.5,
-      staggerChildren: 0.8,
+      staggerChildren: 0.5,
     },
   },
 };
 
 const Work = () => {
+  const controls = useAnimationControls();
   const [dataNum, setDataNum] = useState(4);
   const slicedData = ourWorkData.slice(0, dataNum);
+
   const handleClick = () => {
     setDataNum((prev) => prev + 4);
   };
 
+  useEffect(() => {
+    console.log("뭐가문제지");
+    controls.start("visible");
+    console.log(dataNum);
+  }, [dataNum]);
+
   return (
     <$Wrapper>
       <$Title>our works</$Title>
-      <$Works variants={container} initial="hidden" animate="visible">
-        {slicedData.map((list) => (
-          <WorkList
-            key={list.id}
-            img={list.img}
-            tag={list.tag}
-            title={list.title}
-            location={list.location}
-            period={list.period}
-          />
-        ))}
-      </$Works>
+      <AnimatePresence>
+        <$Works variants={container} initial="hidden" animate={controls}>
+          {slicedData.map((list) => (
+            <WorkList
+              key={list.id}
+              img={list.img}
+              tag={list.tag}
+              title={list.title}
+              location={list.location}
+              period={list.period}
+              link={list.link}
+            />
+          ))}
+        </$Works>
+      </AnimatePresence>
       {dataNum < 12 ? (
         <$BtnWrapper>
           <Button

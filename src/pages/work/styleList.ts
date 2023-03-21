@@ -3,6 +3,7 @@ import colors from "./../../constants/color";
 import { motion } from "framer-motion";
 
 export const $List = styled(motion.li)`
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   gap: 1.1vw;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const $Wrapper = styled.div`
-  margin-top: 10vw;
+  margin-top: 23vw;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,5 +1,8 @@
 import NavigationList from "./NavigationList";
 import { $Wrapper, $Nav } from "./style";
+import { useRecoilValue } from "recoil";
+import { ToggleState } from "./../../../recoil/atom";
+import { useEffect } from "react";
 
 const navLists = [
   { name: "company", link: "/company", color: "purple" },
@@ -34,6 +37,20 @@ const container = {
 };
 
 const Navigation = () => {
+  //스크롤 비활성화
+  useEffect(() => {
+    document.body.style.cssText = `
+      position: fixed;
+      top: -${window.scrollY}px;
+      overflow-y: scroll;
+      width: 100%;`;
+    return () => {
+      const scrollY = document.body.style.top;
+      document.body.style.cssText = "";
+      window.scrollTo(0, parseInt(scrollY || "0", 10) * -1);
+    };
+  }, []);
+
   return (
     <$Wrapper variants={container} initial="hidden" animate="visible">
       <$Nav>

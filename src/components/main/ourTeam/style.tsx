@@ -7,7 +7,7 @@ export const $Wrapper = styled.div`
   z-index: 2;
   display: flex;
   padding: 12vw 0;
-  margin-top: 18vw;
+  margin-top: 25vw;
 `;
 
 export const $ImgBox = styled(motion.div)`
