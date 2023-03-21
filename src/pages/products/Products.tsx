@@ -10,11 +10,11 @@ const Products = () => {
       <$Products>
         {productData.map((list) => (
           <ProductList
-            key={list.id}
+            key={list.order}
             title={list.title}
             sentence={list.sentence}
             img={list.img}
-            id={list.id}
+            order={list.order}
           />
         ))}
       </$Products>

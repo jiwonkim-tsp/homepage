@@ -10,21 +10,21 @@ import {
 import { ISentence } from "@Data/productData";
 
 interface IListProps {
-  id: number;
+  order: number;
   title: string;
   img: string;
   sentence: ISentence[];
 }
 
-const ProductList = ({ id, title, img, sentence }: IListProps) => {
+const ProductList = ({ order, title, img, sentence }: IListProps) => {
   const variants = {
     hidden: {
       opacity: 0,
-      x: id % 2 !== 0 ? -100 : 0,
+      x: order % 2 !== 0 ? -100 : 0,
     },
     visible: {
       opacity: 1,
-      x: id % 2 !== 0 ? 0 : -50,
+      x: order % 2 !== 0 ? 0 : -50,
       transition: {
         duration: 3,
         ease: "easeOut",
@@ -32,11 +32,16 @@ const ProductList = ({ id, title, img, sentence }: IListProps) => {
     },
   };
   return (
-    <$List id={id}>
-      <$ImgBox id={id} variants={variants} initial="hidden" animate="visible">
+    <$List order={order}>
+      <$ImgBox
+        order={order}
+        variants={variants}
+        initial="hidden"
+        animate="visible"
+      >
         <img src={img} alt={title} />
       </$ImgBox>
-      <$ProductInfo id={id}>
+      <$ProductInfo order={order}>
         <$Title>{title}</$Title>
         <$Content>
           {sentence.map((list) => (
