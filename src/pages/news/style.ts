@@ -22,10 +22,6 @@ export const $News = styled(motion.ul)`
   grid-template-columns: 35vw 35vw;
 `;
 
-export const $BtnWrapper = styled.div`
-  margin-bottom: 8vw;
-`;
-
 export const $Content = styled.div`
   margin-bottom: 7vw;
 `;

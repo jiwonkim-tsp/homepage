@@ -27,8 +27,6 @@ export const $PositionWrapper = styled.div`
 `;
 
 export const $BtnWrapper = styled.div`
-  /* position: relative;
-  z-index: 1; */
   transform: translate(58vw, 14vw);
 `;
 

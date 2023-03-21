@@ -18,7 +18,7 @@ const Home = () => {
 
   return (
     <Wrapper>
-      {loading ? <Loading /> : ""}/
+      {loading ? <Loading /> : ""}
       <Catchphrase />
       <OurTeam />
       <OurSolution />

@@ -16,10 +16,6 @@ import { useNavigate } from "react-router-dom";
 const OurSolution = () => {
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate("/solution");
-  };
-
   return (
     <$Wrapper>
       <$PositionWrapper>
@@ -35,7 +31,7 @@ const OurSolution = () => {
             text={"Discover more of our work"}
             color={"#fff"}
             bgColor={"purple"}
-            handleClick={handleClick}
+            handleClick={() => navigate("./solution")}
           />
         </$ImgBtnWrapper>
         <$ContentWrapper>

@@ -5,9 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const OurWork = () => {
   const navigate = useNavigate();
-  const handleClick = () => {
-    navigate("/work");
-  };
+
   return (
     <$Wrapper>
       <Carousel />
@@ -15,7 +13,7 @@ const OurWork = () => {
         text={"Discover more of our work"}
         color={"#fff"}
         bgColor={"purple"}
-        handleClick={handleClick}
+        handleClick={() => navigate("/work")}
       />
     </$Wrapper>
   );

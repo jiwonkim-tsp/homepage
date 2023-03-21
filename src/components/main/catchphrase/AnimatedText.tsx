@@ -9,9 +9,7 @@ const AnimatedText = ({ phrase }: ITextProps) => {
   return (
     <$Wrapper>
       {sentences.map((item, index) => (
-        <$Letter key={index} delay={index}>
-          {item}
-        </$Letter>
+        <$Letter key={index}>{item}</$Letter>
       ))}
     </$Wrapper>
   );

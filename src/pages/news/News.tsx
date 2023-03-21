@@ -3,7 +3,6 @@ import {
   $Wrapper,
   $Title,
   $News,
-  $BtnWrapper,
   $Content,
   $ContentBtnWrapper,
   $Sentence,
@@ -11,9 +10,10 @@ import {
 } from "./style";
 import Button from "@Components/Button/Button";
 import NewsList from "./NewsList";
+import { useNavigate } from "react-router-dom";
 
 const News = () => {
-  const handleClick = () => {};
+  const navigate = useNavigate();
 
   return (
     <$Wrapper>
@@ -35,7 +35,7 @@ const News = () => {
             text={"Get in touch"}
             color={""}
             bgColor={"green"}
-            handleClick={handleClick}
+            handleClick={() => navigate("/solutions")}
           />
         </$ContentBtnWrapper>
         <$Sentence>

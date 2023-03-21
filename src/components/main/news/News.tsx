@@ -16,9 +16,6 @@ import "slick-carousel/slick/slick-theme.css";
 const News = () => {
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate("/news");
-  };
   const settings = {
     arrows: false,
     dots: true,
@@ -44,7 +41,7 @@ const News = () => {
             text={"Discover more of our work"}
             color={"#fff"}
             bgColor={"purple"}
-            handleClick={handleClick}
+            handleClick={() => navigate("/news")}
           />
         </$BtnWrapper>
       </$PositionWrapper>

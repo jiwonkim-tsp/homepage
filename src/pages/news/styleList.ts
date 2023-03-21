@@ -12,13 +12,6 @@ export const $List = styled.li`
   cursor: pointer;
 `;
 
-// export const $ListBox = styled.div`
-//   padding: 0.5vw;
-//   display: flex;
-//   flex-direction: column;
-//   gap: 2vw;
-// `;
-
 export const $Press = styled.div`
   color: ${colors["pink"]};
   font-size: 1.15vw;
