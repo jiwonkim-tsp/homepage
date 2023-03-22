@@ -19,7 +19,6 @@ export const $ImgBox = styled(motion.div)`
   position: absolute;
   top: 10vw;
   left: -10vw;
-  width: 60vw;
   img {
     width: 60vw;
     transform: rotate(20deg);

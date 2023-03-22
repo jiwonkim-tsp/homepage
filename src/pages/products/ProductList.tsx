@@ -9,7 +9,7 @@ import {
 } from "./styleList";
 import { ISentence } from "@Data/productData";
 
-interface IListProps {
+export interface IListProps {
   order: number;
   title: string;
   img: string;

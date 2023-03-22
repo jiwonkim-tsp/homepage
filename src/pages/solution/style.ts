@@ -15,3 +15,10 @@ export const $Title = styled.h1`
   text-transform: uppercase;
   margin-bottom: 10vw;
 `;
+
+export const $Solutions = styled.ul`
+  margin-top: 12vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20vw;
+`;

@@ -14,7 +14,6 @@ export const $CarouselWrapper = styled(Slider)`
 `;
 
 export const $Item = styled.div`
-  width: 30vw;
   img {
     width: 30vw;
   }

@@ -5,6 +5,10 @@ import { motion } from "framer-motion";
 export const $Wrapper = styled.div`
   width: 100%;
   position: relative;
+  iframe {
+    background-color: red;
+    transform: translateX(100vw);
+  }
 `;
 
 export const $PositionWrapper = styled.div<{ main: boolean }>`
@@ -102,7 +106,6 @@ export const $CompanyInfo = styled.div`
 `;
 
 export const $LogoBox = styled.div`
-  width: 10vw;
   transform: translateX(45vw);
   img {
     width: 10vw;
