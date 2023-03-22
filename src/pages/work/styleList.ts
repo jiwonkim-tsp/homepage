@@ -1,8 +1,17 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import colors from "@Constants/color";
 import { motion } from "framer-motion";
 
-export const $List = styled(motion.li)`
+const listAni = keyframes`
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+`;
+
+export const $List = styled(motion.li)<{ delay: number }>`
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -10,10 +19,13 @@ export const $List = styled(motion.li)`
   &:nth-child(2n) {
     margin-top: 3vw;
   }
+  animation-name: ${listAni};
+  animation-duration: 3s;
+  animation-delay: calc(3s * ${({ delay }) => delay});
+  animation-timing-function: ease-in-out;
 `;
 
 export const $ImgBox = styled.div`
-  width: 30vw;
   img {
     width: 30vw;
   }

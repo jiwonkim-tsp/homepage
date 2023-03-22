@@ -1,11 +1,23 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
+
+const wrapperAni = keyframes`
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1
+}
+`;
 
 export const $Wrapper = styled.div`
   margin-top: 23vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation-name: ${wrapperAni};
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
 `;
 
 export const $Title = styled.h1`
