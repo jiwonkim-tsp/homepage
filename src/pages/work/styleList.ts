@@ -1,15 +1,6 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import colors from "@Constants/color";
 import { motion } from "framer-motion";
-
-const listAni = keyframes`
-0% {
-  opacity: 0;
-}
-100% {
-  opacity: 1;
-}
-`;
 
 export const $List = styled(motion.li)<{ delay: number }>`
   cursor: pointer;
@@ -19,10 +10,6 @@ export const $List = styled(motion.li)<{ delay: number }>`
   &:nth-child(2n) {
     margin-top: 3vw;
   }
-  animation-name: ${listAni};
-  animation-duration: 3s;
-  animation-delay: calc(3s * ${({ delay }) => delay});
-  animation-timing-function: ease-in-out;
 `;
 
 export const $ImgBox = styled.div`
