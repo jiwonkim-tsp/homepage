@@ -4,7 +4,7 @@ import ARFaceChanger from "@Assets/image/ourWork/ARFaceChanger.png";
 import ARGallery from "@Assets/image/ourWork/ARGallery.png";
 import ARIN from "@Assets/image/ourWork/ARIN.png";
 import ARMuseum from "@Assets/image/ourWork/ARMuseum.png";
-import ARScape from "@Assets/image/ourWork/ARScape.png";
+import ARScape from "@Assets/image/ourWork/ArScape.png";
 import ArtGallery from "@Assets/image/ourWork/ArtGallery.png";
 import busan from "@Assets/image/ourWork/busan.png";
 import XRFit from "@Assets/image/ourWork/XRFit.png";
