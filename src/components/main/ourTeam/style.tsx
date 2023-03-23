@@ -14,7 +14,6 @@ export const $ImgBox = styled(motion.div)`
   position: absolute;
   top: 10vw;
   right: -10vw;
-  width: 50vw;
   img {
     width: 50vw;
   }

@@ -20,12 +20,9 @@ const container = {
   visible: {
     opacity: 1,
     transition: {
-      type: "tween",
-      duration: 1,
-      delay: 0.5,
-      ease: [0, 0.71, 0.2, 1.01],
-      delayChildren: 0.8,
-      staggerChildren: 0.3,
+      duration: 3,
+      delayChildren: 1,
+      staggerChildren: 0.5,
     },
   },
 };
@@ -53,7 +50,7 @@ const Work = () => {
         animate={controls}
         onAnimationStart={() => console.log("animation started")}
       >
-        {slicedData.map((list) => (
+        {slicedData.map((list, index) => (
           <WorkList
             key={list.id}
             img={list.img}
@@ -62,6 +59,7 @@ const Work = () => {
             location={list.location}
             period={list.period}
             link={list.link}
+            delay={index}
           />
         ))}
       </$Works>

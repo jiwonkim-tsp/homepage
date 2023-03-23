@@ -2,7 +2,7 @@ import styled from "styled-components";
 import colors from "@Constants/color";
 import { motion } from "framer-motion";
 
-export const $List = styled(motion.li)`
+export const $List = styled(motion.li)<{ delay: number }>`
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,6 @@ export const $List = styled(motion.li)`
 `;
 
 export const $ImgBox = styled.div`
-  width: 30vw;
   img {
     width: 30vw;
   }
@@ -34,12 +33,13 @@ export const $Tag = styled.div`
 
 export const $Title = styled.div`
   color: ${colors["yellow"]};
-  font-family: "NanumSquareBold";
+  font-family: "NanumSquareEB";
   font-size: 2.4vw;
 `;
 
 export const $LocaPerBox = styled.div`
   font-family: "NanumSquare";
+  font-weight: bold;
   font-size: 1.5vw;
   display: flex;
   flex-direction: column;

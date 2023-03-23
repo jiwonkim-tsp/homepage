@@ -10,10 +10,10 @@ import GothamMedium from "@Assets/font/Gotham-Medium.otf";
 import GothamTtfMedium from "@Assets/font/Gotham-Medium.ttf";
 import NanumSquare from "@Assets/font/NanumSquareR.otf";
 import NanumSquareTtf from "@Assets/font/NanumSquareR.ttf";
-import NanumSquareacB from "@Assets/font/NanumSquareOTF_acB.otf";
-import NanumSquareacBTtf from "@Assets/font/NanumSquare_acB.ttf";
-import NanumSquareacEB from "@Assets/font/NanumSquareOTF_acEB.otf";
-import NanumSquareacEBTtf from "@Assets/font/NanumSquare_acEB.ttf";
+import NanumSquareB from "@Assets/font/NanumSquareB.otf";
+import NanumSquareBTtf from "@Assets/font/NanumSquareB.ttf";
+import NanumSquareEB from "@Assets/font/NanumSquareEB.otf";
+import NanumSquareEBTtf from "@Assets/font/NanumSquareEB.ttf";
 
 const GlobalStyle = createGlobalStyle`
   ${ResetStyle}
@@ -57,15 +57,15 @@ const GlobalStyle = createGlobalStyle`
 
   @font-face {
   font-family: "NanumSquare";
-  src: url(${NanumSquareacB}) format("truetype"),
-      url(${NanumSquareacBTtf}) format("opentype");
+  src: url(${NanumSquareBTtf}) format("truetype"),
+      url(${NanumSquareB}) format("opentype");
   font-weight: bold;
   }
 
   @font-face {
-  font-family: "NanumSquareBold";
-  src: url(${NanumSquareacEBTtf}) format("truetype"),
-      url(${NanumSquareacEB}) format("opentype");
+  font-family: "NanumSquareEB";
+  src: url(${NanumSquareEBTtf}) format("truetype"),
+      url(${NanumSquareEB}) format("opentype");
   font-weight: normal;
   }
 
@@ -73,7 +73,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   html {
-    font-family: 'Gotham';
+    font-family: 'Gotham', 'NanumSquare';
   }
   body {
   background-color: #1D1D20;

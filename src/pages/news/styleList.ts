@@ -14,19 +14,21 @@ export const $List = styled.li`
 
 export const $Press = styled.div`
   color: ${colors["pink"]};
-  font-size: 1.15vw;
-  font-weight: bold;
+  font-size: 1.3vw;
+  font-family: "GothamBlack", "NanumSquareEB";
 `;
 
 export const $Title = styled.div`
   color: ${colors["yellow"]};
-  font-family: "NanumSquareBold";
+  font-family: "NanumSquare";
+  font-weight: bold;
   word-break: keep-all;
   font-size: 2.2vw;
   line-height: 1.2;
 `;
 
 export const $Content = styled.div`
+  font-family: "NanumSquare";
   color: #fff;
   line-height: 1.2;
   font-size: 1.6vw;

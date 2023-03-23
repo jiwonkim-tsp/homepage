@@ -13,6 +13,7 @@ import {
   $SnsBox,
   $SnsList,
 } from "./style";
+import { useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import img from "@Assets/image/footer/pose1.png";
 import Button from "@Components/Button/Button";
@@ -38,6 +39,16 @@ interface IFooterProps {
 
 const Footer = ({ main }: IFooterProps) => {
   const navigate = useNavigate();
+  // const [data, setData] = useState({
+  //   name: "",
+  //   email: "",
+  //   tel: "",
+  // });
+  // const { name, email, tel } = data;
+  // const handleChange = (event: any) => {
+  //   setData({ ...data, [event.target.name]: event.target.value });
+  // };
+
   return (
     <$Wrapper>
       <$PositionWrapper main={main}>
@@ -57,20 +68,48 @@ const Footer = ({ main }: IFooterProps) => {
             </$ImgBox>
           </>
         ) : (
-          <$Contact>
-            <$List>
-              <$Label htmlFor="name">name</$Label>
-              <input type="text" name="name" required />
-            </$List>
-            <$List>
-              <$Label htmlFor="email">email</$Label>
-              <input type="email" name="email" required />
-            </$List>
-            <$List>
-              <$Label htmlFor="phone">phone number</$Label>
-              <input type="tel" name="phone" required />
-            </$List>
-          </$Contact>
+          <>
+            <$Contact
+            // className="gform"
+            // method="post"
+            // data-email="kim.jiwon@tsp-xr.com"
+            // action="https://script.google.com/macros/s/AKfycbyhggoLu1uVnsBwlPRRiU75iGHkcuCiWhLUKwllvoiFjfrr3vdZu_mqWZNBSrvCeBwy/exec"
+            // target="frAttachFiles"
+            >
+              <$List>
+                <$Label htmlFor="name">name</$Label>
+                <input
+                  type="text"
+                  name="name"
+                  // value={name}
+                  // onChange={handleChange}
+                  required
+                />
+              </$List>
+              <$List>
+                <$Label htmlFor="email">email</$Label>
+                <input
+                  type="email"
+                  name="email"
+                  // value={email}
+                  // onChange={handleChange}
+                  required
+                />
+              </$List>
+              <$List>
+                <$Label htmlFor="tel">phone number</$Label>
+                <input
+                  type="tel"
+                  name="tel"
+                  // value={tel}
+                  // onChange={handleChange}
+                  required
+                />
+              </$List>
+              {/* <button type="submit">Send Message</button> */}
+            </$Contact>
+            {/* <iframe name="frAttachFiles" /> */}
+          </>
         )}
         <$BtnWrapper main={main}>
           <Button
