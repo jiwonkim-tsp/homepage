@@ -1,14 +1,16 @@
-import { $List, $Title, $Content } from "./styleList";
+import { $List, $Press, $Title, $Content } from "./styleList";
 
 interface IListProps {
+  press: string;
   title: string;
   content: string;
 }
 
-const NewsList = ({ title, content }: IListProps) => {
+const NewsList = ({ press, title, content }: IListProps) => {
   return (
     <$List>
-      <$Title>Agumented Reality</$Title>
+      <$Press>{press}</$Press>
+      <$Title>{title}</$Title>
       <$Content>{content}</$Content>
     </$List>
   );

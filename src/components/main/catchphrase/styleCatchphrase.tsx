@@ -21,6 +21,7 @@ export const $VideoWrapper = styled.div`
     position: absolute;
     top: 0;
     left: 0;
+    filter: brightness(30%);
   }
 `;
 

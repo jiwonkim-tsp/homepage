@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const $Wrapper = styled.div`
+  background-color: red;
   margin-top: 23vw;
   display: flex;
   flex-direction: column;

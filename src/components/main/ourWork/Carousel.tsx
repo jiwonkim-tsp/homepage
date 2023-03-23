@@ -1,5 +1,5 @@
 import { $Wrapper, $CarouselWrapper, $Item } from "./styleCarousel";
-import { ourWorkMainData } from "@Data/ourWorkData";
+import { ourWorkData } from "@Data/ourWorkData";
 //slick css
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -19,9 +19,9 @@ const Carousel = () => {
   return (
     <$Wrapper>
       <$CarouselWrapper {...settings}>
-        {ourWorkMainData.map((list) => (
+        {ourWorkData.map((list) => (
           <$Item key={list.id}>
-            <img src={list.src} alt={list.src} />
+            <img src={list.img} alt={list.title} />
           </$Item>
         ))}
       </$CarouselWrapper>

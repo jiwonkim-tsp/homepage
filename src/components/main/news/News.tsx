@@ -5,7 +5,7 @@ import {
   $Slider,
   $BtnWrapper,
 } from "./style";
-import { solutionMainData } from "@Data/solutionData";
+import { newsData } from "@Data/newsData";
 import Button from "@Components/Button/Button";
 import NewsList from "./NewsList";
 import { useNavigate } from "react-router-dom";
@@ -32,8 +32,13 @@ const News = () => {
       <$PositionWrapper>
         <$Title>news</$Title>
         <$Slider {...settings}>
-          {solutionMainData.map((item: any) => (
-            <NewsList key={item.id} title={item.title} content={item.content} />
+          {newsData.map((item: any) => (
+            <NewsList
+              key={item.id}
+              title={item.title}
+              content={item.content}
+              press={item.press}
+            />
           ))}
         </$Slider>
         <$BtnWrapper>

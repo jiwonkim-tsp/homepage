@@ -34,7 +34,7 @@ const Header = () => {
             ""
           ) : (
             <Button
-              text={"Our history"}
+              text={"우리만의 스토리"}
               color={"#fff"}
               bgColor={""}
               border={"purple"}

@@ -13,7 +13,6 @@ import {
   $SnsBox,
   $SnsList,
 } from "./style";
-import { useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import img from "@Assets/image/footer/pose1.png";
 import Button from "@Components/Button/Button";
@@ -39,15 +38,6 @@ interface IFooterProps {
 
 const Footer = ({ main }: IFooterProps) => {
   const navigate = useNavigate();
-  // const [data, setData] = useState({
-  //   name: "",
-  //   email: "",
-  //   tel: "",
-  // });
-  // const { name, email, tel } = data;
-  // const handleChange = (event: any) => {
-  //   setData({ ...data, [event.target.name]: event.target.value });
-  // };
 
   return (
     <$Wrapper>
@@ -70,55 +60,40 @@ const Footer = ({ main }: IFooterProps) => {
         ) : (
           <>
             <$Contact
-            // className="gform"
-            // method="post"
-            // data-email="kim.jiwon@tsp-xr.com"
-            // action="https://script.google.com/macros/s/AKfycbyhggoLu1uVnsBwlPRRiU75iGHkcuCiWhLUKwllvoiFjfrr3vdZu_mqWZNBSrvCeBwy/exec"
-            // target="frAttachFiles"
+              className="gform"
+              method="post"
+              action="https://script.google.com/macros/s/AKfycbzZUoW1c8N9Iu62uvz-u6TYVB5UJClJF7eGgwv36eL46hHKONbOFgcCleo2irNdD4Q/exec"
+              target="frAttachFiles"
             >
               <$List>
                 <$Label htmlFor="name">name</$Label>
-                <input
-                  type="text"
-                  name="name"
-                  // value={name}
-                  // onChange={handleChange}
-                  required
-                />
+                <input type="text" name="name" required />
               </$List>
               <$List>
                 <$Label htmlFor="email">email</$Label>
-                <input
-                  type="email"
-                  name="email"
-                  // value={email}
-                  // onChange={handleChange}
-                  required
-                />
+                <input type="email" name="email" required />
               </$List>
               <$List>
                 <$Label htmlFor="tel">phone number</$Label>
-                <input
-                  type="tel"
-                  name="tel"
-                  // value={tel}
-                  // onChange={handleChange}
-                  required
-                />
+                <input type="tel" name="tel" required />
               </$List>
-              {/* <button type="submit">Send Message</button> */}
+              <button type="submit">Send</button>
             </$Contact>
-            {/* <iframe name="frAttachFiles" /> */}
+            <iframe name="frAttachFiles" />
           </>
         )}
-        <$BtnWrapper main={main}>
-          <Button
-            text={main ? "Get in touch" : "Send"}
-            color={""}
-            bgColor={"green"}
-            handleClick={() => navigate("/solution")}
-          />
-        </$BtnWrapper>
+        {main ? (
+          <$BtnWrapper>
+            <Button
+              text={"Get in touch"}
+              color={""}
+              bgColor={"green"}
+              handleClick={() => navigate("/solution")}
+            />
+          </$BtnWrapper>
+        ) : (
+          ""
+        )}
         <$CompanyInfo>
           <$LogoBox>
             <img src={logo} alt="공간의 파티 로고 이미지" />
