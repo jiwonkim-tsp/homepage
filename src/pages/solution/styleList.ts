@@ -5,6 +5,7 @@ import colors from "@Constants/color";
 export const $List = styled.li<{ order: number }>`
   display: flex;
   align-items: center;
+  font-family: "NanumSquare";
 `;
 
 export const $ImgBox = styled(motion.div)<{ order: number }>`
@@ -17,8 +18,9 @@ export const $ImgBox = styled(motion.div)<{ order: number }>`
   }
 `;
 
-export const $ProductInfo = styled.div<{ order: number }>`
-  width: 50vw;
+export const $ProductInfo = styled.div<{ order: number; isSol: boolean }>`
+  border: 1px solid red;
+  width: ${({ isSol }) => (isSol ? "50vw" : "40vw")};
   position: relative;
   z-index: 1;
   transform: ${({ order }) =>
@@ -27,22 +29,24 @@ export const $ProductInfo = styled.div<{ order: number }>`
 `;
 
 export const $Title = styled.h1`
+  font-family: "NanumSquareBold";
   font-size: 3.5vw;
-  font-weight: bold;
   margin: 2vw 0;
   color: ${colors["pink"]};
   text-transform: uppercase;
 `;
 
 export const $Content = styled.div`
-  font-family: "GothamBook";
   font-size: 3vw;
   line-height: 1.25;
 `;
 
 export const $Sentence = styled.span`
+  font-family: "NanumSquare";
   color: #fff;
 `;
 export const $ColoredText = styled.span<{ color: string }>`
+  font-family: "NanumSquareB";
   color: ${({ color }) => colors[color]};
+  word-break: keep-all;
 `;

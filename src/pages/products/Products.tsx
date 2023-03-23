@@ -15,6 +15,7 @@ const Products = () => {
             sentence={list.sentence}
             img={list.img}
             order={list.order}
+            isSol={false}
           />
         ))}
       </$Products>

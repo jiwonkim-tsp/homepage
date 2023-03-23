@@ -58,6 +58,7 @@ export const $Content = styled.div`
 export const $Sentence = styled.p`
   color: #fff;
   font-family: "NanumSquare";
+  font-weight: bold;
   &:nth-child(1) {
     width: 45vw;
     word-break: keep-all;
@@ -74,7 +75,6 @@ export const $Sentence = styled.p`
 
 export const $ColoredWord = styled.span<{ color: string }>`
   color: ${({ color }) => colors[color]};
-  font-family: "NanumSquareAc";
 `;
 
 export const $Year = styled.div`

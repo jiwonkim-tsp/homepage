@@ -70,11 +70,11 @@ const Footer = ({ main }: IFooterProps) => {
         ) : (
           <>
             <$Contact
-              className="gform"
-              method="post"
-              data-email="kim.jiwon@tsp-xr.com"
-              action="https://script.google.com/macros/s/AKfycbyhggoLu1uVnsBwlPRRiU75iGHkcuCiWhLUKwllvoiFjfrr3vdZu_mqWZNBSrvCeBwy/exec"
-              target="frAttachFiles"
+            // className="gform"
+            // method="post"
+            // data-email="kim.jiwon@tsp-xr.com"
+            // action="https://script.google.com/macros/s/AKfycbyhggoLu1uVnsBwlPRRiU75iGHkcuCiWhLUKwllvoiFjfrr3vdZu_mqWZNBSrvCeBwy/exec"
+            // target="frAttachFiles"
             >
               <$List>
                 <$Label htmlFor="name">name</$Label>
@@ -106,9 +106,9 @@ const Footer = ({ main }: IFooterProps) => {
                   required
                 />
               </$List>
-              <button type="submit">Send Message</button>
+              {/* <button type="submit">Send Message</button> */}
             </$Contact>
-            <iframe name="frAttachFiles" />
+            {/* <iframe name="frAttachFiles" /> */}
           </>
         )}
         <$BtnWrapper main={main}>

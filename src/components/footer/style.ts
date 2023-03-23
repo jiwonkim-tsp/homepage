@@ -32,7 +32,7 @@ export const $PositionWrapper = styled.div<{ main: boolean }>`
 
 export const $BtnWrapper = styled.div<{ main: boolean }>`
   transform: ${({ main }) =>
-    main ? "translate(58vw, 14vw)" : "translate(15vw, -3.5vw)"};
+    main ? "translate(58vw, 14vw)" : "translate(15vw, -3vw)"};
 `;
 
 export const $Content = styled.div`

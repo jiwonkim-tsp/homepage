@@ -2,6 +2,7 @@ import arSpot from "@Assets/image/ourWork/ourWork0.png";
 import arArt from "@Assets/image/ourWork/ourWork1.png";
 import arNav from "@Assets/image/ourWork/ourWork2.png";
 import arFace from "@Assets/image/ourWork/ourWork3.png";
+import product1 from "@Assets/image/ourProjects/product_sensor_alpha.png";
 import { ISentence } from "./productData";
 
 export interface ISolutionData {
@@ -64,7 +65,7 @@ export const solutionMainData: ISolutionData[] = [
 export const solutionPageData: ISolutionPageData[] = [
   {
     order: 1,
-    img: arSpot,
+    img: product1,
     title: "웹 기반 XR 디지털트윈 시스템",
     sentence: [
       {
@@ -82,21 +83,21 @@ export const solutionPageData: ISolutionPageData[] = [
   },
   {
     order: 2,
-    img: arSpot,
+    img: product1,
     title: "웹 탑재 딥러닝을 이용한 AR 광고",
     sentence: [
       {
-        id: "1-1",
-        content: "AR과 딥러닝 기술을 이용한 간편하고 효과적인",
+        id: "2-1",
+        content: "AR과 딥러닝 기술을 이용한 간편하고 효과적인 ",
         color: "white",
       },
       {
-        id: "1-2",
+        id: "2-2",
         content: "웹 기반 광고 서비스",
-        color: "purple",
+        color: "green",
       },
       {
-        id: "1-3",
+        id: "2-3",
         content: "를 경험해보세요",
         color: "white",
       },
@@ -104,18 +105,18 @@ export const solutionPageData: ISolutionPageData[] = [
   },
   {
     order: 3,
-    img: arSpot,
+    img: product1,
     title: "공간인식 기술을 활용한 AR 도슨트 서비스",
     sentence: [
       {
         id: "3-1",
-        content: "공간인식 기술을 활용",
+        content: "공간인식 기술을 활용한",
         color: "white",
       },
       {
         id: "3-2",
-        content: "AR 도슨트 서비스",
-        color: "pink",
+        content: " AR 도슨트 서비스",
+        color: "yellow",
       },
       {
         id: "3-3",

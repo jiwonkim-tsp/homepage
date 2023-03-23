@@ -21,7 +21,7 @@ export const productData: IProduct[] = [
     sentence: [
       {
         id: "1-1",
-        content: "포트그래메트리",
+        content: "포토그래메트리",
         color: "purple",
       },
       {

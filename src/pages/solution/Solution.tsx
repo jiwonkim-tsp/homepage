@@ -1,6 +1,7 @@
 import { $Wrapper, $Title, $Solutions } from "./style";
 import { solutionPageData } from "@Data/solutionData";
 import ProductList from "../products/ProductList";
+import Footer from "@Components/footer/Footer";
 
 const Solution = () => {
   return (
@@ -14,9 +15,11 @@ const Solution = () => {
             sentence={list.sentence}
             img={list.img}
             order={list.order}
+            isSol={true}
           />
         ))}
       </$Solutions>
+      <Footer main={false} />
     </$Wrapper>
   );
 };

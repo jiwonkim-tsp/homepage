@@ -33,12 +33,13 @@ export const $Tag = styled.div`
 
 export const $Title = styled.div`
   color: ${colors["yellow"]};
-  font-family: "NanumSquareBold";
+  font-family: "NanumSquareEB";
   font-size: 2.4vw;
 `;
 
 export const $LocaPerBox = styled.div`
   font-family: "NanumSquare";
+  font-weight: bold;
   font-size: 1.5vw;
   display: flex;
   flex-direction: column;

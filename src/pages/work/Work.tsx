@@ -21,7 +21,6 @@ const container = {
     opacity: 1,
     transition: {
       duration: 3,
-      delay: 0.8,
       delayChildren: 1,
       staggerChildren: 0.5,
     },
