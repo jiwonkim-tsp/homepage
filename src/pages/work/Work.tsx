@@ -44,12 +44,7 @@ const Work = () => {
   return (
     <$Wrapper>
       <$Title>our works</$Title>
-      <$Works
-        variants={container}
-        initial="hidden"
-        animate={controls}
-        onAnimationStart={() => console.log("animation started")}
-      >
+      <$Works variants={container} initial="hidden" animate={controls}>
         {slicedData.map((list, index) => (
           <WorkList
             key={list.id}

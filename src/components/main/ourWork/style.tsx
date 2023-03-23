@@ -8,5 +8,5 @@ export const $Wrapper = styled.div`
   justify-content: center;
   gap: 2vw;
   position: absolute;
-  top: 45vw;
+  top: 47vw;
 `;

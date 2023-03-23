@@ -1,6 +1,6 @@
 import Catchphrase from "@Components/main/catchphrase/Catchphrase";
 import OurTeam from "@Components/main/ourTeam/OurTeam";
-import OurProjects from "@Components/main/ourProjects/OurProjects";
+import OurProducts from "@Components/main/ourProducts/OurProducts";
 import OurSolution from "@Components/main/ourSolution/OurSolution";
 import News from "@Components/main/news/News";
 import Footer from "@Components/footer/Footer";
@@ -24,7 +24,7 @@ const Home = () => {
       <Catchphrase />
       <OurTeam />
       <OurSolution />
-      <OurProjects />
+      <OurProducts />
       <News />
       <Footer main={true} />
     </Wrapper>

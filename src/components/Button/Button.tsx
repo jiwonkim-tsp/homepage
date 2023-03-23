@@ -44,6 +44,7 @@ const $Button = styled.button<{
   border: 1px solid ${({ border }) => colors[border]};
   background-color: ${({ bgColor }) => colors[bgColor]};
   border-radius: 2.5vw;
+  font-family: "NanumSquareEB";
   font-size: 1.5vw;
   z-index: 1;
   cursor: pointer;

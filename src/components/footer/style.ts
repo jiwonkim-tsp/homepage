@@ -6,8 +6,7 @@ export const $Wrapper = styled.div`
   width: 100%;
   position: relative;
   iframe {
-    background-color: red;
-    transform: translateX(100vw);
+    display: none;
   }
 `;
 
@@ -30,9 +29,8 @@ export const $PositionWrapper = styled.div<{ main: boolean }>`
   }
 `;
 
-export const $BtnWrapper = styled.div<{ main: boolean }>`
-  transform: ${({ main }) =>
-    main ? "translate(58vw, 14vw)" : "translate(15vw, -3vw)"};
+export const $BtnWrapper = styled.div`
+  transform: translate(58vw, 14vw);
 `;
 
 export const $Content = styled.div`
@@ -72,6 +70,13 @@ export const $Contact = styled.form`
   gap: 1.5vw;
   position: relative;
   z-index: 1;
+  button {
+    border-radius: 2.5vw;
+    font-size: 1.5vw;
+    padding: 1vw 2vw;
+    background-color: ${colors["green"]};
+    transform: translate(-30vw, 2vw);
+  }
 `;
 
 export const $List = styled.div`

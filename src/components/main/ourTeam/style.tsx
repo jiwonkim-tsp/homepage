@@ -10,6 +10,10 @@ export const $Wrapper = styled.div`
   margin-top: 25vw;
 `;
 
+export const $ContentWrapper = styled.div`
+  transform: translate(10vw, -2vw);
+`;
+
 export const $ImgBox = styled(motion.div)`
   position: absolute;
   top: 10vw;
@@ -19,28 +23,12 @@ export const $ImgBox = styled(motion.div)`
   }
 `;
 
-export const $ContentWrapper = styled.div`
-  padding: 4vw;
-  transform: translateX(10vw);
+export const $LogoWrapper = styled.div`
+  img {
+    width: 17vw;
+  }
 `;
 
-export const $Heading = styled.h1`
-  font-size: 3.5vw;
-  font-weight: bold;
-  margin: 2vw 0;
-  color: ${colors["pink"]};
-  text-transform: uppercase;
-`;
-
-export const $Content = styled.div`
-  font-family: "GothamBook";
-  font-size: 3vw;
-  line-height: 1.1;
-`;
-
-export const $Sentence = styled.p`
-  color: #fff;
-`;
-export const $ColoredText = styled.span<{ color: string }>`
-  color: ${({ color }) => colors[color]};
+export const $DescripWrapper = styled.div`
+  transform: translateY(-3vw);
 `;

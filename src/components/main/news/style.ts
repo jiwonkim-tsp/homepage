@@ -8,7 +8,7 @@ export const $Wrapper = styled.div`
 
 export const $PositionWrapper = styled.div`
   position: absolute;
-  top: 50vw;
+  top: 60vw;
   color: white;
   width: 100%;
   height: 60vw;
