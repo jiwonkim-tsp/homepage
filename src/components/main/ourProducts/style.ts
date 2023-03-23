@@ -9,7 +9,7 @@ export const $Wrapper = styled.div`
 
 export const $ImgBox = styled(motion.div)`
   position: absolute;
-  top: 13vw;
+  top: 20vw;
   left: -10vw;
   img {
     width: 60vw;

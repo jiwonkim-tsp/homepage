@@ -6,18 +6,33 @@ export const $List = styled.li`
   display: flex;
   gap: 2vw;
   flex-direction: column;
-  font-family: "NanumSquare";
+`;
+
+export const $Press = styled.div`
+  font-size: 1.1vw;
+  color: ${colors["purple"]};
+  font-family: "Gotham", "NanumSquare";
+  font-weight: bold;
 `;
 
 export const $Title = styled.div`
+  word-break: keep-all;
+  line-height: 1.15;
+  font-family: "NanumSquareEB";
   font-size: 1.5vw;
   color: ${colors["green"]};
 `;
 
 export const $Content = styled.div`
+  font-family: "NanumSquare";
   word-break: keep-all;
-  font-size: 2.2vw;
+  font-size: 1.2vw;
   line-height: 1.2;
-  height: 15vw;
   overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* 라인수 */
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  line-height: 1.2em;
 `;

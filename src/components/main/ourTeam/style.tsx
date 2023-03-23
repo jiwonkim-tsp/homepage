@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import colors from "@Constants/color";
 
 export const $Wrapper = styled.div`
   position: relative;
@@ -11,7 +10,7 @@ export const $Wrapper = styled.div`
 `;
 
 export const $ContentWrapper = styled.div`
-  transform: translate(10vw, -2vw);
+  transform: translate(16vw, -2vw);
 `;
 
 export const $ImgBox = styled(motion.div)`

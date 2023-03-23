@@ -11,12 +11,6 @@ import XRFit from "@Assets/image/ourWork/XRFit.png";
 import YG from "@Assets/image/ourWork/YG.png";
 import ARspot from "@Assets/image/ourWork/ARspot.png";
 
-interface IOurWorkMainData {
-  id: number;
-  src: string;
-  link: string;
-}
-
 interface IOurWorkData {
   id: number;
   img: string;
@@ -27,45 +21,6 @@ interface IOurWorkData {
   link: string;
 }
 
-export const ourWorkMainData: IOurWorkMainData[] = [
-  { id: 1, src: ARspot, link: "https://www.youtube.com/watch?v=to2l8dx1D_Y" },
-  {
-    id: 2,
-    src: ARGallery,
-    link: "https://www.youtube.com/watch?v=6a6e6XFq7CQ",
-  },
-  { id: 3, src: ARIN, link: "https://www.youtube.com/watch?v=geZt0OQzvAc" },
-  {
-    id: 4,
-    src: ARFaceChanger,
-    link: "https://www.youtube.com/watch?v=9LaEgpEC_NM&t=1s",
-  },
-  { id: 5, src: ARBI, link: "https://www.youtube.com/watch?v=wnVBH2RVFmg" },
-  {
-    id: 6,
-    src: ARBuddha,
-    link: "http://news.bbsi.co.kr/news/articleView.html?idxno=3032527",
-  },
-  { id: 7, src: ARMuseum, link: "https://www.youtube.com/watch?v=8l-uzgjgUBE" },
-  {
-    id: 8,
-    src: ARScape,
-    link: "https://www.youtube.com/watch?v=XdkviOyzCaQ",
-  },
-  {
-    id: 9,
-    src: ArtGallery,
-    link: "https://www.youtube.com/watch?v=qOqotsRlcLI&t=1s",
-  },
-  { id: 10, src: busan, link: "https://www.youtube.com/watch?v=3XfAgr1FrsY" },
-  { id: 11, src: XRFit, link: "https://www.youtube.com/watch?v=CR65HoGYVh4" },
-  {
-    id: 12,
-    src: YG,
-    link: "https://www.youtube.com/watch?v=9LaEgpEC_NM&t=1s",
-  },
-];
-
 export const ourWorkData: IOurWorkData[] = [
   {
     id: 1,
@@ -74,7 +29,7 @@ export const ourWorkData: IOurWorkData[] = [
     title: "디지털 트윈 모니터링 시스템",
     location: "부산 EDC 스마트 정수장",
     period: "2022~2023",
-    link: "",
+    link: "https://www.youtube.com/watch?v=3XfAgr1FrsY",
   },
   {
     id: 2,
@@ -146,7 +101,7 @@ export const ourWorkData: IOurWorkData[] = [
     title: "AR 상황판",
     location: "서울스마트시티센터",
     period: "2021",
-    link: "",
+    link: "https://www.youtube.com/watch?v=XdkviOyzCaQ",
   },
   {
     id: 10,
@@ -155,7 +110,7 @@ export const ourWorkData: IOurWorkData[] = [
     title: "AR 갤러리",
     location: "WTC SEOUL",
     period: "2022",
-    link: "",
+    link: "https://www.youtube.com/watch?v=qOqotsRlcLI&t=1s",
   },
   {
     id: 11,
@@ -164,7 +119,7 @@ export const ourWorkData: IOurWorkData[] = [
     title: "ARBi",
     location: "Under development",
     period: "2022",
-    link: "",
+    link: "https://www.youtube.com/watch?v=wnVBH2RVFmg",
   },
   {
     id: 12,
