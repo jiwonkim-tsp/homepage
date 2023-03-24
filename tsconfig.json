@@ -25,7 +25,8 @@
       "@Pages/*": ["src/pages/*"],
       "@Recoil/*": ["src/recoil/*"],
       "@Styles/*": ["src/styles/*"],
-      "@Hooks/*": ["src/hooks/*"]
+      "@Hooks/*": ["src/hooks/*"],
+      "@Animation/*": ["src/animation/*"]
     }
   },
   "include": ["src"],

@@ -8,7 +8,7 @@ import {
   $Location,
   $Period,
 } from "./styleList";
-import { item } from "@Components/animation/framerMotion";
+import { item } from "@Animation/framerMotion";
 
 interface IListProps {
   img: string;

@@ -16,7 +16,7 @@ import {
   moveRight,
   opacity,
   container,
-} from "@Components/animation/framerMotion";
+} from "@Animation/framerMotion";
 
 const Company = () => {
   return (

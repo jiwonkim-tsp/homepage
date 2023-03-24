@@ -1,7 +1,7 @@
 import { $List, $Year } from "./styleHistory";
 import MainDescrip from "@Components/main/mainDescrip/MainDescrip";
 import { ISentences } from "@Data/companyData";
-import { item } from "@Components/animation/framerMotion";
+import { item } from "@Animation/framerMotion";
 
 interface IHistoryProps {
   year: string;

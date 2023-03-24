@@ -10,7 +10,7 @@ import logo from "@Assets/image/logo/ourTeamLogo.png";
 import OurWorks from "../ourWorks/OurWorks";
 import { ourTeamData } from "@Data/mainContentData";
 import MainDescrip from "../mainDescrip/MainDescrip";
-import { moveLeft } from "@Components/animation/framerMotion";
+import { moveLeft } from "@Animation/framerMotion";
 
 const OurTeam = () => {
   return (

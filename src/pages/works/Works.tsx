@@ -6,7 +6,7 @@ import Button from "@Components/Button/Button";
 import { useAnimationControls } from "framer-motion";
 import Footer from "@Components/footer/Footer";
 import Title from "@Components/title/Title";
-import { container } from "@Components/animation/framerMotion";
+import { container } from "@Animation/framerMotion";
 
 const Works = () => {
   const [dataNum, setDataNum] = useState(4);

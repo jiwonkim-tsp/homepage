@@ -11,7 +11,7 @@ import Button from "@Components/Button/Button";
 import { useNavigate } from "react-router-dom";
 import { ourSolutionData } from "@Data/mainContentData";
 import MainDescrip from "../mainDescrip/MainDescrip";
-import { scale } from "@Components/animation/framerMotion";
+import { scale } from "@Animation/framerMotion";
 
 const OurSolutions = () => {
   const navigate = useNavigate();

@@ -1,5 +1,5 @@
 import { $List, $Press, $Title, $Content } from "./styleList";
-import { item } from "@Components/animation/framerMotion";
+import { item } from "@Animation/framerMotion";
 
 interface INewProps {
   title: string;
