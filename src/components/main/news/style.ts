@@ -1,6 +1,14 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import colors from "@Constants/color";
-import Slider from "react-slick";
+
+const infinite = keyframes`
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-35vw * 3));
+  }
+`;
 
 export const $Wrapper = styled.div`
   position: relative;
@@ -25,26 +33,17 @@ export const $Title = styled.div`
   font-family: "NanumSquareEB";
 `;
 
-export const $Slider = styled(Slider)`
+export const $SliderWrapper = styled.div`
   width: 100%;
-  .slick-dots {
-    position: absolute;
-    bottom: -10vw;
-    width: 100%;
-    list-style: none;
-    .slick-active {
-      button::before {
-        color: ${colors["green"]};
-      }
-    }
-    button::before {
-      color: ${colors["purple"]};
-    }
-  }
-  .slick-dots li {
-    width: 1vw;
-    height: 1vw;
-  }
+  position: relative;
+`;
+
+export const $Slider = styled.ul`
+  position: absolute;
+  left: 0;
+  width: calc(35vw * 6);
+  display: flex;
+  animation: ${infinite} 40s linear infinite;
 `;
 
 export const $BtnWrapper = styled.div`

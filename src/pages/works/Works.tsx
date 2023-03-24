@@ -10,6 +10,7 @@ import { container } from "@Animation/framerMotion";
 
 const Works = () => {
   const [dataNum, setDataNum] = useState(4);
+
   const slicedData = ourWorkData.slice(0, dataNum);
   const controls = useAnimationControls();
 
@@ -27,6 +28,7 @@ const Works = () => {
       <$Works variants={container} initial="hidden" animate={controls}>
         {slicedData.map((list) => (
           <WorkList
+            // key={dataNum}
             key={list.id}
             img={list.img}
             tag={list.tag}

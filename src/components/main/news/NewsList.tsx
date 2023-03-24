@@ -1,4 +1,4 @@
-import { $List, $Press, $Title, $Content } from "./styleList";
+import { $List, $Wrapper, $Press, $Title, $Content } from "./styleList";
 
 interface IListProps {
   press: string;
@@ -9,9 +9,11 @@ interface IListProps {
 const NewsList = ({ press, title, content }: IListProps) => {
   return (
     <$List>
-      <$Press>{press}</$Press>
-      <$Title>{title}</$Title>
-      <$Content>{content}</$Content>
+      <$Wrapper>
+        <$Press>{press}</$Press>
+        <$Title>{title}</$Title>
+        <$Content>{content}</$Content>
+      </$Wrapper>
     </$List>
   );
 };

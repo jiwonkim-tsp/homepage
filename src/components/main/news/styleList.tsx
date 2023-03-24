@@ -2,10 +2,14 @@ import styled from "styled-components";
 import colors from "@Constants/color";
 
 export const $List = styled.li`
-  width: 25vw;
+  width: 35vw;
+`;
+
+export const $Wrapper = styled.div`
+  width: 28vw;
   display: flex;
-  gap: 2vw;
   flex-direction: column;
+  gap: 1.5vw;
 `;
 
 export const $Press = styled.div`
