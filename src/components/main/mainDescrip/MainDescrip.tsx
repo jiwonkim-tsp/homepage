@@ -1,11 +1,16 @@
 import { $Content, $Sentence, $ColoredText } from "./style";
-import { ISentence } from "@/src/data/productData";
+import { ISentence } from "@Data/productData";
 
-const MainDescrip = ({ sentence }: any) => {
+interface IMainDescProps {
+  sentence: ISentence[];
+  main: boolean;
+}
+
+const MainDescrip = ({ sentence, main }: IMainDescProps) => {
   return (
-    <$Content>
-      {sentence.map((list: any) => (
-        <$Sentence key={list.id}>
+    <$Content main={main}>
+      {sentence.map((list) => (
+        <$Sentence key={list.content}>
           <$ColoredText color={list.color}>{list.content}</$ColoredText>
         </$Sentence>
       ))}

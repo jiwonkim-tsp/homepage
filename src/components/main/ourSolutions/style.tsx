@@ -9,7 +9,7 @@ export const $Wrapper = styled.div`
 `;
 
 export const $PositionWrapper = styled.div`
-  transform: translate(30vw, 30vw);
+  transform: translate(25vw, 34vw);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -17,12 +17,12 @@ export const $PositionWrapper = styled.div`
 
 export const $ImgBox = styled(motion.div)`
   img {
-    width: 35vw;
+    width: 50vw;
   }
 `;
 
 export const $ContentWrapper = styled.div`
-  transform: translateX(18vw);
+  transform: translate(30vw, -10vw);
 `;
 
 export const $Title = styled.h1`

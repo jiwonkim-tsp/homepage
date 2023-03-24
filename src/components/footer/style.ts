@@ -10,33 +10,36 @@ export const $Wrapper = styled.div`
   }
 `;
 
-export const $PositionWrapper = styled.div<{ main: boolean }>`
+export const $PositionWrapper = styled.div<{ page: string }>`
   background-color: ${colors["purple"]};
   position: absolute;
   width: 100%;
-  height: 100%;
-  height: 30vw;
-  top: ${({ main }) => (main ? "140vw" : "40vw")};
+  height: 40vw;
+  top: ${({ page }) =>
+    page === "main"
+      ? "140vw"
+      : page === "company"
+      ? "180vw"
+      : page === "works"
+      ? "20vw"
+      : "40vw"};
   &:before {
     content: "";
     position: absolute;
     width: 100vw;
-    height: 34vw;
+    height: 20vw;
     overflow: hidden;
     background-color: ${colors["purple"]};
     border-radius: 50%;
-    top: -17vw;
+    top: -10vw;
+    left: 0;
   }
-`;
-
-export const $BtnWrapper = styled.div`
-  transform: translate(58vw, 14vw);
 `;
 
 export const $Content = styled.div`
   position: absolute;
   z-index: 1;
-  top: -10vw;
+  top: 0vw;
   left: 25vw;
   color: #fff;
   font-size: 10vw;
@@ -62,7 +65,7 @@ export const $ImgBox = styled(motion.div)`
 `;
 
 export const $Contact = styled.form`
-  transform: translate(20vw, -7vw);
+  transform: translate(20vw, 0vw);
   width: 60vw;
   display: flex;
   flex-direction: column;
@@ -119,13 +122,13 @@ export const $LogoBox = styled.div`
 
 export const $SnsBox = styled.ul`
   position: absolute;
-  top: 1vw;
+  top: 1.5vw;
   right: 3vw;
   display: flex;
   gap: 1.5vw;
 `;
 
 export const $SnsList = styled.li`
-  font-size: 3vw;
+  font-size: 2.5vw;
   color: #fff;
 `;

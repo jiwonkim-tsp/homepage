@@ -2,14 +2,13 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const $Wrapper = styled.div`
-  background-color: red;
   margin-top: 23vw;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
-export const $Title = styled.h1`
+export const $Title = styled(motion.h1)`
   font-family: "GothamBlack";
   color: #fff;
   font-size: 12vw;

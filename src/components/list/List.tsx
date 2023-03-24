@@ -6,7 +6,7 @@ import {
   $Content,
   $Sentence,
   $ColoredText,
-} from "./styleList";
+} from "./style";
 import { ISentence } from "@Data/productData";
 
 export interface IListProps {
@@ -14,10 +14,9 @@ export interface IListProps {
   title: string;
   img: string;
   sentence: ISentence[];
-  isSol: boolean;
 }
 
-const ProductList = ({ order, title, img, sentence, isSol }: IListProps) => {
+const List = ({ order, title, img, sentence }: IListProps) => {
   const variants = {
     hidden: {
       opacity: 0,
@@ -32,7 +31,6 @@ const ProductList = ({ order, title, img, sentence, isSol }: IListProps) => {
       },
     },
   };
-
   return (
     <$List>
       <$ImgBox
@@ -43,11 +41,11 @@ const ProductList = ({ order, title, img, sentence, isSol }: IListProps) => {
       >
         <img src={img} alt={title} />
       </$ImgBox>
-      <$ContentBox order={order} isSol={isSol}>
+      <$ContentBox order={order}>
         <$Title>{title}</$Title>
         <$Content>
-          {sentence.map((list) => (
-            <$Sentence key={list.id}>
+          {sentence.map((list, index) => (
+            <$Sentence key={index}>
               <$ColoredText color={list.color}>{list.content}</$ColoredText>
             </$Sentence>
           ))}
@@ -57,4 +55,4 @@ const ProductList = ({ order, title, img, sentence, isSol }: IListProps) => {
   );
 };
 
-export default ProductList;
+export default List;

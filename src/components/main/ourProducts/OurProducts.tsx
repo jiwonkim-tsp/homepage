@@ -5,7 +5,7 @@ import {
   $ContentWrapper,
   $Title,
 } from "./style";
-import img from "@Assets/image/ourProjects/product_sensor_alpha.png";
+import img from "@Assets/image/ourProducts/productSensor.png";
 import Button from "@Components/Button/Button";
 import { useNavigate } from "react-router-dom";
 import MainDescrip from "../mainDescrip/MainDescrip";
@@ -26,14 +26,14 @@ const OurProducts = () => {
       <$ContentWrapper>
         <$Title>공간의파티의 제품들</$Title>
         {ourProductData.map((list) => (
-          <MainDescrip key={list.id} sentence={list.sentence} />
+          <MainDescrip key={list.id} sentence={list.sentence} main={true} />
         ))}
         <$BtnWrapper>
           <Button
-            text={"Discover more of our work"}
+            text={"더보기"}
             color={"#fff"}
             bgColor={"purple"}
-            handleClick={() => navigate("/company")}
+            handleClick={() => navigate("/products")}
           />
         </$BtnWrapper>
       </$ContentWrapper>

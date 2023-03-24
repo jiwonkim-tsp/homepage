@@ -3,20 +3,20 @@ import { $Wrapper } from "./style";
 import Button from "@Components/Button/Button";
 import { useNavigate } from "react-router-dom";
 
-const OurWork = () => {
+const OurWorks = () => {
   const navigate = useNavigate();
 
   return (
     <$Wrapper>
       <Carousel />
       <Button
-        text={"Discover more of our work"}
+        text={"더보기"}
         color={"#fff"}
         bgColor={"purple"}
-        handleClick={() => navigate("/work")}
+        handleClick={() => navigate("/works")}
       />
     </$Wrapper>
   );
 };
 
-export default OurWork;
+export default OurWorks;

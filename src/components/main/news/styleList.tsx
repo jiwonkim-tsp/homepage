@@ -10,8 +10,8 @@ export const $List = styled.li`
 
 export const $Press = styled.div`
   font-size: 1.1vw;
-  color: ${colors["purple"]};
-  font-family: "Gotham", "NanumSquare";
+  color: ${colors["green"]};
+  font-family: "Gotham", "NanumSquareEB";
   font-weight: bold;
 `;
 
@@ -20,7 +20,7 @@ export const $Title = styled.div`
   line-height: 1.15;
   font-family: "NanumSquareEB";
   font-size: 1.5vw;
-  color: ${colors["green"]};
+  color: ${colors["yellow"]};
 `;
 
 export const $Content = styled.div`

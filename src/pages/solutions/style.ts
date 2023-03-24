@@ -8,7 +8,7 @@ export const $Wrapper = styled.div`
   align-items: center;
 `;
 
-export const $Title = styled.h1`
+export const $Title = styled(motion.h1)`
   font-family: "GothamBlack";
   color: #fff;
   font-size: 12vw;

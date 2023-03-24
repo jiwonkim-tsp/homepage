@@ -4,8 +4,8 @@ import useScroll from "@Hooks/useScroll";
 
 const navLists = [
   { name: "company", link: "/company", color: "purple" },
-  { name: "work", link: "/work", color: "yellow" },
-  { name: "solutions", link: "/solution", color: "pink" },
+  { name: "works", link: "/works", color: "yellow" },
+  { name: "solutions", link: "/solutions", color: "pink" },
   { name: "products", link: "/products", color: "green" },
   { name: "news", link: "/news", color: "black" },
 ];

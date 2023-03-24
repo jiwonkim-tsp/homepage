@@ -18,4 +18,7 @@ export default defineConfig({
       "@Hooks": path.resolve(__dirname, "./src/hooks"),
     },
   },
+  build: {
+    chunkSizeWarningLimit: 100000000,
+  },
 });

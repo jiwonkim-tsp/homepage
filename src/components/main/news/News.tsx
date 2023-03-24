@@ -30,7 +30,7 @@ const News = () => {
   return (
     <$Wrapper>
       <$PositionWrapper>
-        <$Title>news</$Title>
+        <$Title>소식들</$Title>
         <$Slider {...settings}>
           {newsData.map((item: any) => (
             <NewsList
@@ -43,7 +43,7 @@ const News = () => {
         </$Slider>
         <$BtnWrapper>
           <Button
-            text={"Discover more of our work"}
+            text={"더보기"}
             color={"#fff"}
             bgColor={"purple"}
             handleClick={() => navigate("/news")}

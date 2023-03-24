@@ -1,34 +1,14 @@
 import { useState, useEffect } from "react";
-import {
-  $Wrapper,
-  $Title,
-  $Works,
-  $BtnWrapper,
-  $Content,
-  $ContentBtnWrapper,
-  $Sentence,
-  $Word,
-} from "./style";
+import { $Wrapper, $Title, $Works, $BtnWrapper } from "./style";
 import { ourWorkData } from "@Data/ourWorkData";
 import WorkList from "./WorkList";
 import Button from "@Components/Button/Button";
 import { useAnimationControls } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import Footer from "@Components/footer/Footer";
+import Title from "@Components/title/Title";
+import { container } from "@Components/animation/framerMotion";
 
-const container = {
-  hidden: { opacity: 1 },
-  visible: {
-    opacity: 1,
-    transition: {
-      duration: 3,
-      delayChildren: 1,
-      staggerChildren: 0.5,
-    },
-  },
-};
-
-const Work = () => {
-  const navigate = useNavigate();
+const Works = () => {
   const [dataNum, setDataNum] = useState(4);
   const slicedData = ourWorkData.slice(0, dataNum);
   const controls = useAnimationControls();
@@ -43,9 +23,9 @@ const Work = () => {
 
   return (
     <$Wrapper>
-      <$Title>our works</$Title>
+      <Title title="our works" />
       <$Works variants={container} initial="hidden" animate={controls}>
-        {slicedData.map((list, index) => (
+        {slicedData.map((list) => (
           <WorkList
             key={list.id}
             img={list.img}
@@ -54,7 +34,6 @@ const Work = () => {
             location={list.location}
             period={list.period}
             link={list.link}
-            delay={index}
           />
         ))}
       </$Works>
@@ -72,23 +51,9 @@ const Work = () => {
       ) : (
         ""
       )}
-      <$Content>
-        <$ContentBtnWrapper>
-          <Button
-            text={"Get in touch"}
-            color={""}
-            bgColor={"green"}
-            handleClick={() => navigate("/solutions")}
-          />
-        </$ContentBtnWrapper>
-        <$Sentence>
-          <$Word>Let's make</$Word>
-          <$Word>something</$Word>
-          <$Word>new</$Word>
-        </$Sentence>
-      </$Content>
+      <Footer page="works" />
     </$Wrapper>
   );
 };
 
-export default Work;
+export default Works;

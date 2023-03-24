@@ -21,9 +21,8 @@ export const $PositionWrapper = styled.div`
 
 export const $Title = styled.div`
   color: ${colors["pink"]};
-  text-transform: uppercase;
   font-size: 2.5vw;
-  font-weight: bold;
+  font-family: "NanumSquareEB";
 `;
 
 export const $Slider = styled(Slider)`

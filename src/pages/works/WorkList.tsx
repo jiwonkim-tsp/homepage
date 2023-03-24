@@ -8,6 +8,7 @@ import {
   $Location,
   $Period,
 } from "./styleList";
+import { item } from "@Components/animation/framerMotion";
 
 interface IListProps {
   img: string;
@@ -16,25 +17,11 @@ interface IListProps {
   location: string;
   period: string;
   link: string;
-  delay: number;
 }
 
-const item = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 3 } },
-};
-
-const WorkList = ({
-  img,
-  tag,
-  title,
-  location,
-  period,
-  link,
-  delay,
-}: IListProps) => {
+const WorkList = ({ img, tag, title, location, period, link }: IListProps) => {
   return (
-    <$List variants={item} delay={delay} onClick={() => window.open(link)}>
+    <$List variants={item} onClick={() => window.open(link)}>
       <$ImgBox>
         <img src={img} alt={title} />
       </$ImgBox>
