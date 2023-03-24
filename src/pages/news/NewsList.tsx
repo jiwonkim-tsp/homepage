@@ -1,4 +1,5 @@
 import { $List, $Press, $Title, $Content } from "./styleList";
+import { item } from "@Animation/framerMotion";
 
 interface INewProps {
   title: string;
@@ -9,7 +10,7 @@ interface INewProps {
 
 const NewsList = ({ title, press, content, link }: INewProps) => {
   return (
-    <$List onClick={() => window.open(link)}>
+    <$List variants={item} onClick={() => window.open(link)}>
       <$Press>{press}</$Press>
       <$Title>{title}</$Title>
       <$Content>{content}</$Content>

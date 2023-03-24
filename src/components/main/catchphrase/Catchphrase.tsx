@@ -25,7 +25,7 @@ const Catchphrase = () => {
   ];
 
   const handleClick = () => {
-    navigate("/work");
+    navigate("/works");
   };
 
   return (
@@ -42,7 +42,7 @@ const Catchphrase = () => {
       </$Phrases>
       <$BtnWrapper>
         <Button
-          text={"Discover what we do"}
+          text={"보러가기"}
           color={""}
           bgColor={"yellow"}
           handleClick={handleClick}

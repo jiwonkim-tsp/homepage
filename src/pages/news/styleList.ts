@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import colors from "@Constants/color";
+import { motion } from "framer-motion";
 
-export const $List = styled.li`
+export const $List = styled(motion.li)`
   display: flex;
   flex-direction: column;
   gap: 1.7vw;

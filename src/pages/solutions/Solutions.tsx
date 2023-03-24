@@ -1,27 +1,27 @@
 import { $Wrapper, $Title, $Solutions } from "./style";
 import { solutionPageData } from "@Data/solutionData";
-import ProductList from "../products/ProductList";
+import List from "@Components/list/List";
 import Footer from "@Components/footer/Footer";
+import Title from "@Components/title/Title";
 
-const Solution = () => {
+const Solutions = () => {
   return (
     <$Wrapper>
-      <$Title>solution</$Title>
+      <Title title="solution" />
       <$Solutions>
         {solutionPageData.map((list) => (
-          <ProductList
+          <List
             key={list.order}
             title={list.title}
             sentence={list.sentence}
             img={list.img}
             order={list.order}
-            isSol={true}
           />
         ))}
       </$Solutions>
-      <Footer main={false} />
+      <Footer page="solutions" />
     </$Wrapper>
   );
 };
 
-export default Solution;
+export default Solutions;

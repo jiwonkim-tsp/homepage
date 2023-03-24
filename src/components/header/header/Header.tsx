@@ -17,10 +17,6 @@ const Header = () => {
     setToggle((prev) => !prev);
   };
 
-  const handleClick = () => {
-    navigate("/company");
-  };
-
   return (
     <$Wrapper>
       <$Header openNav={toggleState}>
@@ -34,11 +30,11 @@ const Header = () => {
             ""
           ) : (
             <Button
-              text={"우리만의 스토리"}
+              text={"발자취"}
               color={"#fff"}
               bgColor={""}
               border={"purple"}
-              handleClick={handleClick}
+              handleClick={() => navigate("/company")}
             />
           )}
           <$ToggleBtn openNav={toggleState} onClick={handleToggle}>

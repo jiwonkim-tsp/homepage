@@ -7,7 +7,6 @@ import {
   $Contact,
   $List,
   $Label,
-  $BtnWrapper,
   $CompanyInfo,
   $LogoBox,
   $SnsBox,
@@ -15,47 +14,51 @@ import {
 } from "./style";
 import { Link, useNavigate } from "react-router-dom";
 import img from "@Assets/image/footer/pose1.png";
-import Button from "@Components/Button/Button";
 import logo from "@Assets/image/logo/KR_문자형_화이트.png";
-import { FaInstagramSquare, FaYoutube } from "react-icons/fa";
+import { BsInstagram, BsYoutube } from "react-icons/bs";
 
 const contactInfo = [
   {
     id: "instagram",
-    icon: <FaInstagramSquare />,
+    icon: <BsInstagram />,
     url: "https://www.instagram.com/tsp_xr/",
   },
   {
     id: "youtube",
-    icon: <FaYoutube />,
+    icon: <BsYoutube />,
     url: "https://www.youtube.com/@tspxr8611",
   },
 ];
 
 interface IFooterProps {
-  main: boolean;
+  page: string;
 }
 
-const Footer = ({ main }: IFooterProps) => {
-  const navigate = useNavigate();
-
+const Footer = ({ page }: IFooterProps) => {
   return (
     <$Wrapper>
-      <$PositionWrapper main={main}>
-        {main ? (
+      <$PositionWrapper page={page}>
+        {page === "main" ||
+        page === "news" ||
+        page === "works" ||
+        page === "company" ? (
           <>
             <$Content>
               <$Word>Let's make</$Word>
               <$Word>something</$Word>
               <$Word>new</$Word>
             </$Content>
-            <$ImgBox
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 3, ease: "easeOut" }}
-            >
-              <img src={img} alt="오리너구리 이미지" />
-            </$ImgBox>
+            {page === "main" ? (
+              <$ImgBox
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 3, ease: "easeOut" }}
+              >
+                <img src={img} alt="오리너구리 이미지" />
+              </$ImgBox>
+            ) : (
+              ""
+            )}
           </>
         ) : (
           <>
@@ -81,18 +84,6 @@ const Footer = ({ main }: IFooterProps) => {
             </$Contact>
             <iframe name="frAttachFiles" />
           </>
-        )}
-        {main ? (
-          <$BtnWrapper>
-            <Button
-              text={"Get in touch"}
-              color={""}
-              bgColor={"green"}
-              handleClick={() => navigate("/solution")}
-            />
-          </$BtnWrapper>
-        ) : (
-          ""
         )}
         <$CompanyInfo>
           <$LogoBox>

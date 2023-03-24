@@ -12,17 +12,17 @@ export const $ImgBox = styled(motion.div)<{ order: number }>`
     width: 50vw;
     transform: ${({ order }) =>
       order % 2 === 0
-        ? "rotate(15deg) translateX(10vw)"
+        ? "rotate(15deg) translateX(15vw)"
         : "rotate(-15deg) translateX(-10vw)"};
   }
 `;
 
-export const $ContentBox = styled.div<{ order: number; isSol: boolean }>`
-  width: ${({ isSol }) => (isSol ? "55vw" : "50vw")};
+export const $ContentBox = styled.div<{ order: number }>`
+  width: "50vw";
   position: relative;
   z-index: 1;
   transform: ${({ order }) =>
-    order % 2 === 0 ? "translate(10vw, -5vw)" : "translate(-5vw, -5vw)"};
+    order % 2 === 0 ? "translate(5vw, -5vw)" : "translateY(-5vw)"};
   order: ${({ order }) => (order % 2 === 0 ? "-1" : "")};
 `;
 
@@ -35,7 +35,8 @@ export const $Title = styled.h1`
 `;
 
 export const $Content = styled.div`
-  font-size: 2.7vw;
+  width: 40vw;
+  font-size: 2vw;
   line-height: 1.25;
 `;
 
@@ -45,5 +46,6 @@ export const $Sentence = styled.span`
 export const $ColoredText = styled.span<{ color: string }>`
   color: ${({ color }) => colors[color]};
   word-break: keep-all;
-  font-weight: ${({ color }) => (color !== "white" ? "bold" : "normal")};
+  font-family: ${({ color }) =>
+    color !== "white" ? "NanumSquareEB" : "NanumSquare"};
 `;

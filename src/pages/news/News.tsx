@@ -1,24 +1,26 @@
 import { newsData } from "@Data/newsData";
-import {
-  $Wrapper,
-  $Title,
-  $News,
-  $Content,
-  $ContentBtnWrapper,
-  $Sentence,
-  $Word,
-} from "./style";
-import Button from "@Components/Button/Button";
+import { $Wrapper, $Title, $News } from "./style";
 import NewsList from "./NewsList";
-import { useNavigate } from "react-router-dom";
+import Footer from "@Components/footer/Footer";
+import Title from "@Components/title/Title";
+
+const container = {
+  hidden: { opacity: 1 },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 3,
+      delayChildren: 1,
+      staggerChildren: 0.5,
+    },
+  },
+};
 
 const News = () => {
-  const navigate = useNavigate();
-
   return (
     <$Wrapper>
-      <$Title>News</$Title>
-      <$News>
+      <Title title="News" />
+      <$News variants={container} initial="hidden" animate="visible">
         {newsData.map((list) => (
           <NewsList
             key={list.id}
@@ -29,21 +31,7 @@ const News = () => {
           />
         ))}
       </$News>
-      <$Content>
-        <$ContentBtnWrapper>
-          <Button
-            text={"Get in touch"}
-            color={""}
-            bgColor={"green"}
-            handleClick={() => navigate("/solutions")}
-          />
-        </$ContentBtnWrapper>
-        <$Sentence>
-          <$Word>Let's make</$Word>
-          <$Word>something</$Word>
-          <$Word>new</$Word>
-        </$Sentence>
-      </$Content>
+      <Footer page="news" />
     </$Wrapper>
   );
 };

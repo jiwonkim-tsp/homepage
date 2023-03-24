@@ -2,8 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import Home from "@Pages/home/Home";
 import Company from "@Pages/company/Company";
-import Work from "@Pages/work/Work";
-import Solution from "@Pages/solution/Solution";
+import Works from "@Pages/works/Works";
+import Solutions from "@Pages/solutions/Solutions";
 import Products from "@Pages/products/Products";
 import ProductDetail from "@Pages/productDetail/ProductDetail";
 import News from "@Pages/news/News";
@@ -22,12 +22,12 @@ const router = createBrowserRouter([
         element: <Company />,
       },
       {
-        path: "work",
-        element: <Work />,
+        path: "works",
+        element: <Works />,
       },
       {
-        path: "solution",
-        element: <Solution />,
+        path: "solutions",
+        element: <Solutions />,
       },
       {
         path: "products",

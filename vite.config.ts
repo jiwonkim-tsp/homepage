@@ -16,6 +16,10 @@ export default defineConfig({
       "@Recoil": path.resolve(__dirname, "./src/recoil"),
       "@Styles": path.resolve(__dirname, "./src/styles"),
       "@Hooks": path.resolve(__dirname, "./src/hooks"),
+      "@Animation": path.resolve(__dirname, "./src/animation"),
     },
+  },
+  build: {
+    chunkSizeWarningLimit: 100000000,
   },
 });

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import colors from "@Constants/color";
 import { motion } from "framer-motion";
 
-export const $List = styled(motion.li)<{ delay: number }>`
+export const $List = styled(motion.li)`
   cursor: pointer;
   display: flex;
   flex-direction: column;

@@ -10,7 +10,7 @@ export const $Wrapper = styled.div`
 `;
 
 export const $ContentWrapper = styled.div`
-  transform: translate(16vw, -2vw);
+  transform: translate(20vw, -5vw);
 `;
 
 export const $ImgBox = styled(motion.div)`

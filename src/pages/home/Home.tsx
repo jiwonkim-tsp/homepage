@@ -1,8 +1,9 @@
 import Catchphrase from "@Components/main/catchphrase/Catchphrase";
 import OurTeam from "@Components/main/ourTeam/OurTeam";
 import OurProducts from "@Components/main/ourProducts/OurProducts";
-import OurSolution from "@Components/main/ourSolution/OurSolution";
+import OurSolutions from "@Components/main/ourSolutions/OurSolutions";
 import News from "@Components/main/news/News";
+import Clients from "@Components/main/clients/Clients";
 import Footer from "@Components/footer/Footer";
 import styled from "styled-components";
 import Loading from "@Components/main/Loading/Loading";
@@ -23,10 +24,11 @@ const Home = () => {
       {loading ? <Loading /> : ""}
       <Catchphrase />
       <OurTeam />
-      <OurSolution />
+      <OurSolutions />
       <OurProducts />
+      <Clients />
       <News />
-      <Footer main={true} />
+      <Footer page="main" />
     </Wrapper>
   );
 };

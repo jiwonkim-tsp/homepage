@@ -26,7 +26,7 @@ export const $Header = styled.header<{ openNav: boolean }>`
 export const $Logo = styled.div`
   cursor: pointer;
   img {
-    width: 15vw;
+    width: 12vw;
   }
 `;
 
