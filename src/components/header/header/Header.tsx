@@ -7,11 +7,15 @@ import { IoMdClose } from "react-icons/io";
 import logo from "@Assets/image/logo/mainLogo.png";
 import { useRecoilValue, useRecoilState } from "recoil";
 import { ToggleState } from "@Recoil/atom";
+import { useScroll } from "framer-motion";
 
 const Header = () => {
   const toggleState = useRecoilValue(ToggleState);
   const [toggle, setToggle] = useRecoilState(ToggleState);
   const navigate = useNavigate();
+  const { scrollYProgress } = useScroll();
+  console.log(scrollYProgress);
+  // const hideHeader: boolean = scrollYProgress > 0 ? true : false;
 
   const handleToggle = () => {
     setToggle((prev) => !prev);
@@ -35,6 +39,7 @@ const Header = () => {
               bgColor={""}
               border={"purple"}
               handleClick={() => navigate("/company")}
+              padding={"2vw 5.5vw"}
             />
           )}
           <$ToggleBtn openNav={toggleState} onClick={handleToggle}>

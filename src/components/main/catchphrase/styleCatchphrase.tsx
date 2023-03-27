@@ -2,13 +2,16 @@ import styled from "styled-components";
 
 export const $Wrapper = styled.div`
   position: relative;
-  top: 10vw;
+  top: 5vw;
   width: 100%;
   height: 55vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4vw;
+  @media (max-width: 1100px) {
+    top: 11.5vw;
+  }
 `;
 
 export const $VideoWrapper = styled.div`
@@ -32,7 +35,7 @@ export const $Phrases = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: translateY(6vw) rotate(-10deg);
+  transform: translateY(9vw) rotate(-10deg);
 `;
 
 export const $BtnWrapper = styled.div`

@@ -6,27 +6,43 @@ export const $Wrapper = styled.div`
   top: 0;
   left: 0;
   z-index: 3;
-  width: 100%;
-  height: 9vw;
+  width: 100vw;
+  height: 4vw;
+  display: flex;
+  @media (max-width: 480px) {
+    height: 12vw;
+  }
 `;
 
 export const $Header = styled.header<{ openNav: boolean }>`
   position: fixed;
-  z-index: 4;
   top: 0;
-  width: 100%;
-  padding: 2vw;
+  left: 0;
+  z-index: 4;
+  width: 100vw;
+  height: 4vw;
+  padding: 3.5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: ${({ openNav }) =>
     openNav ? colors["beige"] : colors["black"]};
+  @media (max-width: 480px) {
+    height: 15vw;
+    padding: 5vw 5vw;
+  }
 `;
 
 export const $Logo = styled.div`
   cursor: pointer;
   img {
     width: 12vw;
+  }
+  @media (max-width: 480px) {
+    margin-top: 1vw;
+    img {
+      width: 24vw;
+    }
   }
 `;
 
@@ -53,5 +69,12 @@ export const $ToggleBtn = styled.div<{ openNav: boolean }>`
   svg {
     color: ${({ openNav }) => (openNav ? "#000" : "#fff")};
     font-size: 1.5vw;
+  }
+  @media (max-width: 480px) {
+    width: 7.8vw;
+    height: 7.8vw;
+    svg {
+      font-size: 4vw;
+    }
   }
 `;

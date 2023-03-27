@@ -19,10 +19,16 @@ export const $ImgBox = styled(motion.div)`
     width: 55vw;
     transform: rotate(-20deg);
   }
+  @media (max-width: 480px) {
+    top: 45vw;
+  }
 `;
 
 export const $ContentWrapper = styled.div`
   transform: translate(15vw, 30vw);
+  @media (max-width: 480px) {
+    transform: translate(15vw, 35vw);
+  }
 `;
 
 export const $Title = styled.h1`
@@ -30,8 +36,15 @@ export const $Title = styled.h1`
   font-size: 4vw;
   margin: 2vw 0;
   color: ${colors["pink"]};
+  @media (max-width: 480px) {
+    font-size: 7.5vw;
+    margin: 3.5vw 0;
+  }
 `;
 
 export const $BtnWrapper = styled.div`
   transform: translate(15vw, 32vw);
+  @media (max-width: 480px) {
+    transform: translate(15vw, 37vw);
+  }
 `;

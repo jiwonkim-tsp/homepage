@@ -23,7 +23,7 @@ const Button = ({
       bgColor={bgColor}
       color={color}
       border={typeof border !== "string" ? bgColor : border}
-      padding={typeof padding !== "string" ? "1vw 2vw" : padding}
+      padding={typeof padding !== "string" ? "" : padding}
       onClick={handleClick}
     >
       {text}
@@ -48,4 +48,9 @@ const $Button = styled.button<{
   font-size: 1.5vw;
   z-index: 1;
   cursor: pointer;
+  @media (max-width: 480px) {
+    padding: ${({ padding }) => (padding ? padding : "1.5vw 8vw")};
+    font-size: 3.5vw;
+    border-radius: 4vw;
+  }
 `;

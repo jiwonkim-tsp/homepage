@@ -34,6 +34,16 @@ export const $PositionWrapper = styled.div<{ page: string }>`
     top: -10vw;
     left: 0;
   }
+  @media (max-width: 1100px) {
+    top: ${({ page }) =>
+      page === "main"
+        ? "30vw"
+        : page === "company"
+        ? "180vw"
+        : page === "works"
+        ? "20vw"
+        : "40vw"};
+  }
 `;
 
 export const $Content = styled.div`
@@ -79,6 +89,7 @@ export const $Contact = styled.form`
     padding: 1vw 2vw;
     background-color: ${colors["green"]};
     transform: translate(-30vw, 2vw);
+    font-family: "NanumSquareEB";
   }
 `;
 
@@ -101,7 +112,7 @@ export const $List = styled.div`
 export const $Label = styled.label`
   font-size: 1.5vw;
   color: #fff;
-  text-transform: uppercase;
+  font-family: "NanumSquareEB";
 `;
 
 export const $CompanyInfo = styled.div`

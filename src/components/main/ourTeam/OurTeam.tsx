@@ -32,15 +32,15 @@ const OurTeam = () => {
             <MainDescrip key={list.id} sentence={list.sentence} main={true} />
           ))}
         </$DescripWrapper>
+        <$BtnWrapper>
+          <Button
+            text={"더보기"}
+            color={"#fff"}
+            bgColor={"purple"}
+            handleClick={() => navigate("/works")}
+          />
+        </$BtnWrapper>
       </$ContentWrapper>
-      <$BtnWrapper>
-        <Button
-          text={"더보기"}
-          color={"#fff"}
-          bgColor={"purple"}
-          handleClick={() => navigate("/works")}
-        />
-      </$BtnWrapper>
       <OurWorks />
     </$Wrapper>
   );

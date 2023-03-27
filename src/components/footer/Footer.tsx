@@ -69,18 +69,18 @@ const Footer = ({ page }: IFooterProps) => {
               target="frAttachFiles"
             >
               <$List>
-                <$Label htmlFor="name">name</$Label>
+                <$Label htmlFor="name">이름</$Label>
                 <input type="text" name="name" required />
               </$List>
               <$List>
-                <$Label htmlFor="email">email</$Label>
+                <$Label htmlFor="email">이메일</$Label>
                 <input type="email" name="email" required />
               </$List>
               <$List>
-                <$Label htmlFor="tel">phone number</$Label>
+                <$Label htmlFor="tel">연락처</$Label>
                 <input type="tel" name="tel" required />
               </$List>
-              <button type="submit">Send</button>
+              <button type="submit">보내기</button>
             </$Contact>
             <iframe name="frAttachFiles" />
           </>

@@ -12,6 +12,9 @@ export const $Wrapper = styled.div`
 
 export const $ContentWrapper = styled.div`
   transform: translate(20vw, -10vw);
+  @media (max-width: 480px) {
+    transform: translate(10vw, -10vw);
+  }
 `;
 
 export const $ImgBox = styled(motion.div)`
@@ -21,11 +24,19 @@ export const $ImgBox = styled(motion.div)`
   img {
     width: 50vw;
   }
+  @media (max-width: 480px) {
+    top: 50vw;
+  }
 `;
 
 export const $LogoWrapper = styled.div`
   img {
     width: 20vw;
+  }
+  @media (max-width: 480px) {
+    img {
+      width: 30vw;
+    }
   }
 `;
 
@@ -34,5 +45,5 @@ export const $DescripWrapper = styled.div`
 `;
 
 export const $BtnWrapper = styled.div`
-  transform: translate(-10vw, 24vw);
+  /* transform: translate(0vw, 0vw); */
 `;

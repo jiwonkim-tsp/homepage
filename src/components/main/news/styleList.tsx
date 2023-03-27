@@ -3,6 +3,9 @@ import colors from "@Constants/color";
 
 export const $List = styled.li`
   width: 35vw;
+  @media (max-width: 480px) {
+    width: 60vw;
+  }
 `;
 
 export const $Wrapper = styled.div`
@@ -10,6 +13,9 @@ export const $Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.5vw;
+  @media (max-width: 480px) {
+    width: 50vw;
+  }
 `;
 
 export const $Press = styled.div`
@@ -17,6 +23,9 @@ export const $Press = styled.div`
   color: ${colors["green"]};
   font-family: "Gotham", "NanumSquareEB";
   font-weight: bold;
+  @media (max-width: 480px) {
+    font-size: 3vw;
+  }
 `;
 
 export const $Title = styled.div`
@@ -25,6 +34,9 @@ export const $Title = styled.div`
   font-family: "NanumSquareEB";
   font-size: 1.5vw;
   color: ${colors["yellow"]};
+  @media (max-width: 480px) {
+    font-size: 4vw;
+  }
 `;
 
 export const $Content = styled.div`
@@ -40,4 +52,7 @@ export const $Content = styled.div`
   -webkit-box-orient: vertical;
   word-wrap: break-word;
   line-height: 1.2em;
+  @media (max-width: 480px) {
+    font-size: 3vw;
+  }
 `;

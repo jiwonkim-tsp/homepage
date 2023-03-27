@@ -27,9 +27,9 @@ const Home = () => {
       <OurTeam />
       <OurSolutions />
       <OurProducts />
-      <Clients />
-      <Awards />
       <News />
+      <Awards />
+      <Clients />
       <Footer page="main" />
     </Wrapper>
   );

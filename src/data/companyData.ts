@@ -69,43 +69,25 @@ export const companyData: ICompany[] = [
       },
     ],
   },
+
   {
-    order: 2,
-    year: "2021",
+    order: 4,
+    year: "2023~",
     content: [
       {
         sentence: [
           {
-            content: "과기부, ",
+            content:
+              "증강현실 인테리어 서비스를 위한 객체/도면생성 기술 및 웹 어플리케이션 개발",
             color: "white",
           },
+        ],
+      },
+      {
+        sentence: [
           {
-            content: "ICT융합서비스 경쟁력 강화사업",
+            content: "웹 기반 ARVR 제작툴 플랫폼 런칭예정(2025)",
             color: "purple",
-          },
-        ],
-      },
-      {
-        sentence: [
-          {
-            content: "인터넷진흥원 ",
-            color: "white",
-          },
-          {
-            content: "차세대 웹 선도 서비스 개발",
-            color: "green",
-          },
-        ],
-      },
-      {
-        sentence: [
-          {
-            content: "국토교통과학기술진흥원 ",
-            color: "white",
-          },
-          {
-            content: "스마트시티 넥스트 혁신기술",
-            color: "yellow",
           },
         ],
       },
@@ -174,23 +156,42 @@ export const companyData: ICompany[] = [
     ],
   },
   {
-    order: 4,
-    year: "2023~",
+    order: 2,
+    year: "2021",
     content: [
       {
         sentence: [
           {
-            content:
-              "증강현실 인테리어 서비스를 위한 객체/도면생성 기술 및 웹 어플리케이션 개발",
+            content: "과기부, ",
             color: "white",
+          },
+          {
+            content: "ICT융합서비스 경쟁력 강화사업",
+            color: "purple",
           },
         ],
       },
       {
         sentence: [
           {
-            content: "웹 기반 ARVR 제작툴 플랫폼 런칭예정(2025)",
-            color: "purple",
+            content: "인터넷진흥원 ",
+            color: "white",
+          },
+          {
+            content: "차세대 웹 선도 서비스 개발",
+            color: "green",
+          },
+        ],
+      },
+      {
+        sentence: [
+          {
+            content: "국토교통과학기술진흥원 ",
+            color: "white",
+          },
+          {
+            content: "스마트시티 넥스트 혁신기술",
+            color: "yellow",
           },
         ],
       },

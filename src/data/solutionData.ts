@@ -22,7 +22,7 @@ export const solutionPageData: ISolutionData[] = [
       },
       {
         content:
-          "은 빠른 현장적용이 가능하고 AR/VR 기술을 활용하여 효율적으로 시설물을 관리할 수 있습니다",
+          "은 빠른 현장적용이 가능하고 AR/VR 기술을 활용하여 효율적으로 시설물을 관리할 수 있습니다.",
         color: "white",
       },
     ],
@@ -41,7 +41,7 @@ export const solutionPageData: ISolutionData[] = [
         color: "green",
       },
       {
-        content: "를 경험해보세요",
+        content: "를 경험해보세요.",
         color: "white",
       },
     ],
@@ -60,7 +60,7 @@ export const solutionPageData: ISolutionData[] = [
         color: "yellow",
       },
       {
-        content: "를 통해 과거 유적지를 생생하게 재현할 수 있습니다",
+        content: "를 통해 과거 유적지를 생생하게 재현할 수 있습니다.",
         color: "white",
       },
     ],
