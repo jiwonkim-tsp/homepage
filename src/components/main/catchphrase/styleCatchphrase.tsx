@@ -4,6 +4,7 @@ export const $Wrapper = styled.div`
   position: relative;
   top: 10vw;
   width: 100%;
+  height: 55vw;
   display: flex;
   flex-direction: column;
   align-items: center;

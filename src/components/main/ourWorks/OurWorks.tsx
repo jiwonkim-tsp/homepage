@@ -9,12 +9,12 @@ const OurWorks = () => {
   return (
     <$Wrapper>
       <Carousel />
-      <Button
+      {/* <Button
         text={"더보기"}
         color={"#fff"}
         bgColor={"purple"}
         handleClick={() => navigate("/works")}
-      />
+      /> */}
     </$Wrapper>
   );
 };

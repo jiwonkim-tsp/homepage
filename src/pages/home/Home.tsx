@@ -4,6 +4,7 @@ import OurProducts from "@Components/main/ourProducts/OurProducts";
 import OurSolutions from "@Components/main/ourSolutions/OurSolutions";
 import News from "@Components/main/news/News";
 import Clients from "@Components/main/clients/Clients";
+import Awards from "@Components/main/awards/Awards";
 import Footer from "@Components/footer/Footer";
 import styled from "styled-components";
 import Loading from "@Components/main/Loading/Loading";
@@ -16,7 +17,7 @@ const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 4000);
   }, []);
 
   return (
@@ -27,6 +28,7 @@ const Home = () => {
       <OurSolutions />
       <OurProducts />
       <Clients />
+      <Awards />
       <News />
       <Footer page="main" />
     </Wrapper>

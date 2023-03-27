@@ -40,14 +40,14 @@ const Catchphrase = () => {
           return <AnimatedText phrase={phrase} key={index} />;
         })}
       </$Phrases>
-      <$BtnWrapper>
+      {/* <$BtnWrapper>
         <Button
           text={"보러가기"}
           color={""}
           bgColor={"yellow"}
           handleClick={handleClick}
         />
-      </$BtnWrapper>
+      </$BtnWrapper> */}
     </$Wrapper>
   );
 };

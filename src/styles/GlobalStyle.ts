@@ -71,6 +71,7 @@ const GlobalStyle = createGlobalStyle`
 
   * {
     box-sizing: border-box;
+    /* cursor: url(images/mouse-cursor.png) 2 2, auto; */
   }
   html {
     font-family: 'Gotham', 'NanumSquare';

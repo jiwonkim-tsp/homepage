@@ -11,12 +11,12 @@ import wtcseoul from "@Assets/image/clients/wtcseoul.png";
 import yg from "@Assets/image/clients/yg.png";
 import seoulDigital from "@Assets/image/clients/seoulDigital.png";
 
-interface IClient {
+export interface IImg {
   title: string;
   img: string;
 }
 
-export const clientData: IClient[] = [
+export const clientData: IImg[] = [
   { title: "한국수자원공사", img: kwater },
   { title: "KB국민은행", img: kbBank },
   { title: "한국콘텐츠진흥원", img: kocca },

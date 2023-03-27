@@ -1,52 +1,44 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import colors from "@Constants/color";
-import Slider from "react-slick";
+
+const infinite = keyframes`
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-35vw * 3));
+  }
+`;
 
 export const $Wrapper = styled.div`
   position: relative;
-`;
-
-export const $PositionWrapper = styled.div`
-  position: absolute;
-  top: 60vw;
-  color: white;
   width: 100%;
-  height: 60vw;
+  height: 30vw;
   display: flex;
-  gap: 8vw;
+  gap: 5vw;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 `;
 
 export const $Title = styled.div`
   color: ${colors["pink"]};
-  font-size: 2.5vw;
-  font-family: "NanumSquareEB";
+  font-size: 4vw;
+  font-family: "GothamBlack";
 `;
 
-export const $Slider = styled(Slider)`
+export const $SliderWrapper = styled.div`
   width: 100%;
-  .slick-dots {
-    position: absolute;
-    bottom: -10vw;
-    width: 100%;
-    list-style: none;
-    .slick-active {
-      button::before {
-        color: ${colors["green"]};
-      }
-    }
-    button::before {
-      color: ${colors["purple"]};
-    }
-  }
-  .slick-dots li {
-    width: 1vw;
-    height: 1vw;
-  }
+  position: relative;
+`;
+
+export const $Slider = styled.ul`
+  position: absolute;
+  left: 0;
+  width: calc(35vw * 6);
+  display: flex;
+  animation: ${infinite} 40s linear infinite;
 `;
 
 export const $BtnWrapper = styled.div`
-  transform: translateY(7vw);
+  transform: translateY(11vw);
 `;

@@ -20,6 +20,7 @@ export const $Works = styled(motion.ul)`
   display: grid;
   column-gap: 9vw;
   grid-template-columns: 30vw 30vw;
+  /* grid-template-columns: 1fr 1fr; */
 `;
 
 export const $BtnWrapper = styled.div`

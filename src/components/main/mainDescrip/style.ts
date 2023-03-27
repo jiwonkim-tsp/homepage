@@ -3,7 +3,7 @@ import colors from "@Constants/color";
 
 export const $Content = styled.div<{ main: boolean }>`
   font-family: "NanumSquare";
-  font-size: ${({ main }) => (main ? "1.8vw" : "2.5vw")};
+  font-size: ${({ main }) => (main ? "1.9vw" : "2.5vw")};
   line-height: 1.25;
 `;
 

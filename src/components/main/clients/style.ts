@@ -4,14 +4,8 @@ import colors from "@Constants/color";
 
 export const $Wrapper = styled(motion.div)`
   width: 100vw;
-  height: 50vw;
+  height: 40vw;
   position: relative;
-`;
-
-export const $PositionWrapper = styled.div`
-  position: absolute;
-  width: 100%;
-  top: 80vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,8 +13,8 @@ export const $PositionWrapper = styled.div`
 
 export const $Title = styled.div`
   color: ${colors["pink"]};
-  font-size: 2.5vw;
-  font-family: "NanumSquareEB";
+  font-size: 4vw;
+  font-family: "GothamBlack";
 `;
 
 export const $Clients = styled(motion.ul)`

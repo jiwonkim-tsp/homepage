@@ -7,7 +7,7 @@ import Title from "@Components/title/Title";
 const Solutions = () => {
   return (
     <$Wrapper>
-      <Title title="solution" />
+      <Title title="solutions" />
       <$Solutions>
         {solutionPageData.map((list) => (
           <List

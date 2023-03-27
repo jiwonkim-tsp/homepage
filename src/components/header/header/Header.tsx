@@ -30,7 +30,7 @@ const Header = () => {
             ""
           ) : (
             <Button
-              text={"발자취"}
+              text={"history"}
               color={"#fff"}
               bgColor={""}
               border={"purple"}

@@ -4,6 +4,7 @@ import {
   $ContentWrapper,
   $LogoWrapper,
   $DescripWrapper,
+  $BtnWrapper,
 } from "./style";
 import img from "@Assets/image/ourTeam/pose7.png";
 import logo from "@Assets/image/logo/ourTeamLogo.png";
@@ -11,8 +12,12 @@ import OurWorks from "../ourWorks/OurWorks";
 import { ourTeamData } from "@Data/mainContentData";
 import MainDescrip from "../mainDescrip/MainDescrip";
 import { moveLeft } from "@Animation/framerMotion";
+import Button from "@Components/Button/Button";
+import { useNavigate } from "react-router-dom";
 
 const OurTeam = () => {
+  const navigate = useNavigate();
+
   return (
     <$Wrapper>
       <$ImgBox variants={moveLeft} initial="hidden" whileInView="visible">
@@ -28,6 +33,14 @@ const OurTeam = () => {
           ))}
         </$DescripWrapper>
       </$ContentWrapper>
+      <$BtnWrapper>
+        <Button
+          text={"더보기"}
+          color={"#fff"}
+          bgColor={"purple"}
+          handleClick={() => navigate("/works")}
+        />
+      </$BtnWrapper>
       <OurWorks />
     </$Wrapper>
   );
