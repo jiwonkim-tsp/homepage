@@ -17,7 +17,7 @@ export const $Wrapper = styled.div`
 export const $CarouselWrapper = styled.ul`
   width: calc(35vw * 24);
   display: flex;
-  animation: ${infinite} 40s linear infinite;
+  animation: ${infinite} 100s linear infinite;
 `;
 
 export const $Item = styled.li`

@@ -19,7 +19,7 @@ const container = {
 const News = () => {
   return (
     <$Wrapper>
-      <Title title="News" />
+      <Title title="news" />
       <$News variants={container} initial="hidden" animate="visible">
         {newsData.map((list) => (
           <NewsList

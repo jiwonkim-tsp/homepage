@@ -12,25 +12,18 @@ const infinite = keyframes`
 
 export const $Wrapper = styled.div`
   position: relative;
-`;
-
-export const $PositionWrapper = styled.div`
-  position: absolute;
-  top: 60vw;
-  color: white;
   width: 100%;
-  height: 60vw;
+  height: 30vw;
   display: flex;
-  gap: 8vw;
+  gap: 5vw;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 `;
 
 export const $Title = styled.div`
   color: ${colors["pink"]};
-  font-size: 2.5vw;
-  font-family: "NanumSquareEB";
+  font-size: 4vw;
+  font-family: "GothamBlack";
 `;
 
 export const $SliderWrapper = styled.div`
@@ -47,5 +40,5 @@ export const $Slider = styled.ul`
 `;
 
 export const $BtnWrapper = styled.div`
-  transform: translateY(7vw);
+  transform: translateY(11vw);
 `;

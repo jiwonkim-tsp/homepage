@@ -17,7 +17,7 @@ export const $PositionWrapper = styled.div<{ page: string }>`
   height: 40vw;
   top: ${({ page }) =>
     page === "main"
-      ? "140vw"
+      ? "30vw"
       : page === "company"
       ? "180vw"
       : page === "works"

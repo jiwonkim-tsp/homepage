@@ -3,7 +3,6 @@ import { $Wrapper, $Title, $Works, $BtnWrapper } from "./style";
 import { ourWorkData } from "@Data/ourWorkData";
 import WorkList from "./WorkList";
 import Button from "@Components/Button/Button";
-import { useAnimationControls } from "framer-motion";
 import Footer from "@Components/footer/Footer";
 import Title from "@Components/title/Title";
 import { container } from "@Animation/framerMotion";
@@ -26,7 +25,7 @@ const Works = () => {
 
   return (
     <$Wrapper>
-      <Title title="our works" />
+      <Title title="works" />
       {dataPages.map((slicedData) => (
         <$Works variants={container} initial="hidden" animate="visible">
           {slicedData.map((list) => (

@@ -29,6 +29,7 @@ export const $Title = styled.div`
 
 export const $Content = styled.div`
   font-family: "NanumSquare";
+  color: white;
   word-break: keep-all;
   font-size: 1.2vw;
   line-height: 1.2;
