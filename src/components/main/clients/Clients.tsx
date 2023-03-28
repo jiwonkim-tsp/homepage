@@ -5,7 +5,7 @@ import { clientData } from "@Data/clientData";
 const Clients = () => {
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
-    if (document.body.offsetWidth === 480) {
+    if (document.body.offsetWidth < 480) {
       setMobile(true);
     }
   });
@@ -15,7 +15,7 @@ const Clients = () => {
       <$Clients
         initial={{ opacity: mobile ? 1 : 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: mobile ? 0 : 5, ease: "easeOut" }}
+        transition={{ duration: 5, ease: "easeOut" }}
       >
         {clientData.map((list) => (
           <$List key={list.title}>

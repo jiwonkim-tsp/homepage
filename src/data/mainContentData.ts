@@ -36,11 +36,11 @@ export const ourTeamData: IContent[] = [
     id: 3,
     sentence: [
       {
-        content: "우리는 ",
+        content: "우리는 자기에게 ",
         color: "white",
       },
       {
-        content: "자기에게 맞는 정보를 모아 ",
+        content: "맞는 정보를 모아 ",
         color: "purple",
       },
     ],
@@ -113,7 +113,7 @@ export const ourSolutionData: IContent[] = [
         color: "green",
       },
       {
-        content: " 솔루션입니다.",
+        content: " 솔루션을 개발하고 있습니다.",
         color: "white",
       },
     ],

@@ -25,8 +25,8 @@ export const carouselData: IOurWorkData[] = [
   {
     id: 1,
     img: busan,
-    tag: "Agumented Reality Digital twin Photography 3D",
-    title: "디지털 트윈 모니터링 시스템",
+    tag: "AR Digital Twin Maintenance System",
+    title: "디지털트윈 유지 보수관리 시스템",
     location: "부산 EDC 스마트 정수장",
     period: "2022~2023",
     link: "https://www.youtube.com/watch?v=3XfAgr1FrsY",
@@ -34,7 +34,7 @@ export const carouselData: IOurWorkData[] = [
   {
     id: 2,
     img: ARMuseum,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Docent Service",
     title: "AR 도슨트 서비스",
     location: "서울 역사박물관 공평도시유적전시관",
     period: "2022",
@@ -43,7 +43,7 @@ export const carouselData: IOurWorkData[] = [
   {
     id: 3,
     img: ARIN,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Indoor Navigation",
     title: "AR 실내 내비게이션",
     location: "노원 시립청소년 미래진로센터",
     period: "2022",
@@ -52,7 +52,7 @@ export const carouselData: IOurWorkData[] = [
   {
     id: 4,
     img: ARGallery,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Art Gallery Service",
     title: "AR 아트 서비스",
     location: "갤러리 바톤",
     period: "2022",
@@ -61,7 +61,7 @@ export const carouselData: IOurWorkData[] = [
   {
     id: 5,
     img: ARspot,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Advertisement Service",
     title: "AR 광고 서비스",
     location: "남산서울타워",
     period: "2022",
@@ -70,7 +70,7 @@ export const carouselData: IOurWorkData[] = [
   {
     id: 6,
     img: YG,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Dance Challenge",
     title: "AR 댄스 챌린지",
     location: "YG 엔터테인먼트 트레저콘서트",
     period: "2022",
@@ -79,7 +79,7 @@ export const carouselData: IOurWorkData[] = [
   {
     id: 7,
     img: ARBuddha,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Lotus Lantern Festival",
     title: "AR 연등제",
     location: "봉은사",
     period: "2021",
@@ -88,7 +88,7 @@ export const carouselData: IOurWorkData[] = [
   {
     id: 8,
     img: ARFaceChanger,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Photo Booth",
     title: "AR 포토부스",
     location: "WSCE 기업공동전시관",
     period: "2022",
@@ -97,7 +97,7 @@ export const carouselData: IOurWorkData[] = [
   {
     id: 9,
     img: ARScape,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Seoul Dashboard",
     title: "AR 상황판",
     location: "서울스마트시티센터",
     period: "2021",
@@ -106,7 +106,7 @@ export const carouselData: IOurWorkData[] = [
   {
     id: 10,
     img: ArtGallery,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Gallery",
     title: "AR 갤러리",
     location: "WTC SEOUL",
     period: "2022",
@@ -115,7 +115,7 @@ export const carouselData: IOurWorkData[] = [
   {
     id: 11,
     img: ARBI,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Business Card Service",
     title: "ARBi",
     location: "Under development",
     period: "2022",
@@ -124,7 +124,7 @@ export const carouselData: IOurWorkData[] = [
   {
     id: 12,
     img: XRFit,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Interior Furniture Arrangement Service",
     title: "XR FIT",
     location: "Under development",
     period: "2022",
@@ -133,8 +133,8 @@ export const carouselData: IOurWorkData[] = [
   {
     id: 13,
     img: busan,
-    tag: "Agumented Reality Digital twin Photography 3D",
-    title: "디지털 트윈 모니터링 시스템",
+    tag: "AR Digital Twin Maintenance System",
+    title: "디지털트윈 유지 보수관리 시스템",
     location: "부산 EDC 스마트 정수장",
     period: "2022~2023",
     link: "https://www.youtube.com/watch?v=3XfAgr1FrsY",
@@ -142,7 +142,7 @@ export const carouselData: IOurWorkData[] = [
   {
     id: 14,
     img: ARMuseum,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Docent Service",
     title: "AR 도슨트 서비스",
     location: "서울 역사박물관 공평도시유적전시관",
     period: "2022",
@@ -151,7 +151,7 @@ export const carouselData: IOurWorkData[] = [
   {
     id: 15,
     img: ARIN,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Indoor Navigation",
     title: "AR 실내 내비게이션",
     location: "노원 시립청소년 미래진로센터",
     period: "2022",
@@ -160,7 +160,7 @@ export const carouselData: IOurWorkData[] = [
   {
     id: 16,
     img: ARGallery,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Art Gallery Service",
     title: "AR 아트 서비스",
     location: "갤러리 바톤",
     period: "2022",
@@ -169,7 +169,7 @@ export const carouselData: IOurWorkData[] = [
   {
     id: 17,
     img: ARspot,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Advertisement Service",
     title: "AR 광고 서비스",
     location: "남산서울타워",
     period: "2022",
@@ -178,7 +178,7 @@ export const carouselData: IOurWorkData[] = [
   {
     id: 18,
     img: YG,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Dance Challenge",
     title: "AR 댄스 챌린지",
     location: "YG 엔터테인먼트 트레저콘서트",
     period: "2022",
@@ -187,7 +187,7 @@ export const carouselData: IOurWorkData[] = [
   {
     id: 19,
     img: ARBuddha,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Lotus Lantern Festiva",
     title: "AR 연등제",
     location: "봉은사",
     period: "2021",
@@ -196,7 +196,7 @@ export const carouselData: IOurWorkData[] = [
   {
     id: 20,
     img: ARFaceChanger,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Photo Booth",
     title: "AR 포토부스",
     location: "WSCE 기업공동전시관",
     period: "2022",
@@ -205,7 +205,7 @@ export const carouselData: IOurWorkData[] = [
   {
     id: 21,
     img: ARScape,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Seoul Dashboard",
     title: "AR 상황판",
     location: "서울스마트시티센터",
     period: "2021",
@@ -214,7 +214,7 @@ export const carouselData: IOurWorkData[] = [
   {
     id: 22,
     img: ArtGallery,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Gallery",
     title: "AR 갤러리",
     location: "WTC SEOUL",
     period: "2022",
@@ -223,7 +223,7 @@ export const carouselData: IOurWorkData[] = [
   {
     id: 23,
     img: ARBI,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Business Card Service",
     title: "ARBi",
     location: "Under development",
     period: "2022",
@@ -232,7 +232,7 @@ export const carouselData: IOurWorkData[] = [
   {
     id: 24,
     img: XRFit,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Interior Furniture Arrangement Service",
     title: "XR FIT",
     location: "Under development",
     period: "2022",
@@ -244,8 +244,8 @@ export const ourWorkData: IOurWorkData[] = [
   {
     id: 1,
     img: busan,
-    tag: "Agumented Reality Digital twin Photography 3D",
-    title: "디지털 트윈 모니터링 시스템",
+    tag: "AR Digital Twin Maintenance System",
+    title: "디지털트윈 유지 보수관리 시스템",
     location: "부산 EDC 스마트 정수장",
     period: "2022~2023",
     link: "https://www.youtube.com/watch?v=3XfAgr1FrsY",
@@ -253,7 +253,7 @@ export const ourWorkData: IOurWorkData[] = [
   {
     id: 2,
     img: ARMuseum,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Docent Service",
     title: "AR 도슨트 서비스",
     location: "서울 역사박물관 공평도시유적전시관",
     period: "2022",
@@ -262,7 +262,7 @@ export const ourWorkData: IOurWorkData[] = [
   {
     id: 3,
     img: ARIN,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Indoor Navigation",
     title: "AR 실내 내비게이션",
     location: "노원 시립청소년 미래진로센터",
     period: "2022",
@@ -271,16 +271,16 @@ export const ourWorkData: IOurWorkData[] = [
   {
     id: 4,
     img: ARGallery,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Art Gallery Service",
     title: "AR 아트 서비스",
-    location: "갤러리 바톤",
+    location: "x갤러리 바톤",
     period: "2022",
     link: "https://youtu.be/6a6e6XFq7CQ",
   },
   {
     id: 5,
     img: ARspot,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Advertisement Service",
     title: "AR 광고 서비스",
     location: "남산서울타워",
     period: "2022",
@@ -289,7 +289,7 @@ export const ourWorkData: IOurWorkData[] = [
   {
     id: 6,
     img: YG,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Dance Challenge",
     title: "AR 댄스 챌린지",
     location: "YG 엔터테인먼트 트레저콘서트",
     period: "2022",
@@ -298,7 +298,7 @@ export const ourWorkData: IOurWorkData[] = [
   {
     id: 7,
     img: ARBuddha,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Lotus Lantern Festival",
     title: "AR 연등제",
     location: "봉은사",
     period: "2021",
@@ -307,7 +307,7 @@ export const ourWorkData: IOurWorkData[] = [
   {
     id: 8,
     img: ARFaceChanger,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Photo Booth",
     title: "AR 포토부스",
     location: "WSCE 기업공동전시관",
     period: "2022",
@@ -316,7 +316,7 @@ export const ourWorkData: IOurWorkData[] = [
   {
     id: 9,
     img: ARScape,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Seoul Dashboard",
     title: "AR 상황판",
     location: "서울스마트시티센터",
     period: "2021",
@@ -325,7 +325,7 @@ export const ourWorkData: IOurWorkData[] = [
   {
     id: 10,
     img: ArtGallery,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Gallery",
     title: "AR 갤러리",
     location: "WTC SEOUL",
     period: "2022",
@@ -334,7 +334,7 @@ export const ourWorkData: IOurWorkData[] = [
   {
     id: 11,
     img: ARBI,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Business Card Service",
     title: "ARBi",
     location: "Under development",
     period: "2022",
@@ -343,7 +343,7 @@ export const ourWorkData: IOurWorkData[] = [
   {
     id: 12,
     img: XRFit,
-    tag: "Agumented Reality Digital twin Photography 3D",
+    tag: "AR Interior Furniture Arrangement Service",
     title: "XR FIT",
     location: "Under development",
     period: "2022",

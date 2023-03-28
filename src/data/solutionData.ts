@@ -22,7 +22,7 @@ export const solutionPageData: ISolutionData[] = [
       },
       {
         content:
-          "은 빠른 현장적용이 가능하고 AR/VR 기술을 활용하여 효율적으로 시설물을 관리할 수 있습니다.",
+          "은 기존의 관제시스템과 연계가 쉽고, AR/VR 기술을 활용하여 적은 인원으로 효율적인 시설관리가 가능합니다.",
         color: "white",
       },
     ],
@@ -33,15 +33,15 @@ export const solutionPageData: ISolutionData[] = [
     title: "웹 탑재 딥러닝을 이용한 AR 광고",
     sentence: [
       {
-        content: "AR과 딥러닝 기술을 이용한 간편하고 효과적인 ",
+        content: "AR과 딥러닝 기술을 이용하여 도시곳곳을",
         color: "white",
       },
       {
-        content: "웹 기반 광고 서비스",
+        content: "AR광고",
         color: "green",
       },
       {
-        content: "를 경험해보세요.",
+        content: "공간으로 변화시켜드립니다.",
         color: "white",
       },
     ],
@@ -49,18 +49,19 @@ export const solutionPageData: ISolutionData[] = [
   {
     order: 3,
     img: arMuseum,
-    title: "공간인식 기술을 활용한 AR 도슨트",
+    title: "공간인식 기술을 기반으로 하는 AR 도슨트",
     sentence: [
       {
-        content: "공간인식 기술을 활용한",
+        content: "정밀한 공간인식 기술을 바탕으로 유적지 위에",
         color: "white",
       },
       {
-        content: " AR 도슨트 서비스",
+        content: " AR VR 실감콘텐츠",
         color: "yellow",
       },
       {
-        content: "를 통해 과거 유적지를 생생하게 재현할 수 있습니다.",
+        content:
+          "를 제공합니다. 스마트폰만 있으면 누구나 17~18c 조선시대를 체험해볼 수 있습니다. ",
         color: "white",
       },
     ],

@@ -18,9 +18,9 @@ export const $ImgBox = styled(motion.div)`
 `;
 
 export const $ContentWrapper = styled.div`
-  transform: translate(60vw, 42vw);
+  transform: translate(55vw, 42vw);
   @media (max-width: 480px) {
-    transform: translate(40vw, 22vw);
+    transform: translate(40vw, 32vw);
   }
 `;
 
@@ -36,8 +36,8 @@ export const $Title = styled.h1`
 `;
 
 export const $BtnWrapper = styled.div`
-  transform: translate(60vw, 45vw);
+  transform: translate(55vw, 45vw);
   @media (max-width: 480px) {
-    transform: translate(40vw, 30vw);
+    transform: translate(40vw, 35vw);
   }
 `;

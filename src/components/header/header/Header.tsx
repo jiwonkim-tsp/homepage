@@ -7,7 +7,6 @@ import { IoMdClose } from "react-icons/io";
 import logo from "@Assets/image/logo/mainLogo.png";
 import { useRecoilValue, useRecoilState } from "recoil";
 import { ToggleState } from "@Recoil/atom";
-import { useScroll } from "framer-motion";
 
 const Header = () => {
   const toggleState = useRecoilValue(ToggleState);

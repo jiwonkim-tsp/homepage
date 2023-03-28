@@ -22,7 +22,11 @@ export const companyData: ICompany[] = [
             color: "yellow",
           },
           {
-            content: "들을 개발하고,",
+            content: "들을 개발하고, 이에 적합한 ",
+            color: "white",
+          },
+          {
+            content: "콘텐츠를 제작하는 회사입니다.",
             color: "white",
           },
         ],
@@ -30,23 +34,11 @@ export const companyData: ICompany[] = [
       {
         sentence: [
           {
-            content: "이에 적합한 ",
+            content: "자체 개발한 다양한 증강현실",
             color: "white",
           },
           {
-            content: "콘텐츠",
-            color: "yellow",
-          },
-          {
-            content: "를 제작하는 회사입니다.",
-            color: "white",
-          },
-        ],
-      },
-      {
-        sentence: [
-          {
-            content: "다양한 증강현실 솔루션들을 기반으로 ",
+            content: "솔루션들을 기반으로 ",
             color: "white",
           },
           {
@@ -54,15 +46,7 @@ export const companyData: ICompany[] = [
             color: "green",
           },
           {
-            content: "을",
-            color: "white",
-          },
-        ],
-      },
-      {
-        sentence: [
-          {
-            content: "개발 중입니다.",
+            content: "을 개발 중입니다",
             color: "white",
           },
         ],
@@ -77,16 +61,20 @@ export const companyData: ICompany[] = [
       {
         sentence: [
           {
-            content:
-              "증강현실 인테리어 서비스를 위한 객체/도면생성 기술 및 웹 어플리케이션 개발",
+            content: "증강현실 인테리어 서비스를 위한",
+            color: "white",
+          },
+          {
+            content: "객체/도면생성 기술 및 웹 어플리케이션 개발",
             color: "white",
           },
         ],
       },
+
       {
         sentence: [
           {
-            content: "웹 기반 ARVR 제작툴 플랫폼 런칭예정(2025)",
+            content: "웹 기반 ARVR 저작툴 플랫폼 런칭 준비(2025)",
             color: "purple",
           },
         ],

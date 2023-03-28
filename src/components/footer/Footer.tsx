@@ -11,7 +11,7 @@ import {
   $SnsBox,
   $SnsList,
 } from "./style";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import img from "@Assets/image/footer/pose1.png";
 import logo from "@Assets/image/logo/KR_문자형_화이트.png";
 import { BsInstagram, BsYoutube } from "react-icons/bs";
@@ -36,29 +36,7 @@ interface IFooterProps {
 const Footer = ({ page }: IFooterProps) => {
   return (
     <$Wrapper page={page}>
-      {page === "main" ||
-      page === "news" ||
-      page === "works" ||
-      page === "company" ? (
-        <>
-          <$Content>
-            <$Word>Let's make</$Word>
-            <$Word>something</$Word>
-            <$Word>new</$Word>
-          </$Content>
-          {page === "main" ? (
-            <$ImgBox
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 3, ease: "easeOut" }}
-            >
-              <img src={img} alt="오리너구리 이미지" />
-            </$ImgBox>
-          ) : (
-            ""
-          )}
-        </>
-      ) : (
+      {page === "products" || page === "solutions" ? (
         <>
           <$Contact
             className="gform"
@@ -81,6 +59,25 @@ const Footer = ({ page }: IFooterProps) => {
             <button type="submit">보내기</button>
           </$Contact>
           <iframe name="frAttachFiles" />
+        </>
+      ) : (
+        <>
+          <$Content>
+            <$Word>Let's make</$Word>
+            <$Word>something</$Word>
+            <$Word>new</$Word>
+          </$Content>
+          {page === "main" ? (
+            <$ImgBox
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 3, ease: "easeOut" }}
+            >
+              <img src={img} alt="오리너구리 이미지" />
+            </$ImgBox>
+          ) : (
+            ""
+          )}
         </>
       )}
       <$CompanyInfo>

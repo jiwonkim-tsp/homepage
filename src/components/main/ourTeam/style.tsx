@@ -5,12 +5,10 @@ export const $Wrapper = styled.div`
   position: relative;
   width: 100vw;
   height: 80vw;
-  overflow-x: hidden;
   z-index: 2;
   display: flex;
   padding: 12vw 0;
   margin-top: 10vw;
-
   @media (max-width: 480px) {
     height: 110vw;
   }
@@ -28,6 +26,7 @@ export const $ImgBox = styled(motion.div)`
   top: 10vw;
   right: -10vw;
   img {
+    overflow-x: hidden;
     width: 50vw;
   }
   @media (max-width: 480px) {
@@ -48,8 +47,4 @@ export const $LogoWrapper = styled.div`
 
 export const $DescripWrapper = styled.div`
   transform: translateY(-3vw);
-`;
-
-export const $BtnWrapper = styled.div`
-  /* transform: translate(0vw, 0vw); */
 `;

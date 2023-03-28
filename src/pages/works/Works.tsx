@@ -1,9 +1,8 @@
-import { useState, useEffect } from "react";
-import { $Wrapper, $Title, $Works, $BtnWrapper } from "./style";
+import { useState } from "react";
+import { $Wrapper, $Works, $BtnWrapper } from "./style";
 import { ourWorkData } from "@Data/ourWorkData";
 import WorkList from "./WorkList";
 import Button from "@Components/Button/Button";
-import Footer from "@Components/footer/Footer";
 import Title from "@Components/title/Title";
 import { container } from "@Animation/framerMotion";
 
@@ -44,7 +43,7 @@ const Works = () => {
       {pageNum !== 3 && (
         <$BtnWrapper>
           <Button
-            text={"MORE"}
+            text={"더보기"}
             color={"#fff"}
             bgColor={"transparent"}
             border={"purple"}
@@ -53,7 +52,6 @@ const Works = () => {
           />
         </$BtnWrapper>
       )}
-      <Footer page="works" />
     </$Wrapper>
   );
 };

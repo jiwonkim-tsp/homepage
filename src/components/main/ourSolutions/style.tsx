@@ -3,16 +3,15 @@ import colors from "@Constants/color";
 import { motion } from "framer-motion";
 
 export const $Wrapper = styled.div`
+  margin-top: 10vw;
   width: 100vw;
   height: 70vw;
-  overflow-x: hidden;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   @media (max-width: 480px) {
     height: 90vw;
-    margin-top: 10vw;
   }
 `;
 
@@ -21,6 +20,7 @@ export const $ImgBox = styled(motion.div)`
   top: 10vw;
   right: -10vw;
   img {
+    overflow-x: hidden;
     width: 55vw;
     transform: rotate(-20deg);
   }

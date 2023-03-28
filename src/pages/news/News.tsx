@@ -1,7 +1,6 @@
-import { newsData } from "@Data/newsData";
+import { newsPageData } from "@Data/newsData";
 import { $Wrapper, $News } from "./style";
 import NewsList from "./NewsList";
-import Footer from "@Components/footer/Footer";
 import Title from "@Components/title/Title";
 
 const container = {
@@ -21,7 +20,7 @@ const News = () => {
     <$Wrapper>
       <Title title="news" />
       <$News variants={container} initial="hidden" animate="visible">
-        {newsData.map((list) => (
+        {newsPageData.map((list) => (
           <NewsList
             key={list.id}
             title={list.title}
@@ -32,7 +31,6 @@ const News = () => {
           />
         ))}
       </$News>
-      <Footer page="news" />
     </$Wrapper>
   );
 };

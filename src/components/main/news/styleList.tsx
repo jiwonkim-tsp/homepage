@@ -48,10 +48,18 @@ export const $Content = styled.div`
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3; /* 라인수 */
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   word-wrap: break-word;
   line-height: 1.2em;
+  @media (max-width: 700px) {
+    -webkit-line-clamp: 2;
+    line-height: 1.5em;
+  }
+  @media (max-width: 556px) {
+    -webkit-line-clamp: 2;
+    line-height: 1.7em;
+  }
   @media (max-width: 480px) {
     font-size: 3vw;
   }

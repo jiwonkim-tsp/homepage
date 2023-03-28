@@ -7,15 +7,6 @@ export const $Wrapper = styled.div<{ page: string }>`
   height: 40vw;
   background-color: ${colors["purple"]};
   position: relative;
-  top: ${({ page }) =>
-    page === "main"
-      ? "30vw"
-      : page === "company"
-      ? "170vw"
-      : page === "works"
-      ? "20vw"
-      : "40vw"};
-  bottom: ${({ page }) => (page === "company" ? "0vw" : "")};
   &:before {
     content: "";
     position: absolute;
@@ -30,71 +21,26 @@ export const $Wrapper = styled.div<{ page: string }>`
   iframe {
     display: none;
   }
-
-  @media (max-width: 1100px) {
-    top: ${({ page }) =>
-      page === "main"
-        ? "30vw"
-        : page === "company"
-        ? "180vw"
-        : page === "works"
-        ? "20vw"
-        : "40vw"};
-  }
-`;
-
-export const $PositionWrapper = styled.div<{ page: string }>`
-  background-color: ${colors["purple"]};
-  position: absolute;
-  width: 100%;
-  height: 40vw;
-  top: ${({ page }) =>
-    page === "main"
-      ? "30vw"
-      : page === "company"
-      ? "180vw"
-      : page === "works"
-      ? "20vw"
-      : "40vw"};
-  &:before {
-    content: "";
-    position: absolute;
-    width: 100vw;
-    height: 20vw;
-    overflow: hidden;
-    background-color: ${colors["purple"]};
-    border-radius: 50%;
-    top: -10vw;
-    left: 0;
-  }
-  @media (max-width: 1100px) {
-    top: ${({ page }) =>
-      page === "main"
-        ? "30vw"
-        : page === "company"
-        ? "180vw"
-        : page === "works"
-        ? "20vw"
-        : "40vw"};
+  @media (max-width: 480px) {
+    height: ${({ page }) =>
+      page === "solutions" || page === "products" ? "55vw" : ""};
   }
 `;
 
 export const $Content = styled.div`
   position: absolute;
   z-index: 1;
-  top: 0vw;
+  top: -2vw;
   left: 25vw;
   color: #fff;
   font-size: 10vw;
   display: flex;
   flex-direction: column;
+  align-items: center;
 `;
 
 export const $Word = styled.div`
   font-family: "GothamBlack";
-  &:nth-child(3) {
-    transform: translateX(10vw);
-  }
 `;
 
 export const $ImgBox = styled(motion.div)`
@@ -124,6 +70,14 @@ export const $Contact = styled.form`
     transform: translate(-30vw, 2vw);
     font-family: "NanumSquareEB";
   }
+  @media (max-width: 480px) {
+    transform: translate(20vw, -2vw);
+    button {
+      font-size: 3vw;
+      padding: 1.5vw 8vw;
+      transform: translate(-24vw, 2vw);
+    }
+  }
 `;
 
 export const $List = styled.div`
@@ -140,12 +94,22 @@ export const $List = styled.div`
   input:focus {
     outline: none;
   }
+  @media (max-width: 480px) {
+    input {
+      height: 7vw;
+      width: 70vw;
+      font-size: 3vw;
+    }
+  }
 `;
 
 export const $Label = styled.label`
   font-size: 1.5vw;
   color: #fff;
   font-family: "NanumSquareEB";
+  @media (max-width: 480px) {
+    font-size: 3vw;
+  }
 `;
 
 export const $CompanyInfo = styled.div`
@@ -162,6 +126,11 @@ export const $LogoBox = styled.div`
   img {
     width: 10vw;
   }
+  @media (max-width: 480px) {
+    img {
+      width: 15vw;
+    }
+  }
 `;
 
 export const $SnsBox = styled.ul`
@@ -175,4 +144,7 @@ export const $SnsBox = styled.ul`
 export const $SnsList = styled.li`
   font-size: 2.5vw;
   color: #fff;
+  @media (max-width: 480px) {
+    font-size: 5vw;
+  }
 `;

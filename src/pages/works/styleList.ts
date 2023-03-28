@@ -24,7 +24,7 @@ export const $ImgBox = styled.div`
 `;
 
 export const $ContentBox = styled.div`
-  padding: 0.5vw;
+  padding-left: 1.5vw;
   display: flex;
   flex-direction: column;
   gap: 1.1vw;
@@ -41,7 +41,7 @@ export const $Tag = styled.div`
   color: ${colors["pink"]};
   font-size: 1.15vw;
   @media (max-width: 480px) {
-    display: none;
+    font-size: 2.5vw;
   }
 `;
 
@@ -49,6 +49,8 @@ export const $Title = styled.div`
   color: ${colors["yellow"]};
   font-family: "NanumSquareEB";
   font-size: 2.4vw;
+  word-break: keep-all;
+  line-height: 1.1;
   @media (max-width: 480px) {
     font-size: 4.5vw;
   }

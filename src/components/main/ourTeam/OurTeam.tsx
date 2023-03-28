@@ -4,7 +4,6 @@ import {
   $ContentWrapper,
   $LogoWrapper,
   $DescripWrapper,
-  $BtnWrapper,
 } from "./style";
 import img from "@Assets/image/ourTeam/pose7.png";
 import logo from "@Assets/image/logo/ourTeamLogo.png";
@@ -32,14 +31,12 @@ const OurTeam = () => {
             <MainDescrip key={list.id} sentence={list.sentence} main={true} />
           ))}
         </$DescripWrapper>
-        <$BtnWrapper>
-          <Button
-            text={"더보기"}
-            color={"#fff"}
-            bgColor={"purple"}
-            handleClick={() => navigate("/company")}
-          />
-        </$BtnWrapper>
+        <Button
+          text={"더보기"}
+          color={"#fff"}
+          bgColor={"purple"}
+          handleClick={() => navigate("/company")}
+        />
       </$ContentWrapper>
       <OurWorks />
     </$Wrapper>
