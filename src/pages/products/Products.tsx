@@ -1,4 +1,4 @@
-import { $Wrapper, $Title, $Products } from "./style";
+import { $Wrapper, $Products } from "./style";
 import { productData } from "@Data/productData";
 import Footer from "@Components/footer/Footer";
 import List from "@Components/list/List";
@@ -19,7 +19,6 @@ const Products = () => {
           />
         ))}
       </$Products>
-      <Footer page="products" />
     </$Wrapper>
   );
 };

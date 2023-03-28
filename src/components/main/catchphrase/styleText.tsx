@@ -6,6 +6,6 @@ export const $Wrapper = styled.div`
 
 export const $Letter = styled.span`
   font-family: "GothamBlack";
-  font-size: 14vw;
+  font-size: 14.5vw;
   color: #fff;
 `;

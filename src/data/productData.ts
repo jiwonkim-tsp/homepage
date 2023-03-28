@@ -26,7 +26,7 @@ export const productData: IProduct[] = [
       },
       {
         content:
-          "에 최적화된 스캐너 장비와 스캔 기술을 통해 퀄리티 높은 3D 모델을 생성하고 활용할 수 있습니다",
+          "에 최적화된 스캐너 장비와 스캔 기술을 제공하여 퀄러티 높은 3D 모델을 생성할 수 있습니다.",
         color: "white",
       },
     ],
@@ -34,18 +34,18 @@ export const productData: IProduct[] = [
   {
     order: 2,
     img: productSensor,
-    title: "커넥트 허브",
+    title: "IoT Sensor Supporter",
     sentence: [
       {
-        content: "IoT를 위한 Zigbee 기반 ",
+        content: "IoT를 위한 WiFi, BLE, Zigbee 기반 ",
         color: "white",
       },
       {
-        content: "커넥트 모듈",
+        content: "네트워크 모듈",
         color: "green",
       },
       {
-        content: "을 통해 다양한 센서를 연동하고 제어할 수 있습니다",
+        content: "을 통해 다양한 센서들을 연동하고 웹으로 제어할 수 있습니다.",
         color: "white",
       },
     ],
@@ -53,15 +53,15 @@ export const productData: IProduct[] = [
   {
     order: 3,
     img: smartMirror,
-    title: "스마트 미러",
+    title: "스마트미러",
     sentence: [
       {
-        content: "커스터마이징이 가능한 스마트미러",
+        content: "AI 솔루션을 탑재할 수 있는 스마트미러",
         color: "yellow",
       },
       {
         content:
-          "에 딥러닝 기반의 생체 정보 인식 솔루션을 통합하여 사용자 맞춤형 정보를 제공할 수 있습니다",
+          "에 무구속 생체 정보 인식 솔루션을 통합하여 다양한 맞춤형 정보를 제공할 수 있습니다.",
         color: "white",
       },
     ],

@@ -1,9 +1,8 @@
-import { useState, useEffect } from "react";
-import { $Wrapper, $Title, $Works, $BtnWrapper } from "./style";
+import { useState } from "react";
+import { $Wrapper, $Works, $BtnWrapper } from "./style";
 import { ourWorkData } from "@Data/ourWorkData";
 import WorkList from "./WorkList";
 import Button from "@Components/Button/Button";
-import Footer from "@Components/footer/Footer";
 import Title from "@Components/title/Title";
 import { container } from "@Animation/framerMotion";
 
@@ -26,8 +25,13 @@ const Works = () => {
   return (
     <$Wrapper>
       <Title title="works" />
-      {dataPages.map((slicedData) => (
-        <$Works variants={container} initial="hidden" animate="visible">
+      {dataPages.map((slicedData, index) => (
+        <$Works
+          key={index}
+          variants={container}
+          initial="hidden"
+          animate="visible"
+        >
           {slicedData.map((list) => (
             <WorkList
               key={list.id}
@@ -44,7 +48,7 @@ const Works = () => {
       {pageNum !== 3 && (
         <$BtnWrapper>
           <Button
-            text={"MORE"}
+            text={"더보기"}
             color={"#fff"}
             bgColor={"transparent"}
             border={"purple"}
@@ -53,7 +57,6 @@ const Works = () => {
           />
         </$BtnWrapper>
       )}
-      <Footer page="works" />
     </$Wrapper>
   );
 };

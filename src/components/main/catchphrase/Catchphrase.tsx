@@ -1,11 +1,5 @@
 import AnimatedText from "./AnimatedText";
-import {
-  $Wrapper,
-  $VideoWrapper,
-  $Phrases,
-  $BtnWrapper,
-} from "./styleCatchphrase";
-import Button from "@Components/Button/Button";
+import { $Wrapper, $VideoWrapper, $Phrases } from "./styleCatchphrase";
 import video from "@Assets/image/catchphrase/TSP XR.mp4";
 import { useNavigate } from "react-router-dom";
 
@@ -24,10 +18,6 @@ const Catchphrase = () => {
     },
   ];
 
-  const handleClick = () => {
-    navigate("/works");
-  };
-
   return (
     <$Wrapper>
       <$VideoWrapper>
@@ -40,14 +30,6 @@ const Catchphrase = () => {
           return <AnimatedText phrase={phrase} key={index} />;
         })}
       </$Phrases>
-      {/* <$BtnWrapper>
-        <Button
-          text={"보러가기"}
-          color={""}
-          bgColor={"yellow"}
-          handleClick={handleClick}
-        />
-      </$BtnWrapper> */}
     </$Wrapper>
   );
 };

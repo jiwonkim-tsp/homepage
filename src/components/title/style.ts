@@ -5,6 +5,6 @@ export const $Title = styled(motion.h1)`
   font-family: "GothamBlack";
   color: #fff;
   font-size: 12vw;
-  /* text-transform: uppercase; */
+  text-transform: capitalize;
   margin-bottom: 10vw;
 `;

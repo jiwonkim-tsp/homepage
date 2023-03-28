@@ -24,7 +24,7 @@ const OurProducts = () => {
         <img src={img} alt="제품 이미지" />
       </$ImgBox>
       <$ContentWrapper>
-        <$Title>products</$Title>
+        <$Title>Products</$Title>
         {ourProductData.map((list) => (
           <MainDescrip key={list.id} sentence={list.sentence} main={true} />
         ))}

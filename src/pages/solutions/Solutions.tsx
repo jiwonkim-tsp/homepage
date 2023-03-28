@@ -1,7 +1,6 @@
-import { $Wrapper, $Title, $Solutions } from "./style";
+import { $Wrapper, $Solutions } from "./style";
 import { solutionPageData } from "@Data/solutionData";
 import List from "@Components/list/List";
-import Footer from "@Components/footer/Footer";
 import Title from "@Components/title/Title";
 
 const Solutions = () => {
@@ -19,7 +18,6 @@ const Solutions = () => {
           />
         ))}
       </$Solutions>
-      <Footer page="solutions" />
     </$Wrapper>
   );
 };

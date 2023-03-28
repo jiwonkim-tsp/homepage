@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 const useScroll = () => {
-  //페이지 이동시 스크롤을 최상단으로
+  // 페이지 이동시 스크롤을 최상단으로
   const scrollTop = () => {
     const { pathname } = useLocation();
 

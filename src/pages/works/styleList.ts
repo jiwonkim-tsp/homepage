@@ -16,25 +16,44 @@ export const $ImgBox = styled.div`
   img {
     width: 30vw;
   }
+  @media (max-width: 480px) {
+    img {
+      width: 60vw;
+    }
+  }
 `;
 
 export const $ContentBox = styled.div`
-  padding: 0.5vw;
+  padding-left: 1.5vw;
   display: flex;
   flex-direction: column;
   gap: 1.1vw;
+  @media (max-width: 480px) {
+    gap: 1.5vw;
+    box-sizing: border-box;
+    padding-left: 3vw;
+    margin-top: 1.5vw;
+  }
 `;
 
 export const $Tag = styled.div`
   font-weight: bold;
   color: ${colors["pink"]};
   font-size: 1.15vw;
+  @media (max-width: 480px) {
+    font-size: 2.5vw;
+  }
 `;
 
 export const $Title = styled.div`
   color: ${colors["yellow"]};
   font-family: "NanumSquareEB";
   font-size: 2.4vw;
+  word-break: keep-all;
+  line-height: 1.1;
+  @media (max-width: 480px) {
+    font-size: 4.5vw;
+  }
 `;
 
 export const $LocaPerBox = styled.div`
@@ -45,6 +64,9 @@ export const $LocaPerBox = styled.div`
   flex-direction: column;
   gap: 0.4vw;
   margin-bottom: 7vw;
+  @media (max-width: 480px) {
+    font-size: 3.2vw;
+  }
 `;
 
 export const $Location = styled.div`

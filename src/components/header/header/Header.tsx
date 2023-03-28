@@ -35,6 +35,7 @@ const Header = () => {
               bgColor={""}
               border={"purple"}
               handleClick={() => navigate("/company")}
+              padding={"2vw 5.5vw"}
             />
           )}
           <$ToggleBtn openNav={toggleState} onClick={handleToggle}>

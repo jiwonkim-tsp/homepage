@@ -10,7 +10,6 @@ import {
 } from "./style";
 import History from "./History";
 import { companyData } from "@Data/companyData";
-import Footer from "@Components/footer/Footer";
 import {
   moveLeft,
   moveRight,
@@ -47,7 +46,6 @@ const Company = () => {
       >
         <img src={img2} alt="오리너구리 이미지" />
       </$ImgBox>
-      <Footer page="company" />
     </$Wrapper>
   );
 };

@@ -5,7 +5,6 @@ import OurSolutions from "@Components/main/ourSolutions/OurSolutions";
 import News from "@Components/main/news/News";
 import Clients from "@Components/main/clients/Clients";
 import Awards from "@Components/main/awards/Awards";
-import Footer from "@Components/footer/Footer";
 import styled from "styled-components";
 import Loading from "@Components/main/Loading/Loading";
 import { useEffect } from "react";
@@ -27,10 +26,9 @@ const Home = () => {
       <OurTeam />
       <OurSolutions />
       <OurProducts />
-      <Clients />
-      <Awards />
       <News />
-      <Footer page="main" />
+      <Awards />
+      <Clients />
     </Wrapper>
   );
 };
@@ -38,6 +36,8 @@ const Home = () => {
 export default Home;
 
 const Wrapper = styled.div`
+  width: 100vw;
   height: 100%;
+  overflow-x: hidden;
   position: relative;
 `;

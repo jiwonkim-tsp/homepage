@@ -2,27 +2,11 @@ import styled from "styled-components";
 import colors from "@Constants/color";
 import { motion } from "framer-motion";
 
-export const $Wrapper = styled.div`
-  width: 100%;
-  position: relative;
-  iframe {
-    display: none;
-  }
-`;
-
-export const $PositionWrapper = styled.div<{ page: string }>`
-  background-color: ${colors["purple"]};
-  position: absolute;
+export const $Wrapper = styled.div<{ page: string }>`
   width: 100%;
   height: 40vw;
-  top: ${({ page }) =>
-    page === "main"
-      ? "30vw"
-      : page === "company"
-      ? "180vw"
-      : page === "works"
-      ? "20vw"
-      : "40vw"};
+  background-color: ${colors["purple"]};
+  position: relative;
   &:before {
     content: "";
     position: absolute;
@@ -34,24 +18,29 @@ export const $PositionWrapper = styled.div<{ page: string }>`
     top: -10vw;
     left: 0;
   }
+  iframe {
+    display: none;
+  }
+  @media (max-width: 480px) {
+    height: ${({ page }) =>
+      page === "solutions" || page === "products" ? "55vw" : ""};
+  }
 `;
 
 export const $Content = styled.div`
   position: absolute;
   z-index: 1;
-  top: 0vw;
+  top: -2vw;
   left: 25vw;
   color: #fff;
   font-size: 10vw;
   display: flex;
   flex-direction: column;
+  align-items: center;
 `;
 
 export const $Word = styled.div`
   font-family: "GothamBlack";
-  &:nth-child(3) {
-    transform: translateX(10vw);
-  }
 `;
 
 export const $ImgBox = styled(motion.div)`
@@ -79,6 +68,15 @@ export const $Contact = styled.form`
     padding: 1vw 2vw;
     background-color: ${colors["green"]};
     transform: translate(-30vw, 2vw);
+    font-family: "NanumSquareEB";
+  }
+  @media (max-width: 480px) {
+    transform: translate(20vw, -2vw);
+    button {
+      font-size: 3vw;
+      padding: 1.5vw 8vw;
+      transform: translate(-24vw, 2vw);
+    }
   }
 `;
 
@@ -96,12 +94,22 @@ export const $List = styled.div`
   input:focus {
     outline: none;
   }
+  @media (max-width: 480px) {
+    input {
+      height: 7vw;
+      width: 70vw;
+      font-size: 3vw;
+    }
+  }
 `;
 
 export const $Label = styled.label`
   font-size: 1.5vw;
   color: #fff;
-  text-transform: uppercase;
+  font-family: "NanumSquareEB";
+  @media (max-width: 480px) {
+    font-size: 3vw;
+  }
 `;
 
 export const $CompanyInfo = styled.div`
@@ -118,6 +126,11 @@ export const $LogoBox = styled.div`
   img {
     width: 10vw;
   }
+  @media (max-width: 480px) {
+    img {
+      width: 15vw;
+    }
+  }
 `;
 
 export const $SnsBox = styled.ul`
@@ -131,4 +144,7 @@ export const $SnsBox = styled.ul`
 export const $SnsList = styled.li`
   font-size: 2.5vw;
   color: #fff;
+  @media (max-width: 480px) {
+    font-size: 5vw;
+  }
 `;

@@ -7,9 +7,8 @@ export const $List = styled(motion.li)`
   flex-direction: column;
   align-items: center;
   gap: 1.3vw;
-  :nth-child(1) {
-    margin-bottom: 7vw;
-    gap: 0;
+  @media (max-width: 480px) {
+    width: 80vw;
   }
 `;
 
@@ -18,4 +17,7 @@ export const $Year = styled.div`
   font-size: 2.7vw;
   color: ${colors["pink"]};
   margin-bottom: 1.5vw;
+  @media (max-width: 480px) {
+    font-size: 4.2vw;
+  }
 `;
