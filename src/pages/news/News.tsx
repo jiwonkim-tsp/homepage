@@ -1,5 +1,5 @@
 import { newsData } from "@Data/newsData";
-import { $Wrapper, $Title, $News } from "./style";
+import { $Wrapper, $News } from "./style";
 import NewsList from "./NewsList";
 import Footer from "@Components/footer/Footer";
 import Title from "@Components/title/Title";
@@ -28,6 +28,7 @@ const News = () => {
             press={list.press}
             content={list.content}
             link={list.link}
+            order={list.id}
           />
         ))}
       </$News>

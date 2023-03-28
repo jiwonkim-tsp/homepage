@@ -15,7 +15,7 @@ const News = () => {
 
   return (
     <$Wrapper>
-      <$Title>news</$Title>
+      <$Title>News</$Title>
       <$SliderWrapper>
         <$Slider>
           {newsData.map((item: any) => (

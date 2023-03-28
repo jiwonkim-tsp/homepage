@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const $Wrapper = styled.div`
   position: relative;
-  top: 5vw;
   width: 100%;
   height: 55vw;
   display: flex;
@@ -10,7 +9,7 @@ export const $Wrapper = styled.div`
   align-items: center;
   gap: 4vw;
   @media (max-width: 1100px) {
-    top: 11.5vw;
+    margin-top: 10vw;
   }
 `;
 
@@ -35,7 +34,7 @@ export const $Phrases = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: translateY(9vw) rotate(-10deg);
+  transform: translateY(11vw) rotate(-10deg);
 `;
 
 export const $BtnWrapper = styled.div`

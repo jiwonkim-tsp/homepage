@@ -1,14 +1,21 @@
+import { useState, useEffect } from "react";
 import { $Wrapper, $Title, $Clients, $List } from "./style";
 import { clientData } from "@Data/clientData";
 
 const Clients = () => {
+  const [mobile, setMobile] = useState(false);
+  useEffect(() => {
+    if (document.body.offsetWidth === 480) {
+      setMobile(true);
+    }
+  });
   return (
     <$Wrapper>
-      <$Title>clients</$Title>
+      <$Title>Clients</$Title>
       <$Clients
-        initial={{ opacity: 0 }}
+        initial={{ opacity: mobile ? 1 : 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 5, ease: "easeOut" }}
+        transition={{ duration: mobile ? 0 : 5, ease: "easeOut" }}
       >
         {clientData.map((list) => (
           <$List key={list.title}>

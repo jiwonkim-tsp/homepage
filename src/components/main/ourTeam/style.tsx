@@ -3,11 +3,17 @@ import { motion } from "framer-motion";
 
 export const $Wrapper = styled.div`
   position: relative;
+  width: 100vw;
+  height: 80vw;
+  overflow-x: hidden;
   z-index: 2;
   display: flex;
   padding: 12vw 0;
   margin-top: 10vw;
-  height: 80vw;
+
+  @media (max-width: 480px) {
+    height: 110vw;
+  }
 `;
 
 export const $ContentWrapper = styled.div`

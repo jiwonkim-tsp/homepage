@@ -30,6 +30,10 @@ export const opacity = {
   visible: { opacity: 1, transition: { duration: 3, ease: "easeOut" } },
 };
 
+export const noChange = {
+  hidden: {},
+  visible: {},
+};
 export const scale = {
   hidden: { opacity: 0, scale: 0.8 },
   visible: {

@@ -6,11 +6,12 @@ interface INewProps {
   press: string;
   content: string;
   link: string;
+  order: number;
 }
 
-const NewsList = ({ title, press, content, link }: INewProps) => {
+const NewsList = ({ title, press, content, link, order }: INewProps) => {
   return (
-    <$List variants={item} onClick={() => window.open(link)}>
+    <$List order={order} variants={item} onClick={() => window.open(link)}>
       <$Press>{press}</$Press>
       <$Title>{title}</$Title>
       <$Content>{content}</$Content>

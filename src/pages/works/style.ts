@@ -18,33 +18,15 @@ export const $Title = styled(motion.h1)`
 
 export const $Works = styled(motion.ul)`
   display: grid;
+  place-items: center;
   column-gap: 9vw;
   grid-template-columns: 30vw 30vw;
-  /* grid-template-columns: 1fr 1fr; */
+  @media (max-width: 480px) {
+    grid-template-columns: 60vw;
+    margin-top: 5vw;
+  }
 `;
 
 export const $BtnWrapper = styled.div`
   margin-bottom: 8vw;
-`;
-
-export const $Content = styled.div`
-  margin-bottom: 7vw;
-`;
-
-export const $ContentBtnWrapper = styled.div`
-  transform: translate(32vw, 28vw);
-`;
-
-export const $Sentence = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-export const $Word = styled.div`
-  font-family: "GothamBlack";
-  color: #fff;
-  font-size: 10vw;
-  &:nth-child(3) {
-    transform: translateX(10vw);
-  }
 `;

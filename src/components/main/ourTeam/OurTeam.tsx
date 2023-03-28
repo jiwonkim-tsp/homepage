@@ -37,7 +37,7 @@ const OurTeam = () => {
             text={"더보기"}
             color={"#fff"}
             bgColor={"purple"}
-            handleClick={() => navigate("/works")}
+            handleClick={() => navigate("/company")}
           />
         </$BtnWrapper>
       </$ContentWrapper>

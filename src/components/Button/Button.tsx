@@ -39,7 +39,7 @@ const $Button = styled.button<{
   border: string;
   padding: string;
 }>`
-  padding: ${({ padding }) => (padding ? padding : "1vw 2vw")};
+  padding: ${({ padding }) => (padding ? "1vw 2vw" : "1vw 2vw")};
   color: ${({ color }) => (color ? color : "#000")};
   border: 1px solid ${({ border }) => colors[border]};
   background-color: ${({ bgColor }) => colors[bgColor]};

@@ -24,6 +24,11 @@ export const $ContentBox = styled.div<{ order: number }>`
   transform: ${({ order }) =>
     order % 2 === 0 ? "translate(5vw, -5vw)" : "translateY(-5vw)"};
   order: ${({ order }) => (order % 2 === 0 ? "-1" : "")};
+  @media (max-width: 480px) {
+    width: 60vw;
+    transform: ${({ order }) =>
+      order % 2 === 0 ? "translate(15vw, -5vw)" : "translate(-5vw,-5vw)"};
+  }
 `;
 
 export const $Title = styled.h1`
@@ -32,12 +37,19 @@ export const $Title = styled.h1`
   margin: 2vw 0;
   color: ${colors["pink"]};
   text-transform: uppercase;
+  @media (max-width: 480px) {
+    font-size: 4vw;
+  }
 `;
 
 export const $Content = styled.div`
   width: 40vw;
   font-size: 2vw;
   line-height: 1.25;
+  @media (max-width: 480px) {
+    width: 50vw;
+    font-size: 3.5vw;
+  }
 `;
 
 export const $Sentence = styled.span`

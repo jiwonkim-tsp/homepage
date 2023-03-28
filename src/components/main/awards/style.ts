@@ -4,11 +4,12 @@ import colors from "@Constants/color";
 
 export const $Wrapper = styled(motion.div)`
   width: 100vw;
-  height: 25vw;
+  height: 20vw;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 15vw;
   @media (max-width: 480px) {
     height: 50vw;
     margin-top: 15vw;

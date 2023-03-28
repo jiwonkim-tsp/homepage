@@ -13,9 +13,6 @@ const Header = () => {
   const toggleState = useRecoilValue(ToggleState);
   const [toggle, setToggle] = useRecoilState(ToggleState);
   const navigate = useNavigate();
-  const { scrollYProgress } = useScroll();
-  console.log(scrollYProgress);
-  // const hideHeader: boolean = scrollYProgress > 0 ? true : false;
 
   const handleToggle = () => {
     setToggle((prev) => !prev);

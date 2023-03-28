@@ -18,10 +18,10 @@ const OurSolutions = () => {
   return (
     <$Wrapper>
       <$ImgBox variants={moveLeft} initial="hidden" whileInView="visible">
-        <img src={img} alt="전구 이미지" />
+        <img src={img} alt="솔루션 이미지" />
       </$ImgBox>
       <$ContentWrapper>
-        <$Title>solutions</$Title>
+        <$Title>Solutions</$Title>
         {ourSolutionData.map((list) => (
           <MainDescrip key={list.id} sentence={list.sentence} main={true} />
         ))}

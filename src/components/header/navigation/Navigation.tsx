@@ -3,11 +3,11 @@ import { $Wrapper, $Nav } from "./style";
 import useScroll from "@Hooks/useScroll";
 
 const navLists = [
-  { name: "history", link: "/company", color: "purple" },
-  { name: "works", link: "/works", color: "yellow" },
-  { name: "solutions", link: "/solutions", color: "pink" },
-  { name: "products", link: "/products", color: "green" },
-  { name: "news", link: "/news", color: "black" },
+  { name: "History", link: "/company", color: "purple" },
+  { name: "Works", link: "/works", color: "yellow" },
+  { name: "Solutions", link: "/solutions", color: "pink" },
+  { name: "Products", link: "/products", color: "green" },
+  { name: "News", link: "/news", color: "black" },
 ];
 
 const container = {

@@ -6,7 +6,9 @@ export const $Wrapper = styled.div`
   margin-top: 10vw;
   display: flex;
   justify-content: center;
-  margin-bottom: 210vw;
+  @media (max-width: 480px) {
+    margin-top: 15vw;
+  }
 `;
 
 export const $ImgBox = styled(motion.div)<{ top: boolean }>`
@@ -30,6 +32,7 @@ export const $LogoBox = styled(motion.div)`
 `;
 
 export const $ContentWrapper = styled.div`
+  height: 120vw;
   position: absolute;
   z-index: 2;
   top: 45vw;

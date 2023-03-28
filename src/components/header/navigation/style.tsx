@@ -5,13 +5,10 @@ import colors from "@Constants/color";
 export const $Wrapper = styled(motion.div)`
   position: fixed;
   z-index: 11;
-  top: 5.3vw;
+  top: 5vw;
   width: 100%;
   height: 100vh;
   background-color: ${colors["beige"]};
-  @media (max-width: 1100px) {
-    top: 11.5vw;
-  }
 `;
 
 export const $Nav = styled(motion.ul)`
@@ -23,16 +20,16 @@ export const $Nav = styled(motion.ul)`
   bottom: 10vw;
   font-family: "GothamBlack";
   font-size: 7.6vw;
-  @media (max-width: 1100px) {
+  /* @media (max-width: 1100px) {
     font-size: 12vw;
-  }
+  } */
   @media (max-width: 790px) {
     bottom: 20vw;
-    font-size: 17vw;
+    font-size: 13vw;
   }
   @media (max-width: 500px) {
     bottom: 55vw;
-    font-size: 17vw;
+    font-size: 13vw;
     gap: 3vw;
   }
 `;

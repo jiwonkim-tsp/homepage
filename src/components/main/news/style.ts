@@ -21,13 +21,13 @@ const infiniteMobile = keyframes`
 
 export const $Wrapper = styled.div`
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 30vw;
   display: flex;
   gap: 5vw;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  overflow-x: hidden;
   @media (max-width: 480px) {
     margin-top: 20vw;
     height: 65vw;

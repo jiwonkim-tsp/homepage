@@ -2,11 +2,44 @@ import styled from "styled-components";
 import colors from "@Constants/color";
 import { motion } from "framer-motion";
 
-export const $Wrapper = styled.div`
+export const $Wrapper = styled.div<{ page: string }>`
   width: 100%;
+  height: 40vw;
+  background-color: ${colors["purple"]};
   position: relative;
+  top: ${({ page }) =>
+    page === "main"
+      ? "30vw"
+      : page === "company"
+      ? "170vw"
+      : page === "works"
+      ? "20vw"
+      : "40vw"};
+  bottom: ${({ page }) => (page === "company" ? "0vw" : "")};
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 20vw;
+    overflow: hidden;
+    background-color: ${colors["purple"]};
+    border-radius: 50%;
+    top: -10vw;
+    left: 0;
+  }
   iframe {
     display: none;
+  }
+
+  @media (max-width: 1100px) {
+    top: ${({ page }) =>
+      page === "main"
+        ? "30vw"
+        : page === "company"
+        ? "180vw"
+        : page === "works"
+        ? "20vw"
+        : "40vw"};
   }
 `;
 

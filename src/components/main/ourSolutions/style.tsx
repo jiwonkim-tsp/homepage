@@ -5,10 +5,15 @@ import { motion } from "framer-motion";
 export const $Wrapper = styled.div`
   width: 100vw;
   height: 70vw;
+  overflow-x: hidden;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  @media (max-width: 480px) {
+    height: 90vw;
+    margin-top: 10vw;
+  }
 `;
 
 export const $ImgBox = styled(motion.div)`
@@ -19,15 +24,12 @@ export const $ImgBox = styled(motion.div)`
     width: 55vw;
     transform: rotate(-20deg);
   }
-  @media (max-width: 480px) {
-    top: 45vw;
-  }
 `;
 
 export const $ContentWrapper = styled.div`
   transform: translate(15vw, 30vw);
   @media (max-width: 480px) {
-    transform: translate(15vw, 35vw);
+    transform: translate(15vw, 25vw);
   }
 `;
 
@@ -45,6 +47,6 @@ export const $Title = styled.h1`
 export const $BtnWrapper = styled.div`
   transform: translate(15vw, 32vw);
   @media (max-width: 480px) {
-    transform: translate(15vw, 37vw);
+    transform: translate(15vw, 30vw);
   }
 `;
