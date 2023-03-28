@@ -34,7 +34,7 @@ export const companyData: ICompany[] = [
       {
         sentence: [
           {
-            content: "자체 개발한 다양한 증강현실",
+            content: "자체 개발한 다양한 증강현실 ",
             color: "white",
           },
           {
@@ -46,7 +46,7 @@ export const companyData: ICompany[] = [
             color: "green",
           },
           {
-            content: "을 개발 중입니다",
+            content: "을 개발 중입니다.",
             color: "white",
           },
         ],

@@ -25,8 +25,13 @@ const Works = () => {
   return (
     <$Wrapper>
       <Title title="works" />
-      {dataPages.map((slicedData) => (
-        <$Works variants={container} initial="hidden" animate="visible">
+      {dataPages.map((slicedData, index) => (
+        <$Works
+          key={index}
+          variants={container}
+          initial="hidden"
+          animate="visible"
+        >
           {slicedData.map((list) => (
             <WorkList
               key={list.id}

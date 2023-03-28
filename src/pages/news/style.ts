@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export const $Wrapper = styled.div`
   width: 100vw;
-  height: 150vw;
+  height: 100vw;
   margin-top: 23vw;
   display: flex;
   flex-direction: column;
