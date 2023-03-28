@@ -6,7 +6,7 @@ export const $List = styled(motion.li)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.3vw;
+  gap: 1.5vw;
   @media (max-width: 480px) {
     width: 80vw;
   }

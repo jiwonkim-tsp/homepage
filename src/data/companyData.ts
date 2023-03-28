@@ -13,49 +13,6 @@ interface ICompany {
 export const companyData: ICompany[] = [
   {
     order: 1,
-    year: "",
-    content: [
-      {
-        sentence: [
-          {
-            content: "웹 기반의 증강현실 솔루션",
-            color: "yellow",
-          },
-          {
-            content: "들을 개발하고, 이에 적합한 ",
-            color: "white",
-          },
-          {
-            content: "콘텐츠를 제작하는 회사입니다.",
-            color: "white",
-          },
-        ],
-      },
-      {
-        sentence: [
-          {
-            content: "자체 개발한 다양한 증강현실 ",
-            color: "white",
-          },
-          {
-            content: "솔루션들을 기반으로 ",
-            color: "white",
-          },
-          {
-            content: "웹 기반 증강현실 플랫폼",
-            color: "green",
-          },
-          {
-            content: "을 개발 중입니다.",
-            color: "white",
-          },
-        ],
-      },
-    ],
-  },
-
-  {
-    order: 4,
     year: "2023~",
     content: [
       {
@@ -82,7 +39,7 @@ export const companyData: ICompany[] = [
     ],
   },
   {
-    order: 3,
+    order: 2,
     year: "2022",
     content: [
       {
@@ -144,7 +101,7 @@ export const companyData: ICompany[] = [
     ],
   },
   {
-    order: 2,
+    order: 3,
     year: "2021",
     content: [
       {
