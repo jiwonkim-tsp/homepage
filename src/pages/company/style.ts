@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import colors from "@Constants/color";
 
 export const $Wrapper = styled.div`
+  overflow-x: hidden;
   width: 100vw;
   height: 220vw;
   position: relative;
@@ -22,11 +23,10 @@ export const $ImgBox = styled(motion.div)<{ top: boolean }>`
   top: ${({ top }) => (top ? "2vw" : "174vw")};
   left: ${({ top }) => (top ? "50vw" : "-10vw")};
   img {
-    overflow-x: hidden;
     width: 55vw;
   }
   @media (max-width: 480px) {
-    top: ${({ top }) => (top ? "2vw" : "224vw")};
+    top: ${({ top }) => (top ? "2vw" : "215vw")};
   }
 `;
 

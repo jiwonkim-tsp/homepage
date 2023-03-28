@@ -124,7 +124,7 @@ export const companyData: ICompany[] = [
           },
           {
             content: "차세대 웹 선도 서비스 개발",
-            color: "green",
+            color: "yellow",
           },
         ],
       },
@@ -136,7 +136,7 @@ export const companyData: ICompany[] = [
           },
           {
             content: "스마트시티 넥스트 혁신기술",
-            color: "yellow",
+            color: "green",
           },
         ],
       },

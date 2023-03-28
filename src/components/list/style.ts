@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import colors from "@Constants/color";
 
 export const $List = styled.li`
+  overflow-x: hidden;
+  height: 70vw;
   display: flex;
   align-items: center;
 `;
