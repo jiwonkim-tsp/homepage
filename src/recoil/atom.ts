@@ -9,3 +9,8 @@ export const LoadingState = atom({
   key: "loadingState",
   default: true,
 });
+
+export const HeaderState = atom({
+  key: "headerState",
+  default: false,
+});

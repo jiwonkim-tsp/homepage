@@ -18,11 +18,11 @@ export const companyData: ICompany[] = [
       {
         sentence: [
           {
-            content: "증강현실 인테리어 서비스를 위한",
+            content: "증강현실 인테리어 서비스를 위한 ",
             color: "white",
           },
           {
-            content: "객체/도면생성 기술 및 웹 어플리케이션 개발",
+            content: "객체/도면 생성 기술 및 웹 어플리케이션 개발",
             color: "white",
           },
         ],
@@ -31,7 +31,11 @@ export const companyData: ICompany[] = [
       {
         sentence: [
           {
-            content: "웹 기반 ARVR 저작툴 플랫폼 런칭 준비(2025)",
+            content: "웹 기반 AR/VR 저작 툴",
+            color: "purple",
+          },
+          {
+            content: "플랫폼 론칭 준비(2025)",
             color: "purple",
           },
         ],
@@ -57,7 +61,7 @@ export const companyData: ICompany[] = [
       {
         sentence: [
           {
-            content: "부산 ECO DELTA CITY 이음5G특화망 사업 : ",
+            content: "부산 ECO DELTA CITY 이음 5G 특화망 사업 ",
             color: "white",
           },
           {
@@ -73,7 +77,7 @@ export const companyData: ICompany[] = [
             color: "white",
           },
           {
-            content: "앱설치가 필요없는 AR광고 솔루션",
+            content: "앱 설치가 필요 없는 AR 광고 솔루션",
             color: "yellow",
           },
         ],
@@ -107,11 +111,11 @@ export const companyData: ICompany[] = [
       {
         sentence: [
           {
-            content: "과기부, ",
+            content: "과학기술정보통신부 ",
             color: "white",
           },
           {
-            content: "ICT융합서비스 경쟁력 강화사업",
+            content: "ICT융합서비스경쟁력강화사업",
             color: "purple",
           },
         ],

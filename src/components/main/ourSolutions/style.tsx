@@ -45,8 +45,5 @@ export const $Title = styled.h1`
 `;
 
 export const $BtnWrapper = styled.div`
-  transform: translate(15vw, 32vw);
-  @media (max-width: 480px) {
-    transform: translate(15vw, 30vw);
-  }
+  transform: translate(0vw, 3vw);
 `;

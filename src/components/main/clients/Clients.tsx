@@ -15,7 +15,7 @@ const Clients = () => {
       <$Clients
         initial={{ opacity: mobile ? 1 : 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 5, ease: "easeOut" }}
+        transition={{ duration: mobile ? 0 : 5, ease: "easeOut" }}
       >
         {clientData.map((list) => (
           <$List key={list.title}>

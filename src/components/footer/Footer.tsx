@@ -84,14 +84,14 @@ const Footer = ({ page }: IFooterProps) => {
         <$LogoBox>
           <img src={logo} alt="공간의 파티 로고 이미지" />
         </$LogoBox>
-        <$SnsBox>
-          {contactInfo.map((item) => (
-            <Link to={item.url} key={item.id}>
-              <$SnsList>{item.icon}</$SnsList>
-            </Link>
-          ))}
-        </$SnsBox>
       </$CompanyInfo>
+      <$SnsBox>
+        {contactInfo.map((item) => (
+          <Link to={item.url} key={item.id}>
+            <$SnsList>{item.icon}</$SnsList>
+          </Link>
+        ))}
+      </$SnsBox>
     </$Wrapper>
   );
 };

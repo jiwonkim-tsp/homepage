@@ -19,6 +19,7 @@ export const $Title = styled.div`
   color: ${colors["pink"]};
   font-size: 4vw;
   font-family: "GothamBlack";
+  margin-bottom: 1vw;
   @media (max-width: 480px) {
     margin-bottom: 5vw;
     font-size: 7.5vw;

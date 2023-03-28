@@ -49,6 +49,7 @@ export const $Title = styled.h1`
   color: ${colors["pink"]};
   @media (max-width: 480px) {
     font-size: 4vw;
+    line-height: 1.1;
   }
 `;
 

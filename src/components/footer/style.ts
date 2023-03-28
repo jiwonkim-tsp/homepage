@@ -28,10 +28,10 @@ export const $Wrapper = styled.div<{ page: string }>`
 `;
 
 export const $Content = styled.div`
+  width: 100vw;
   position: absolute;
   z-index: 1;
   top: -2vw;
-  left: 25vw;
   color: #fff;
   font-size: 10vw;
   display: flex;
@@ -119,10 +119,10 @@ export const $CompanyInfo = styled.div`
   padding: 0.5vw;
   border-top: 1px solid #1d1d20;
   display: flex;
+  justify-content: center;
 `;
 
 export const $LogoBox = styled.div`
-  transform: translateX(45vw);
   img {
     width: 10vw;
   }
@@ -135,8 +135,8 @@ export const $LogoBox = styled.div`
 
 export const $SnsBox = styled.ul`
   position: absolute;
-  top: 1.5vw;
-  right: 3vw;
+  bottom: 1vw;
+  right: 3.5vw;
   display: flex;
   gap: 1.5vw;
 `;
