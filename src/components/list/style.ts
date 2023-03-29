@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import colors from "@Constants/color";
 
 export const $List = styled.li`
-  overflow-x: hidden;
   height: 70vw;
   display: flex;
   align-items: center;
@@ -11,7 +10,6 @@ export const $List = styled.li`
 
 export const $ImgBox = styled(motion.div)<{ order: number }>`
   img {
-    overflow-x: hidden;
     width: 50vw;
     transform: ${({ order }) =>
       order % 2 === 0

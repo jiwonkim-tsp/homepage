@@ -13,7 +13,7 @@ import {
 } from "./style";
 import { Link } from "react-router-dom";
 import img from "@Assets/image/footer/pose1.png";
-import logo from "@Assets/image/logo/KR_문자형_화이트.png";
+import logo from "@Assets/image/logo/footerLogo.png";
 import { BsInstagram, BsYoutube } from "react-icons/bs";
 
 const contactInfo = [

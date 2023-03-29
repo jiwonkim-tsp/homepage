@@ -121,6 +121,7 @@ export const $CompanyInfo = styled.div`
   border-top: 1px solid #1d1d20;
   display: flex;
   justify-content: center;
+  align-items: center;
   @media (max-width: 480px) {
     height: 8vw;
   }
@@ -128,7 +129,7 @@ export const $CompanyInfo = styled.div`
 
 export const $LogoBox = styled.div`
   img {
-    width: 10vw;
+    width: 11vw;
   }
   @media (max-width: 480px) {
     img {
@@ -138,9 +139,8 @@ export const $LogoBox = styled.div`
 `;
 
 export const $SnsBox = styled.ul`
-  height: 5vw;
   position: absolute;
-  bottom: 0vw;
+  bottom: 0.6vw;
   right: 4vw;
   display: flex;
   align-items: center;

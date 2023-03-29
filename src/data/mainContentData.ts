@@ -187,11 +187,7 @@ export const ourProductData: IContent[] = [
     id: 3,
     sentence: [
       {
-        content: "개발",
-        color: "green",
-      },
-      {
-        content: "하고 있습니다.",
+        content: "개발하고 있습니다.",
         color: "white",
       },
     ],

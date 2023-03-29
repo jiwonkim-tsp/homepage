@@ -20,14 +20,17 @@ const Header = ({ shown }: IHeaderProps) => {
   const handleToggle = () => {
     setToggle((prev) => !prev);
   };
+
+  const handleClick = () => {
+    setToggle(false);
+    navigate("/");
+  };
   return (
     <$Wrapper>
       <$Header shown={shown} openNav={toggleState}>
-        <Link to="/">
-          <$Logo>
-            <img src={logo} alt="로고" />
-          </$Logo>
-        </Link>
+        <$Logo onClick={handleClick}>
+          <img src={logo} alt="로고" />
+        </$Logo>
         <$BtnWrapper>
           <$ToggleBtn openNav={toggleState} onClick={handleToggle}>
             {toggleState ? <IoMdClose /> : <HiMenu />}
