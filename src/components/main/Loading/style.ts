@@ -9,7 +9,7 @@ export const $Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  z-index: 10;
+  z-index: 20;
   video {
     width: 30%;
   }
