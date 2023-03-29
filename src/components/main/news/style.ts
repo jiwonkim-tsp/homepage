@@ -6,7 +6,7 @@ const infinite = keyframes`
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-35vw * 3));
+    transform: translateX(calc(-35vw * 5));
   }
 `;
 
@@ -15,7 +15,7 @@ const infiniteMobile = keyframes`
   transform: translateX(0);
 }
 100% {
-  transform: translateX(calc(-60vw * 3));
+  transform: translateX(calc(-60vw * 5));
 }
 `;
 
@@ -52,11 +52,11 @@ export const $SliderWrapper = styled.div`
 export const $Slider = styled.ul`
   position: absolute;
   left: 0;
-  width: calc(35vw * 6);
+  width: calc(35vw * 10);
   display: flex;
   animation: ${infinite} 40s linear infinite;
   @media (max-width: 480px) {
-    width: calc(60vw * 6);
+    width: calc(60vw * 10);
     display: flex;
     animation: ${infiniteMobile} 40s linear infinite;
   }

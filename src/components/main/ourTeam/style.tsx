@@ -35,8 +35,9 @@ export const $ImgBox = styled(motion.div)`
 `;
 
 export const $LogoWrapper = styled.div`
+  margin-bottom: 6vw;
   img {
-    width: 20vw;
+    width: 18vw;
   }
   @media (max-width: 480px) {
     img {

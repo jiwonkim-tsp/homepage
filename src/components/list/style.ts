@@ -38,7 +38,7 @@ export const $ContentBox = styled.div<{ order: number }>`
   @media (max-width: 480px) {
     width: 60vw;
     transform: ${({ order }) =>
-      order % 2 === 0 ? "translate(15vw, -5vw)" : "translate(-5vw,-5vw)"};
+      order % 2 === 0 ? "translate(15vw, -5vw)" : "translate(10vw,-5vw)"};
   }
 `;
 
@@ -46,8 +46,10 @@ export const $Title = styled.h1`
   font-family: "NanumSquareEB";
   font-size: 2.8vw;
   margin: 2vw 0;
+  word-break: keep-all;
   color: ${colors["pink"]};
   @media (max-width: 480px) {
+    width: 40vw;
     font-size: 4vw;
     line-height: 1.1;
   }
@@ -58,7 +60,7 @@ export const $Content = styled.div`
   font-size: 2vw;
   line-height: 1.25;
   @media (max-width: 480px) {
-    width: 50vw;
+    width: 40vw;
     font-size: 3.5vw;
   }
 `;

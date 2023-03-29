@@ -18,7 +18,7 @@ export const $Wrapper = styled.div`
   }
   @media (max-width: 480px) {
     video {
-      width: 50%;
+      width: 62vw;
     }
   }
 `;

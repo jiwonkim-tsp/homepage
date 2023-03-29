@@ -112,6 +112,11 @@ export const ourSolutionData: IContent[] = [
         content: "웹 기반의 증강현실",
         color: "green",
       },
+    ],
+  },
+  {
+    id: 3,
+    sentence: [
       {
         content: " 솔루션을 개발하고 있습니다.",
         color: "white",

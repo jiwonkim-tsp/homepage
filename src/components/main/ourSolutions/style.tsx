@@ -29,7 +29,7 @@ export const $ImgBox = styled(motion.div)`
 export const $ContentWrapper = styled.div`
   transform: translate(15vw, 30vw);
   @media (max-width: 480px) {
-    transform: translate(15vw, 25vw);
+    transform: translate(10vw, 25vw);
   }
 `;
 
