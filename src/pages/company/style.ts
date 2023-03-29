@@ -21,8 +21,6 @@ export const $ImgBox = styled(motion.div)<{ top: boolean }>`
   z-index: 1;
   top: ${({ top }) => (top ? "2vw" : "154vw")};
   left: ${({ top }) => (top ? "50vw" : "-10vw")};
-  /* transform: ${({ top }) =>
-    top ? "translate(10vw, 50vw)" : "translate(50vw, 130vw)"}; */
   img {
     width: 50vw;
   }

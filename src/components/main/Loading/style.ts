@@ -10,8 +10,15 @@ export const $Wrapper = styled.div`
   justify-content: center;
   position: relative;
   z-index: 10;
-
   video {
     width: 30%;
+  }
+  video::-webkit-media-controls-play-button {
+    display: none !important;
+  }
+  @media (max-width: 480px) {
+    video {
+      width: 50%;
+    }
   }
 `;

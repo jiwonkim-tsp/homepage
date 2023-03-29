@@ -37,12 +37,10 @@ const Company = () => {
       <$ContentWrapper>
         <$Explanation>
           <$Sentence>
-            <$ColoredText color="yellow">
-              웹 기반의 증강현실 솔루션
-            </$ColoredText>
-            들을 개발하고,
+            <$ColoredText color="yellow">웹 기반의 AR솔루션</$ColoredText>을
+            개발하고,
           </$Sentence>
-          <$Sentence>이에 적합한 콘텐츠를 제작하는 회사입니다.</$Sentence>
+          <$Sentence>콘텐츠를 제작하는 (주)공간의파티입니다.</$Sentence>
           <$Sentence>자체 개발한 증강현실 솔루션들을 기반으로</$Sentence>
           <$Sentence>
             <$ColoredText color="green">웹 기반 증강현실 플랫폼</$ColoredText>을

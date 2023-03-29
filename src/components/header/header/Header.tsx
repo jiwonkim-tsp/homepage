@@ -20,9 +20,6 @@ const Header = ({ shown }: IHeaderProps) => {
   const handleToggle = () => {
     setToggle((prev) => !prev);
   };
-
-  // console.log(shown);
-
   return (
     <$Wrapper>
       <$Header shown={shown} openNav={toggleState}>
@@ -32,18 +29,6 @@ const Header = ({ shown }: IHeaderProps) => {
           </$Logo>
         </Link>
         <$BtnWrapper>
-          {/* {toggleState ? (
-            ""
-          ) : (
-            <Button
-              text={"History"}
-              color={"#fff"}
-              bgColor={""}
-              border={"purple"}
-              handleClick={() => navigate("/company")}
-              padding={"2vw 5.5vw"}
-            />
-          )} */}
           <$ToggleBtn openNav={toggleState} onClick={handleToggle}>
             {toggleState ? <IoMdClose /> : <HiMenu />}
           </$ToggleBtn>

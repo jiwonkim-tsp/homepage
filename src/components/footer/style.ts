@@ -75,7 +75,7 @@ export const $Contact = styled.form`
     button {
       font-size: 3vw;
       padding: 1.5vw 8vw;
-      transform: translate(-24vw, 2vw);
+      transform: translate(-21.5vw, 2vw);
     }
   }
 `;
@@ -116,10 +116,14 @@ export const $CompanyInfo = styled.div`
   position: absolute;
   bottom: 0;
   width: 100%;
+  height: 5vw;
   padding: 0.5vw;
   border-top: 1px solid #1d1d20;
   display: flex;
   justify-content: center;
+  @media (max-width: 480px) {
+    height: 8vw;
+  }
 `;
 
 export const $LogoBox = styled.div`
@@ -134,16 +138,26 @@ export const $LogoBox = styled.div`
 `;
 
 export const $SnsBox = styled.ul`
+  height: 5vw;
   position: absolute;
-  bottom: 1vw;
-  right: 3.5vw;
+  bottom: 0vw;
+  right: 4vw;
   display: flex;
+  align-items: center;
   gap: 1.5vw;
+  @media (max-width: 480px) {
+    bottom: 0vw;
+    height: 7vw;
+    right: 6vw;
+    gap: 3vw;
+  }
 `;
 
 export const $SnsList = styled.li`
-  font-size: 2.5vw;
-  color: #fff;
+  font-size: 2.8vw;
+  a {
+    color: #fff;
+  }
   @media (max-width: 480px) {
     font-size: 5vw;
   }

@@ -36,7 +36,7 @@ export const $Awards = styled(motion.ul)`
   @media (max-width: 480px) {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 0vw;
-    column-gap: 7vw;
+    column-gap: 7.5vw;
   }
 `;
 

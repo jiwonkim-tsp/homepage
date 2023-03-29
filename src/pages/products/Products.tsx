@@ -1,6 +1,5 @@
 import { $Wrapper, $Products } from "./style";
 import { productData } from "@Data/productData";
-import Footer from "@Components/footer/Footer";
 import List from "@Components/list/List";
 import Title from "@Components/title/Title";
 

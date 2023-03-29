@@ -18,7 +18,7 @@ export const $ImgBox = styled.div`
   }
   @media (max-width: 480px) {
     img {
-      width: 60vw;
+      width: 68vw;
     }
   }
 `;

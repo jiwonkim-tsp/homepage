@@ -21,6 +21,7 @@ export default defineConfig({
     },
   },
   build: {
+    minify: false,
     chunkSizeWarningLimit: 100000000,
   },
   // server: {

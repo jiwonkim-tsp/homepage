@@ -74,7 +74,7 @@ export const carouselData: IOurWorkData[] = [
     title: "AR 댄스 챌린지",
     location: "YG 엔터테인먼트 트레저콘서트",
     period: "2022",
-    link: "",
+    link: "https://www.youtube.com/watch?v=B74dyWbfFa0",
   },
   {
     id: 7,
@@ -182,7 +182,7 @@ export const carouselData: IOurWorkData[] = [
     title: "AR 댄스 챌린지",
     location: "YG 엔터테인먼트 트레저콘서트",
     period: "2022",
-    link: "",
+    link: "https://www.youtube.com/watch?v=B74dyWbfFa0",
   },
   {
     id: 19,
@@ -293,7 +293,7 @@ export const ourWorkData: IOurWorkData[] = [
     title: "AR 댄스 챌린지",
     location: "YG 엔터테인먼트 트레저 콘서트",
     period: "2022",
-    link: "",
+    link: "https://www.youtube.com/watch?v=B74dyWbfFa0",
   },
   {
     id: 7,
