@@ -31,7 +31,6 @@ export const $Content = styled.div`
   width: 100vw;
   position: absolute;
   z-index: 1;
-  top: -2vw;
   color: #fff;
   font-size: 10vw;
   display: flex;
