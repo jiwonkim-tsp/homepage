@@ -11,12 +11,11 @@ export const $List = styled(motion.li)<{ order: number }>`
     margin-top: 4vw;
   }
   cursor: pointer;
-  /* @media (max-width: 480px) {
-    transform: translateX(-10vw);
+  @media (max-width: 480px) {
     &:nth-child(2n) {
-      transform: translateX(10vw);
+      margin-top: 0vw;
     }
-  } */
+  }
 `;
 
 export const $Press = styled.div`
@@ -49,14 +48,3 @@ export const $Content = styled.div`
     font-size: 3.2vw;
   }
 `;
-
-// export const $MoreBtn = styled.button`
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   transform: translateX(12vw);
-//   font-size: 1.1vw;
-//   color: #fff;
-//   text-decoration: none;
-//   cursor: pointer;
-// `;

@@ -14,15 +14,15 @@ export const solutionPageData: ISolutionData[] = [
   {
     order: 1,
     img: digitalTwin,
-    title: "웹 기반 XR 디지털트윈 시스템",
+    title: "웹 기반 XR 디지털 트윈 시스템",
     sentence: [
       {
-        content: "웹 기반 디지털트윈",
+        content: "웹 기반 디지털 트윈",
         color: "green",
       },
       {
         content:
-          "은 기존의 관제시스템과 연계가 쉽고, AR/VR 기술을 활용하여 적은 인원으로 효율적인 시설관리가 가능합니다.",
+          "은 기존의 관제 시스템과 연계가 쉽고, AR/VR 기술을 활용하여 적은 인원으로 효율적인 시설 관리가 가능합니다.",
         color: "white",
       },
     ],
@@ -33,11 +33,11 @@ export const solutionPageData: ISolutionData[] = [
     title: "웹 탑재 딥러닝을 이용한 AR 광고",
     sentence: [
       {
-        content: "AR과 딥러닝 기술을 이용하여 도시곳곳을",
+        content: "AR과 딥러닝 기술을 이용하여 도시 곳곳을 ",
         color: "white",
       },
       {
-        content: "AR광고",
+        content: "AR 광고 ",
         color: "green",
       },
       {
@@ -56,12 +56,12 @@ export const solutionPageData: ISolutionData[] = [
         color: "white",
       },
       {
-        content: " AR VR 실감콘텐츠",
+        content: " AR/VR 실감 콘텐츠",
         color: "yellow",
       },
       {
         content:
-          "를 제공합니다. 스마트폰만 있으면 누구나 17~18c 조선시대를 체험해볼 수 있습니다. ",
+          "를 제공합니다. 스마트폰만 있으면 누구나 17~18c 조선시대를 체험해 볼 수 있습니다. ",
         color: "white",
       },
     ],

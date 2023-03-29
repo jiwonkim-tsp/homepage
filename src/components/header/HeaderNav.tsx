@@ -3,11 +3,14 @@ import Navigation from "./navigation/Navigation";
 import { useRecoilValue } from "recoil";
 import { ToggleState } from "@Recoil/atom";
 
-const HeaderNav = () => {
+interface IHeaderProps {
+  header: boolean;
+}
+const HeaderNav = ({ header }: IHeaderProps) => {
   const toggleState = useRecoilValue(ToggleState);
   return (
     <>
-      <Header />
+      <Header shown={header} />
       {toggleState ? <Navigation /> : ""}
     </>
   );

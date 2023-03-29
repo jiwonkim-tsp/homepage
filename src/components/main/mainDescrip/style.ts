@@ -10,6 +10,7 @@ export const $Content = styled.div<{ main: boolean }>`
     display: ${({ main }) => (main ? "" : "flex")};
     flex-direction: column;
     align-items: center;
+    gap: 0.8vw;
   }
 `;
 

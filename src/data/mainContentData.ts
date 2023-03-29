@@ -131,7 +131,7 @@ export const ourSolutionData: IContent[] = [
     id: 5,
     sentence: [
       {
-        content: "별도의 설명없이 체험하며",
+        content: "별도의 설명 없이 체험하며",
         color: "white",
       },
     ],

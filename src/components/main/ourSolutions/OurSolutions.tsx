@@ -25,15 +25,15 @@ const OurSolutions = () => {
         {ourSolutionData.map((list) => (
           <MainDescrip key={list.id} sentence={list.sentence} main={true} />
         ))}
+        <$BtnWrapper>
+          <Button
+            text={"더보기"}
+            color={"#fff"}
+            bgColor={"purple"}
+            handleClick={() => navigate("/solutions")}
+          />
+        </$BtnWrapper>
       </$ContentWrapper>
-      <$BtnWrapper>
-        <Button
-          text={"더보기"}
-          color={"#fff"}
-          bgColor={"purple"}
-          handleClick={() => navigate("/solutions")}
-        />
-      </$BtnWrapper>
     </$Wrapper>
   );
 };

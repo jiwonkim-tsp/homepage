@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
+import fs from "fs";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -20,6 +21,13 @@ export default defineConfig({
     },
   },
   build: {
+    minify: false,
     chunkSizeWarningLimit: 100000000,
   },
+  // server: {
+  //   https: {
+  //     key: fs.readFileSync("./ssl/key.pem"),
+  //     cert: fs.readFileSync("./ssl/crt.pem"),
+  //   },
+  // },
 });

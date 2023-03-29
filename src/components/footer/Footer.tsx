@@ -56,7 +56,7 @@ const Footer = ({ page }: IFooterProps) => {
               <$Label htmlFor="tel">연락처</$Label>
               <input type="tel" name="tel" required />
             </$List>
-            <button type="submit">보내기</button>
+            <button type="submit">문의하기</button>
           </$Contact>
           <iframe name="frAttachFiles" />
         </>
@@ -84,14 +84,14 @@ const Footer = ({ page }: IFooterProps) => {
         <$LogoBox>
           <img src={logo} alt="공간의 파티 로고 이미지" />
         </$LogoBox>
-        <$SnsBox>
-          {contactInfo.map((item) => (
-            <Link to={item.url} key={item.id}>
-              <$SnsList>{item.icon}</$SnsList>
-            </Link>
-          ))}
-        </$SnsBox>
       </$CompanyInfo>
+      <$SnsBox>
+        {contactInfo.map((item) => (
+          <$SnsList key={item.id}>
+            <Link to={item.url}>{item.icon}</Link>
+          </$SnsList>
+        ))}
+      </$SnsBox>
     </$Wrapper>
   );
 };

@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import colors from "@Constants/color";
 
 export const $List = styled.li`
+  overflow-x: hidden;
+  height: 70vw;
   display: flex;
   align-items: center;
 `;
@@ -47,6 +49,7 @@ export const $Title = styled.h1`
   color: ${colors["pink"]};
   @media (max-width: 480px) {
     font-size: 4vw;
+    line-height: 1.1;
   }
 `;
 

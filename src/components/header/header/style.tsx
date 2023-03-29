@@ -14,9 +14,10 @@ export const $Wrapper = styled.div`
   }
 `;
 
-export const $Header = styled.header<{ openNav: boolean }>`
+export const $Header = styled.header<{ openNav: boolean; shown: boolean }>`
   position: fixed;
   top: 0;
+  /* top: ${({ shown }) => (shown ? "-4vw" : "0")}; */
   left: 0;
   z-index: 4;
   width: 100vw;
@@ -31,6 +32,7 @@ export const $Header = styled.header<{ openNav: boolean }>`
     height: 15vw;
     padding: 5vw 5vw;
   }
+  transition: top 0.4s ease;
 `;
 
 export const $Logo = styled.div`

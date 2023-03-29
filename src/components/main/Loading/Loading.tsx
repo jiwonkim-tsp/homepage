@@ -1,5 +1,5 @@
 import { $Wrapper } from "./style";
-import loading from "@Assets/image/loading/loading3.mp4";
+import loading from "@Assets/image/loading/loading.mp4";
 import useScroll from "@Hooks/useScroll";
 
 const Loading = () => {

@@ -26,6 +26,9 @@ export const $VideoWrapper = styled.div`
     left: 0;
     filter: brightness(30%);
   }
+  video::-webkit-media-controls-play-button {
+    display: none !important;
+  }
 `;
 
 export const $Phrases = styled.div`

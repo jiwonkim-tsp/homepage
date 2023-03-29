@@ -6,6 +6,9 @@ import {
   $ImgBox,
   $LogoBox,
   $ContentWrapper,
+  $Explanation,
+  $Sentence,
+  $ColoredText,
   $HistoryUl,
 } from "./style";
 import History from "./History";
@@ -32,6 +35,18 @@ const Company = () => {
         <img src={logo} alt="로고 이미지" />
       </$LogoBox>
       <$ContentWrapper>
+        <$Explanation>
+          <$Sentence>
+            <$ColoredText color="yellow">웹 기반의 AR솔루션</$ColoredText>을
+            개발하고,
+          </$Sentence>
+          <$Sentence>콘텐츠를 제작하는 (주)공간의파티입니다.</$Sentence>
+          <$Sentence>자체 개발한 증강현실 솔루션들을 기반으로</$Sentence>
+          <$Sentence>
+            <$ColoredText color="green">웹 기반 증강현실 플랫폼</$ColoredText>을
+            개발 중입니다.
+          </$Sentence>
+        </$Explanation>
         <$HistoryUl variants={container} initial="hidden" animate="visible">
           {companyData.map((list) => (
             <History key={list.order} year={list.year} content={list.content} />

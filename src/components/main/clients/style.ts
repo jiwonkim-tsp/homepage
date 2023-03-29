@@ -11,7 +11,7 @@ export const $Wrapper = styled(motion.div)`
   align-items: center;
   @media (max-width: 480px) {
     margin-top: 10vw;
-    height: 110vw;
+    height: 130vw;
   }
 `;
 
@@ -30,8 +30,8 @@ export const $Clients = styled(motion.ul)`
   grid-template-columns: repeat(4, 1fr);
   row-gap: 0vw;
   @media (max-width: 480px) {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 2vw;
+    grid-template-columns: repeat(2, 40vw);
+    row-gap: 5.5vw;
   }
 `;
 
@@ -41,15 +41,12 @@ export const $List = styled.li`
   align-items: center;
   justify-content: center;
   :nth-child(4) {
-    /* background-color: red; */
     padding-right: 3vw;
   }
   :nth-child(5) {
-    /* background-color: red; */
     padding-bottom: 1.5vw;
   }
   :nth-child(6) {
-    /* background-color: red; */
     padding-bottom: 1.5vw;
   }
   img {
