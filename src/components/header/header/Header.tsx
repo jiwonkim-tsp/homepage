@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import Button from "@Components/Button/Button";
 import { $Wrapper, $Header, $Logo, $BtnWrapper, $ToggleBtn } from "./style";
 import { HiMenu } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
@@ -25,8 +23,10 @@ const Header = ({ shown }: IHeaderProps) => {
     setToggle(false);
     navigate("/");
   };
+
+  console.log(shown);
   return (
-    <$Wrapper>
+    <$Wrapper shown={shown}>
       <$Header shown={shown} openNav={toggleState}>
         <$Logo onClick={handleClick}>
           <img src={logo} alt="로고" />

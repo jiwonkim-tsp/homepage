@@ -115,7 +115,7 @@ export const ourSolutionData: IContent[] = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     sentence: [
       {
         content: " 솔루션을 개발하고 있습니다.",
@@ -124,7 +124,7 @@ export const ourSolutionData: IContent[] = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     sentence: [
       {
         content: "직관적인 UXUI로 ",
@@ -133,7 +133,7 @@ export const ourSolutionData: IContent[] = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     sentence: [
       {
         content: "별도의 설명 없이 체험하며",
@@ -142,7 +142,7 @@ export const ourSolutionData: IContent[] = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     sentence: [
       {
         content: "인터랙션",

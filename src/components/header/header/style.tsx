@@ -1,13 +1,12 @@
 import styled from "styled-components";
 import colors from "@Constants/color";
 
-export const $Wrapper = styled.div`
+export const $Wrapper = styled.div<{ shown: boolean }>`
   position: fixed;
-  top: 0;
   left: 0;
   z-index: 12;
   width: 100vw;
-  height: 4vw;
+  height: 7vw;
   display: flex;
   @media (max-width: 480px) {
     height: 12vw;
@@ -16,12 +15,11 @@ export const $Wrapper = styled.div`
 
 export const $Header = styled.header<{ openNav: boolean; shown: boolean }>`
   position: fixed;
-  top: 0;
-  /* top: ${({ shown }) => (shown ? "-4vw" : "0")}; */
+  top: ${({ shown }) => (shown ? "-7vw" : "0")};
   left: 0;
   z-index: 4;
   width: 100vw;
-  height: 4vw;
+  height: 7vw;
   padding: 3.5vw;
   display: flex;
   justify-content: space-between;
@@ -32,7 +30,7 @@ export const $Header = styled.header<{ openNav: boolean; shown: boolean }>`
     height: 15vw;
     padding: 5vw 5vw;
   }
-  transition: top 0.4s ease;
+  transition: top 0.6s ease;
 `;
 
 export const $Logo = styled.div`

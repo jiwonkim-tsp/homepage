@@ -9,7 +9,7 @@ export const $Wrapper = styled.div`
   align-items: center;
   gap: 4vw;
   @media (max-width: 1100px) {
-    margin-top: 10vw;
+    margin-top: 8vw;
   }
 `;
 

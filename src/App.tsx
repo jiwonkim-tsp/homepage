@@ -16,6 +16,9 @@ function App() {
       if (scrollY > 50) {
         setHideHeader(true);
       }
+      if (scrollY < 200) {
+        setHideHeader(false);
+      }
     })();
     return () => {
       window.removeEventListener("scroll", () =>
