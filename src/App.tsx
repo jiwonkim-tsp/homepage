@@ -8,24 +8,23 @@ function App() {
   const { scrollTop } = useScroll();
   const { pathname } = useLocation();
   const [hideHeader, setHideHeader] = useState(false);
-  const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    (() => {
-      window.addEventListener("scroll", () => setScrollY(window.pageYOffset));
+    function handleScroll() {
+      const scrollY = window.pageYOffset;
       if (scrollY > 50) {
         setHideHeader(true);
-      }
-      if (scrollY < 200) {
+      } else if (scrollY < 200) {
         setHideHeader(false);
       }
-    })();
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
     return () => {
-      window.removeEventListener("scroll", () =>
-        setScrollY(window.pageYOffset)
-      );
+      window.removeEventListener("scroll", handleScroll);
     };
-  });
+  }, []);
 
   scrollTop();
   return (
