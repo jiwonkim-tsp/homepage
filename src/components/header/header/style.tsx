@@ -28,6 +28,7 @@ export const $Header = styled.header<{ openNav: boolean; shown: boolean }>`
     openNav ? colors["beige"] : colors["black"]};
   @media (max-width: 480px) {
     height: 15vw;
+    top: ${({ shown }) => (shown ? "-15vw" : "0")};
     padding: 5vw 5vw;
   }
   transition: top 0.6s ease;
