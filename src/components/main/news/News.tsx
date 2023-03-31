@@ -24,6 +24,7 @@ const News = () => {
               title={item.title}
               content={item.content}
               press={item.press}
+              link={item.link}
             />
           ))}
         </$Slider>

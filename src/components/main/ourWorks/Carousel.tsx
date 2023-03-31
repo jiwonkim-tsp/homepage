@@ -7,7 +7,9 @@ const Carousel = () => {
       <$CarouselWrapper>
         {carouselData.map((list) => (
           <$Item key={list.id}>
-            <img src={list.img} alt={list.title} />
+            <a href={list.link && list.link} target="_blank">
+              <img src={list.img} alt={list.title} />
+            </a>
           </$Item>
         ))}
       </$CarouselWrapper>

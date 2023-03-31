@@ -1,6 +1,6 @@
 import { $Wrapper } from "./style";
-import loading from "@Assets/image/loading/loading.mp4";
 import useScroll from "@Hooks/useScroll";
+import loading from "@Assets/image/loading/Intro_apng.png";
 
 const Loading = () => {
   //스크롤 비활성화
@@ -9,9 +9,7 @@ const Loading = () => {
 
   return (
     <$Wrapper>
-      <video autoPlay muted loop playsInline>
-        <source src={loading} type="video/mp4" />
-      </video>
+      <img src={loading} alt="로딩 이미지" />
     </$Wrapper>
   );
 };

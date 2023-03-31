@@ -4,16 +4,19 @@ interface IListProps {
   press: string;
   title: string;
   content: string;
+  link: string;
 }
 
-const NewsList = ({ press, title, content }: IListProps) => {
+const NewsList = ({ press, title, content, link }: IListProps) => {
   return (
     <$List>
-      <$Wrapper>
-        <$Press>{press}</$Press>
-        <$Title>{title}</$Title>
-        <$Content>{content}</$Content>
-      </$Wrapper>
+      <a href={link && link} target="_blank">
+        <$Wrapper>
+          <$Press>{press}</$Press>
+          <$Title>{title}</$Title>
+          <$Content>{content}</$Content>
+        </$Wrapper>
+      </a>
     </$List>
   );
 };

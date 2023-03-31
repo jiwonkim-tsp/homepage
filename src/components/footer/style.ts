@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export const $Wrapper = styled.div<{ page: string }>`
   width: 100%;
-  height: 40vw;
+  height: 30vw;
   background-color: ${colors["purple"]};
   position: relative;
   &:before {
@@ -23,16 +23,59 @@ export const $Wrapper = styled.div<{ page: string }>`
   }
   @media (max-width: 480px) {
     height: ${({ page }) =>
-      page === "solutions" || page === "products" ? "55vw" : ""};
+      page === "solutions" || page === "products" ? "45vw" : ""};
+  }
+`;
+
+export const $Contact = styled.div`
+  position: relative;
+  bottom: 4vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @media (max-width: 480px) {
+    bottom: 1vw;
+  }
+`;
+
+export const $ContactTitle = styled.div`
+  z-index: 1;
+  font-family: "GothamBlack";
+  color: #fff;
+  font-size: 7vw;
+  margin-bottom: 4vw;
+  @media (max-width: 480px) {
+    font-size: 10vw;
+  }
+`;
+export const $ContactUl = styled.ul`
+  color: #fff;
+  font-family: "NanumSquare";
+  font-size: 3vw;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  @media (max-width: 480px) {
+    font-size: 5vw;
+    gap: 1vw;
+  }
+`;
+export const $ContactLi = styled.li`
+  cursor: pointer;
+  a {
+    color: #fff;
+    text-decoration: none;
   }
 `;
 
 export const $Content = styled.div`
   width: 100vw;
-  position: absolute;
+  position: relative;
+  bottom: 1.3vw;
   z-index: 1;
   color: #fff;
-  font-size: 10vw;
+  font-size: 7vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,65 +92,6 @@ export const $ImgBox = styled(motion.div)`
   width: 50vw;
   img {
     width: 50vw;
-  }
-`;
-
-export const $Contact = styled.form`
-  transform: translate(20vw, 0vw);
-  width: 60vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5vw;
-  position: relative;
-  z-index: 1;
-  button {
-    border-radius: 2.5vw;
-    font-size: 1.5vw;
-    padding: 1vw 2vw;
-    background-color: ${colors["green"]};
-    transform: translate(-30vw, 2vw);
-    font-family: "NanumSquareEB";
-  }
-  @media (max-width: 480px) {
-    transform: translate(20vw, -2vw);
-    button {
-      font-size: 3vw;
-      padding: 1.5vw 8vw;
-      transform: translate(-21.5vw, 2vw);
-    }
-  }
-`;
-
-export const $List = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1vw;
-  input {
-    border: none;
-    height: 4vw;
-    width: 70vw;
-    padding-left: 1vw;
-    font-size: 1.5vw;
-  }
-  input:focus {
-    outline: none;
-  }
-  @media (max-width: 480px) {
-    input {
-      height: 7vw;
-      width: 70vw;
-      font-size: 3vw;
-    }
-  }
-`;
-
-export const $Label = styled.label`
-  font-size: 1.5vw;
-  color: #fff;
-  font-family: "NanumSquareEB";
-  @media (max-width: 480px) {
-    font-size: 3vw;
   }
 `;
 

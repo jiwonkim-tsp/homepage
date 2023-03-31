@@ -3,18 +3,20 @@ import colors from "@Constants/color";
 import { motion } from "framer-motion";
 
 export const $List = styled(motion.li)<{ order: number }>`
-  display: flex;
-  flex-direction: column;
-  gap: 1.7vw;
   margin-bottom: 6vw;
   &:nth-child(2n) {
     margin-top: 4vw;
   }
-  cursor: pointer;
   @media (max-width: 480px) {
     &:nth-child(2n) {
       margin-top: 0vw;
     }
+  }
+  a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7vw;
   }
 `;
 

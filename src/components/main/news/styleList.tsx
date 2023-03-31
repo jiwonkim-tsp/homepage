@@ -6,6 +6,9 @@ export const $List = styled.li`
   @media (max-width: 480px) {
     width: 60vw;
   }
+  a {
+    text-decoration: none;
+  }
 `;
 
 export const $Wrapper = styled.div`

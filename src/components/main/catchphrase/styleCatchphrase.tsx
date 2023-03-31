@@ -4,10 +4,6 @@ export const $Wrapper = styled.div`
   position: relative;
   width: 100%;
   height: 55vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4vw;
   @media (max-width: 1100px) {
     margin-top: 8vw;
   }
@@ -38,9 +34,4 @@ export const $Phrases = styled.div`
   flex-direction: column;
   align-items: center;
   transform: translateY(11vw) rotate(-10deg);
-`;
-
-export const $BtnWrapper = styled.div`
-  z-index: 1;
-  transform: translateY(10vw);
 `;

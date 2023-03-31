@@ -15,6 +15,7 @@ const Solutions = () => {
             sentence={list.sentence}
             img={list.img}
             order={list.order}
+            link={list.link}
           />
         ))}
       </$Solutions>

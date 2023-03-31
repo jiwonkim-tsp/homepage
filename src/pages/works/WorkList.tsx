@@ -22,7 +22,7 @@ interface IListProps {
 const WorkList = ({ img, tag, title, location, period, link }: IListProps) => {
   return (
     <$List variants={item}>
-      <a href={link} target="_blank">
+      <a href={link && link} target="_blank">
         <$ImgBox>
           <img src={img} alt={title} />
         </$ImgBox>

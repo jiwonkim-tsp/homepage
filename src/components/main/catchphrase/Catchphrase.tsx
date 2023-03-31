@@ -1,20 +1,18 @@
 import AnimatedText from "./AnimatedText";
 import { $Wrapper, $VideoWrapper, $Phrases } from "./styleCatchphrase";
 import video from "@Assets/image/catchphrase/TSP XR.mp4";
-import { useNavigate } from "react-router-dom";
 
 const Catchphrase = () => {
-  const navigate = useNavigate();
-
   const phrases = [
-    { id: 1, text: "Begin your" },
+    { id: 1, text: "Discover" },
+    { id: 2, text: "new dimensions" },
     {
-      id: 2,
-      text: "new",
+      id: 3,
+      text: "and possibilities",
     },
     {
-      id: 2,
-      text: "experience",
+      id: 4,
+      text: "with our AR solutions",
     },
   ];
 

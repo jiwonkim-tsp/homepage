@@ -8,17 +8,12 @@ export const $Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  z-index: 20;
-  video {
-    width: 30%;
-  }
-  video::-webkit-media-controls-play-button {
-    display: none !important;
+  z-index: 10;
+  img {
   }
   @media (max-width: 480px) {
-    video {
-      width: 62vw;
+    img {
+      width: 95%;
     }
   }
 `;

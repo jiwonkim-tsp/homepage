@@ -15,6 +15,9 @@ export const $List = styled(motion.li)`
   }
   @media (max-width: 480px) {
     width: 68vw;
+    &:nth-child(2n) {
+      margin-top: 0vw;
+    }
   }
 `;
 
@@ -30,7 +33,8 @@ export const $ImgBox = styled.div`
 `;
 
 export const $ContentBox = styled.div`
-  padding-left: 1.5vw;
+  margin-top: 2vw;
+  padding-left: 1vw;
   display: flex;
   flex-direction: column;
   gap: 1.1vw;
@@ -38,7 +42,7 @@ export const $ContentBox = styled.div`
     gap: 1.5vw;
     box-sizing: border-box;
     padding-left: 3vw;
-    margin-top: 1.5vw;
+    margin-top: 3vw;
   }
 `;
 

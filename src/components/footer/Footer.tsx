@@ -1,11 +1,12 @@
 import {
   $Wrapper,
+  $Contact,
+  $ContactTitle,
+  $ContactUl,
+  $ContactLi,
   $Content,
   $Word,
   $ImgBox,
-  $Contact,
-  $List,
-  $Label,
   $CompanyInfo,
   $LogoBox,
   $SnsBox,
@@ -34,38 +35,33 @@ interface IFooterProps {
 }
 
 const Footer = ({ page }: IFooterProps) => {
+  const copyEmail = () => {
+    document.execCommand("info@tsp-xr.com");
+  };
+
   return (
     <$Wrapper page={page}>
       {page === "products" || page === "solutions" ? (
-        <>
-          <$Contact
-            className="gform"
-            method="post"
-            action="https://script.google.com/macros/s/AKfycbzZUoW1c8N9Iu62uvz-u6TYVB5UJClJF7eGgwv36eL46hHKONbOFgcCleo2irNdD4Q/exec"
-            target="frAttachFiles"
-          >
-            <$List>
-              <$Label htmlFor="name">이름</$Label>
-              <input type="text" name="name" required />
-            </$List>
-            <$List>
-              <$Label htmlFor="email">이메일</$Label>
-              <input type="email" name="email" required />
-            </$List>
-            <$List>
-              <$Label htmlFor="tel">연락처</$Label>
-              <input type="tel" name="tel" required />
-            </$List>
-            <button type="submit">문의하기</button>
-          </$Contact>
-          <iframe name="frAttachFiles" />
-        </>
+        <$Contact>
+          <$ContactTitle>Contact</$ContactTitle>
+          <$ContactUl>
+            <$ContactLi>
+              <a href="tel:02-545-3982">02-545-3982</a>
+            </$ContactLi>
+            <$ContactLi onClick={copyEmail}>info@tsp-xr.com</$ContactLi>
+            <$ContactLi>
+              <a href="https://goo.gl/maps/o46jRX5ytXJEuHo56" target="_blank">
+                서울 강남구 학동로 101길 26
+              </a>
+            </$ContactLi>
+          </$ContactUl>
+        </$Contact>
       ) : (
         <>
           <$Content>
-            <$Word>Let's make</$Word>
-            <$Word>something</$Word>
-            <$Word>new</$Word>
+            <$Word>We're putting</$Word>
+            <$Word>the power of AR</$Word>
+            <$Word>in your palm</$Word>
           </$Content>
           {page === "main" ? (
             <$ImgBox

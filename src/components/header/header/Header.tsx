@@ -24,7 +24,6 @@ const Header = ({ shown }: IHeaderProps) => {
     navigate("/");
   };
 
-  console.log(shown);
   return (
     <$Wrapper shown={shown}>
       <$Header shown={shown} openNav={toggleState}>

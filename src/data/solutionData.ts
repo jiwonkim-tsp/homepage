@@ -15,7 +15,7 @@ export const solutionPageData: ISolutionData[] = [
   {
     order: 1,
     img: digitalTwin,
-    link: "",
+    link: "https://www.youtube.com/watch?v=3XfAgr1FrsY",
     title: "웹 기반 XR 디지털 트윈 시스템",
     sentence: [
       {
@@ -32,6 +32,7 @@ export const solutionPageData: ISolutionData[] = [
   {
     order: 2,
     img: arAd,
+    link: "https://youtu.be/to2l8dx1D_Y",
     title: "웹 탑재 딥러닝을 이용한 AR 광고",
     sentence: [
       {
@@ -51,6 +52,7 @@ export const solutionPageData: ISolutionData[] = [
   {
     order: 3,
     img: arMuseum,
+    link: "https://youtu.be/8l-uzgjgUBE",
     title: "공간인식 기술을 기반으로 하는 AR 도슨트",
     sentence: [
       {

@@ -8,15 +8,17 @@ import {
   $ColoredText,
 } from "./style";
 import { ISentence } from "@Data/productData";
+import { useNavigate } from "react-router-dom";
 
 export interface IListProps {
   order: number;
   title: string;
   img: string;
   sentence: ISentence[];
+  link?: string;
 }
 
-const List = ({ order, title, img, sentence }: IListProps) => {
+const List = ({ order, title, img, sentence, link }: IListProps) => {
   const variants = {
     hidden: {
       opacity: 0,
@@ -31,6 +33,12 @@ const List = ({ order, title, img, sentence }: IListProps) => {
       },
     },
   };
+
+  const handleClick = () => {
+    if (link) {
+      window.open(link);
+    }
+  };
   return (
     <$List>
       <$ImgBox
@@ -39,7 +47,9 @@ const List = ({ order, title, img, sentence }: IListProps) => {
         initial="hidden"
         whileInView="visible"
       >
-        <img src={img} alt={title} />
+        <a href={link && link} target="_blank">
+          <img src={img} alt={title} />
+        </a>
       </$ImgBox>
       <$ContentBox order={order}>
         <$Title>{title}</$Title>

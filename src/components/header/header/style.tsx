@@ -3,8 +3,9 @@ import colors from "@Constants/color";
 
 export const $Wrapper = styled.div<{ shown: boolean }>`
   position: fixed;
+  top: 0;
   left: 0;
-  z-index: 12;
+  z-index: 4;
   width: 100vw;
   height: 7vw;
   display: flex;
@@ -14,10 +15,9 @@ export const $Wrapper = styled.div<{ shown: boolean }>`
 `;
 
 export const $Header = styled.header<{ openNav: boolean; shown: boolean }>`
-  position: fixed;
+  position: absolute;
   top: ${({ shown }) => (shown ? "-7vw" : "0")};
   left: 0;
-  z-index: 4;
   width: 100vw;
   height: 7vw;
   padding: 3.5vw;

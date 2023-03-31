@@ -11,10 +11,12 @@ interface INewProps {
 
 const NewsList = ({ title, press, content, link, order }: INewProps) => {
   return (
-    <$List order={order} variants={item} onClick={() => window.open(link)}>
-      <$Press>{press}</$Press>
-      <$Title>{title}</$Title>
-      <$Content>{content}</$Content>
+    <$List order={order} variants={item}>
+      <a href={link && link} target="_blank">
+        <$Press>{press}</$Press>
+        <$Title>{title}</$Title>
+        <$Content>{content}</$Content>
+      </a>
     </$List>
   );
 };
