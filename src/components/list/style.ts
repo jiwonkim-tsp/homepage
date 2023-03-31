@@ -3,21 +3,25 @@ import { motion } from "framer-motion";
 import colors from "@Constants/color";
 
 export const $List = styled.li`
-  height: 70vw;
+  height: 40vw;
   display: flex;
   align-items: center;
+  @media (max-width: 480px) {
+    height: 70vw;
+  }
 `;
 
 export const $ImgBox = styled(motion.div)<{ order: number }>`
   img {
-    width: 50vw;
+    width: 30vw;
     transform: ${({ order }) =>
       order % 2 === 0
-        ? "rotate(15deg) translateX(15vw)"
-        : "rotate(-15deg) translateX(-10vw)"};
+        ? "rotate(15deg) translateX(20vw)"
+        : "rotate(-15deg) translateX(-20vw)"};
   }
   @media (max-width: 480px) {
     img {
+      width: 50vw;
       transform: ${({ order }) =>
         order % 2 === 0
           ? "rotate(15deg) translateX(10vw)"
@@ -31,7 +35,7 @@ export const $ContentBox = styled.div<{ order: number }>`
   position: relative;
   z-index: 1;
   transform: ${({ order }) =>
-    order % 2 === 0 ? "translate(5vw, -5vw)" : "translate(-5vw, -5vw)"};
+    order % 2 === 0 ? "translate(20vw, 0vw)" : "translate(-10vw, -2vw)"};
   order: ${({ order }) => (order % 2 === 0 ? "-1" : "")};
   @media (max-width: 480px) {
     width: 60vw;
@@ -42,7 +46,7 @@ export const $ContentBox = styled.div<{ order: number }>`
 
 export const $Title = styled.h1`
   font-family: "NanumSquareEB";
-  font-size: 2.8vw;
+  font-size: 2vw;
   margin: 2vw 0;
   word-break: keep-all;
   color: ${colors["pink"]};
@@ -55,7 +59,7 @@ export const $Title = styled.h1`
 
 export const $Content = styled.div`
   width: 40vw;
-  font-size: 2vw;
+  font-size: 1.4vw;
   line-height: 1.25;
   @media (max-width: 480px) {
     width: 40vw;

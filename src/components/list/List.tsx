@@ -8,7 +8,6 @@ import {
   $ColoredText,
 } from "./style";
 import { ISentence } from "@Data/productData";
-import { useNavigate } from "react-router-dom";
 
 export interface IListProps {
   order: number;
@@ -34,11 +33,6 @@ const List = ({ order, title, img, sentence, link }: IListProps) => {
     },
   };
 
-  const handleClick = () => {
-    if (link) {
-      window.open(link);
-    }
-  };
   return (
     <$List>
       <$ImgBox

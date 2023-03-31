@@ -29,7 +29,7 @@ export const carouselData: IOurWorkData[] = [
     title: "디지털트윈 유지 보수관리 시스템",
     location: "부산 EDC 스마트 정수장",
     period: "2022~2023",
-    link: "https://www.youtube.com/watch?v=3XfAgr1FrsY",
+    link: "https://youtu.be/i4eMTrLnEIw",
   },
   {
     id: 2,
@@ -137,7 +137,7 @@ export const carouselData: IOurWorkData[] = [
     title: "디지털트윈 유지 보수관리 시스템",
     location: "부산 EDC 스마트 정수장",
     period: "2022~2023",
-    link: "https://www.youtube.com/watch?v=3XfAgr1FrsY",
+    link: "https://youtu.be/i4eMTrLnEIw",
   },
   {
     id: 14,
@@ -248,7 +248,7 @@ export const ourWorkData: IOurWorkData[] = [
     title: "디지털 트윈 유지 보수관리 시스템",
     location: "부산 EDC 스마트 정수장",
     period: "2022~2023",
-    link: "https://www.youtube.com/watch?v=3XfAgr1FrsY",
+    link: "https://youtu.be/i4eMTrLnEIw",
   },
   {
     id: 2,

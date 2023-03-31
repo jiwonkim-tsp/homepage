@@ -12,6 +12,7 @@ export const $Wrapper = styled.div`
   align-items: flex-start;
   @media (max-width: 480px) {
     height: 90vw;
+    margin-top: 20vw;
   }
 `;
 

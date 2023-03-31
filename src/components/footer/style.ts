@@ -18,9 +18,6 @@ export const $Wrapper = styled.div<{ page: string }>`
     top: -10vw;
     left: 0;
   }
-  iframe {
-    display: none;
-  }
   @media (max-width: 480px) {
     height: ${({ page }) =>
       page === "solutions" || page === "products" ? "45vw" : ""};
@@ -101,7 +98,6 @@ export const $CompanyInfo = styled.div`
   width: 100%;
   height: 5vw;
   padding: 0.5vw;
-  border-top: 1px solid #1d1d20;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,6 +107,8 @@ export const $CompanyInfo = styled.div`
 `;
 
 export const $LogoBox = styled.div`
+  color: #fff;
+  font-size: 3vw;
   img {
     width: 11vw;
   }

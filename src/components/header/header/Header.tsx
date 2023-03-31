@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { $Wrapper, $Header, $Logo, $BtnWrapper, $ToggleBtn } from "./style";
 import { HiMenu } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
-import logo from "@Assets/image/logo/mainLogo.png";
+import logo from "@Assets/image/logo/mainLogo2.png";
 import { useRecoilValue, useRecoilState } from "recoil";
 import { ToggleState } from "@Recoil/atom";
 

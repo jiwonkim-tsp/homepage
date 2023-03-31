@@ -30,7 +30,7 @@ export const $ImgBox = styled(motion.div)`
     width: 50vw;
   }
   @media (max-width: 480px) {
-    top: 50vw;
+    top: 30vw;
   }
 `;
 

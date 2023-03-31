@@ -8,7 +8,7 @@ export const $List = styled(motion.li)`
   flex-direction: column;
   gap: 1.1vw;
   &:nth-child(2n) {
-    margin-top: 3vw;
+    margin-top: 10vw;
   }
   a {
     text-decoration: none;
@@ -58,7 +58,7 @@ export const $Tag = styled.div`
 export const $Title = styled.div`
   color: ${colors["yellow"]};
   font-family: "NanumSquareEB";
-  font-size: 2.4vw;
+  font-size: 1.4vw;
   word-break: keep-all;
   line-height: 1.1;
   @media (max-width: 480px) {
@@ -69,7 +69,7 @@ export const $Title = styled.div`
 export const $LocaPerBox = styled.div`
   font-family: "NanumSquare";
   font-weight: bold;
-  font-size: 1.5vw;
+  font-size: 0.9vw;
   display: flex;
   flex-direction: column;
   gap: 0.4vw;

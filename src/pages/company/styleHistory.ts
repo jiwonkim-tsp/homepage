@@ -14,7 +14,7 @@ export const $List = styled(motion.li)`
 
 export const $Year = styled.div`
   font-weight: bold;
-  font-size: 2.7vw;
+  font-size: 2vw;
   color: ${colors["pink"]};
   margin-bottom: 1.5vw;
   @media (max-width: 480px) {

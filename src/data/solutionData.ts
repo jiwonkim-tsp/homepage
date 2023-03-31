@@ -15,7 +15,7 @@ export const solutionPageData: ISolutionData[] = [
   {
     order: 1,
     img: digitalTwin,
-    link: "https://www.youtube.com/watch?v=3XfAgr1FrsY",
+    link: "https://youtu.be/i4eMTrLnEIw",
     title: "웹 기반 XR 디지털 트윈 시스템",
     sentence: [
       {
