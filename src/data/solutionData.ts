@@ -6,6 +6,7 @@ import { ISentence } from "./productData";
 interface ISolutionData {
   order: number;
   img: string;
+  link: string;
   title: string;
   sentence: ISentence[];
 }
@@ -14,6 +15,7 @@ export const solutionPageData: ISolutionData[] = [
   {
     order: 1,
     img: digitalTwin,
+    link: "",
     title: "웹 기반 XR 디지털 트윈 시스템",
     sentence: [
       {

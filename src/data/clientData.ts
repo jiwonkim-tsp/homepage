@@ -1,6 +1,5 @@
 import bongeunsa from "@Assets/image/clients/bongeunsa.png";
 import gangnam from "@Assets/image/clients/gangnam.png";
-import kbBank from "@Assets/image/clients/kbBank.png";
 import kocca from "@Assets/image/clients/kocca.png";
 import kwangwoonUni from "@Assets/image/clients/kwangwoonUni.png";
 import kwater from "@Assets/image/clients/kwater.png";
@@ -18,7 +17,6 @@ export interface IImg {
 
 export const clientData: IImg[] = [
   { title: "한국수자원공사", img: kwater },
-  { title: "KB국민은행", img: kbBank },
   { title: "한국콘텐츠진흥원", img: kocca },
   { title: "YG엔터테인먼트", img: yg },
   { title: "veea", img: veea },

@@ -3,12 +3,18 @@ import colors from "@Constants/color";
 import { motion } from "framer-motion";
 
 export const $List = styled(motion.li)`
-  cursor: pointer;
+  width: 30vw;
   display: flex;
   flex-direction: column;
   gap: 1.1vw;
   &:nth-child(2n) {
     margin-top: 3vw;
+  }
+  a {
+    text-decoration: none;
+  }
+  @media (max-width: 480px) {
+    width: 68vw;
   }
 `;
 
@@ -63,7 +69,6 @@ export const $LocaPerBox = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.4vw;
-  margin-bottom: 7vw;
   @media (max-width: 480px) {
     font-size: 3.2vw;
   }

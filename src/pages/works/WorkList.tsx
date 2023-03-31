@@ -21,18 +21,20 @@ interface IListProps {
 
 const WorkList = ({ img, tag, title, location, period, link }: IListProps) => {
   return (
-    <$List variants={item} onClick={() => window.open(link)}>
-      <$ImgBox>
-        <img src={img} alt={title} />
-      </$ImgBox>
-      <$ContentBox>
-        <$Tag>{tag}</$Tag>
-        <$Title>{title}</$Title>
-        <$LocaPerBox>
-          <$Location>{location}</$Location>
-          <$Period>{period}</$Period>
-        </$LocaPerBox>
-      </$ContentBox>
+    <$List variants={item}>
+      <a href={link} target="_blank">
+        <$ImgBox>
+          <img src={img} alt={title} />
+        </$ImgBox>
+        <$ContentBox>
+          <$Tag>{tag}</$Tag>
+          <$Title>{title}</$Title>
+          <$LocaPerBox>
+            <$Location>{location}</$Location>
+            <$Period>{period}</$Period>
+          </$LocaPerBox>
+        </$ContentBox>
+      </a>
     </$List>
   );
 };
