@@ -78,7 +78,7 @@ const Footer = ({ page }: IFooterProps) => {
       )}
       <$CompanyInfo>
         <$LogoBox>
-          <span>&copy; </span> 공간의파티 All rights reserved.
+          <span>&copy; </span> 공간의파티. All Rights Reserved.
         </$LogoBox>
       </$CompanyInfo>
       <$SnsBox>
