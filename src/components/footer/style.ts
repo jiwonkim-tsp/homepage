@@ -111,7 +111,7 @@ export const $LogoBox = styled.div`
   display: flex;
   align-items: center;
   color: #fff;
-  font-size: 1.5vw;
+  font-size: 1vw;
   img {
     width: 11vw;
   }
@@ -121,7 +121,7 @@ export const $LogoBox = styled.div`
     }
   }
   span {
-    font-size: 1.8vw;
+    font-size: 1.3vw;
     margin-top: 0.1vw;
   }
 `;
@@ -142,7 +142,7 @@ export const $SnsBox = styled.ul`
 `;
 
 export const $SnsList = styled.li`
-  font-size: 2.8vw;
+  font-size: 2vw;
   a {
     color: #fff;
   }
