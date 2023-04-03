@@ -107,8 +107,11 @@ export const $CompanyInfo = styled.div`
 `;
 
 export const $LogoBox = styled.div`
+  font-family: "NanumSquare";
+  display: flex;
+  align-items: center;
   color: #fff;
-  font-size: 3vw;
+  font-size: 1.5vw;
   img {
     width: 11vw;
   }
@@ -116,6 +119,10 @@ export const $LogoBox = styled.div`
     img {
       width: 15vw;
     }
+  }
+  span {
+    font-size: 1.8vw;
+    margin-top: 0.1vw;
   }
 `;
 

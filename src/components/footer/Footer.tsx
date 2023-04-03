@@ -78,7 +78,7 @@ const Footer = ({ page }: IFooterProps) => {
       )}
       <$CompanyInfo>
         <$LogoBox>
-          &copy; <img src={logo} alt="공간의 파티 로고 이미지" />
+          <span>&copy; </span> 공간의파티 All rights reserved.
         </$LogoBox>
       </$CompanyInfo>
       <$SnsBox>

@@ -19,7 +19,7 @@ export const $Nav = styled(motion.ul)`
   right: 5vw;
   bottom: 10vw;
   font-family: "GothamBlack";
-  font-size: 7.6vw;
+  font-size: 6.5vw;
   @media (max-width: 790px) {
     bottom: 20vw;
     font-size: 13vw;
