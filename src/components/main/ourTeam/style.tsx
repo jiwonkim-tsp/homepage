@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import colors from "@Constants/color";
 
 export const $Wrapper = styled.div`
   position: relative;
@@ -35,11 +36,15 @@ export const $ImgBox = styled(motion.div)`
 `;
 
 export const $LogoWrapper = styled.div`
+  color: ${colors["purple"]};
+  font-size: 4vw;
+  font-family: "GothamBlack";
   margin-bottom: 6vw;
   img {
     width: 18vw;
   }
   @media (max-width: 480px) {
+    font-size: 7vw;
     img {
       width: 30vw;
     }

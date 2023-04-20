@@ -15,16 +15,58 @@ export const solutionPageData: ISolutionData[] = [
   {
     order: 1,
     img: digitalTwin,
-    link: "https://youtu.be/i4eMTrLnEIw",
-    title: "웹 기반 XR 디지털 트윈 시스템",
+    link: "https://www.youtube.com/watch?v=BJSeKC8EwqY",
+    title: "웹 기반 디지털 트윈 통합 솔루션",
     sentence: [
       {
-        content: "웹 기반 디지털 트윈",
-        color: "green",
+        content: "Modeling(구축)",
+        color: "yellow",
+      },
+      {
+        content: "AR을 위한 3D 모델링, VR 작업, HMI등을 위한 UXUI 작업",
+        color: "white",
+      },
+      {
+        content: "Data Organizing(데이터 분류)",
+        color: "yellow",
+      },
+      {
+        content: "센서 데이터 수집 및 분류(Tag 확인 및 시각화를 위한 정리)",
+        color: "white",
+      },
+      {
+        content: "Data Acqusition(데이터 획득)",
+        color: "yellow",
       },
       {
         content:
-          "은 기존의 관제 시스템과 연계가 쉽고, AR/VR 기술을 활용하여 적은 인원으로 효율적인 시설 관리가 가능합니다.",
+          "BIM 데이터 분석, LIDAR 3D 스캐닝 데이터 분석 및 모델링 치수화",
+        color: "white",
+      },
+      {
+        content: "Optimization(최적화)",
+        color: "yellow",
+      },
+      {
+        content:
+          "최소한의 인원으로 시설 유지 보수 관리, 빠른 대응을 통한 사전 대비",
+        color: "white",
+      },
+      {
+        content: "Analysis(분석)",
+        color: "yellow",
+      },
+      {
+        content:
+          "유지보수 로그 기록 및 대응 메뉴얼 정리, 센서 데이터 추이 그래프를 제공",
+        color: "white",
+      },
+      {
+        content: "Integration(연계)",
+        color: "yellow",
+      },
+      {
+        content: "현장 AR과 관제센터 및 VR, HMI 등을 WebRTC로 연동",
         color: "white",
       },
     ],
@@ -33,18 +75,35 @@ export const solutionPageData: ISolutionData[] = [
     order: 2,
     img: arAd,
     link: "https://youtu.be/to2l8dx1D_Y",
-    title: "웹 탑재 딥러닝을 이용한 AR 광고",
+    title: "웹 기반 ARVR 솔루션",
     sentence: [
       {
-        content: "AR과 딥러닝 기술을 이용하여 도시 곳곳을 ",
+        content: "Neural Architecture Search",
+        color: "yellow",
+      },
+      {
+        content: "기반의 모바일 깊이 추론 모델",
         color: "white",
       },
       {
-        content: "AR 광고 ",
-        color: "green",
+        content: "Monocular Depth Estimation",
+        color: "yellow",
       },
       {
-        content: "공간으로 변화시켜드립니다.",
+        content: "기반의 실시간 3D Model Reconstruction",
+        color: "white",
+      },
+      {
+        content: "공간상 객체 포즈 추적 기술",
+        color: "yellow",
+      },
+      {
+        content: "AR 콘텐츠 제공 시 사용자의 이동에 맞춰 비추는 방향에 따라",
+        color: "white",
+      },
+      {
+        content:
+          "공간상 객체 포즈를 추적하여 별도의 마커 없이 가상 모델의 위치를 추적",
         color: "white",
       },
     ],
@@ -53,20 +112,19 @@ export const solutionPageData: ISolutionData[] = [
     order: 3,
     img: arMuseum,
     link: "https://youtu.be/8l-uzgjgUBE",
-    title: "공간인식 기술을 기반으로 하는 AR 도슨트",
+    title: "앱 기반과 비교해 웹 기반 디지털트윈의 장점",
     sentence: [
       {
-        content: "정밀한 공간인식 기술을 바탕으로 유적지 위에",
-        color: "white",
-      },
-      {
-        content: " AR/VR 실감 콘텐츠",
+        content: "- 별도의 장비 구입 및 교육과정 없이 즉각적인 활용 가능",
         color: "yellow",
       },
       {
-        content:
-          "를 제공합니다. 스마트폰만 있으면 누구나 17~18c 조선시대를 체험해 볼 수 있습니다. ",
-        color: "white",
+        content: "- 실시간 업데이트로 확장성이 뛰어나고 유지보수가 용이함",
+        color: "yellow",
+      },
+      {
+        content: "- 넓은 지역에 상대적으로 적은 비용으로 구축 가능",
+        color: "yellow",
       },
     ],
   },

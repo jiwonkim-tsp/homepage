@@ -21,11 +21,11 @@ const List = ({ order, title, img, sentence, link }: IListProps) => {
   const variants = {
     hidden: {
       opacity: 0,
-      x: order % 2 !== 0 ? -100 : 0,
+      x: -100,
     },
     visible: {
       opacity: 1,
-      x: order % 2 !== 0 ? 0 : -50,
+      x: -50,
       transition: {
         duration: 3,
         ease: "easeOut",

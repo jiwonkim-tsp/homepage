@@ -13,6 +13,7 @@ import MainDescrip from "../mainDescrip/MainDescrip";
 import { moveLeft } from "@Animation/framerMotion";
 import Button from "@Components/Button/Button";
 import { useNavigate } from "react-router-dom";
+import Clients from "../clients/Clients";
 
 const OurTeam = () => {
   const navigate = useNavigate();
@@ -24,7 +25,8 @@ const OurTeam = () => {
       </$ImgBox>
       <$ContentWrapper>
         <$LogoWrapper>
-          <img src={logo} alt="로고 이미지" />
+          ABOUT US
+          {/* <img src={logo} alt="로고 이미지" /> */}
         </$LogoWrapper>
         <$DescripWrapper>
           {ourTeamData.map((list) => (
@@ -38,6 +40,7 @@ const OurTeam = () => {
           handleClick={() => navigate("/company")}
         />
       </$ContentWrapper>
+      {/* <Clients /> */}
       <OurWorks />
     </$Wrapper>
   );

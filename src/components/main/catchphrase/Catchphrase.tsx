@@ -1,18 +1,14 @@
 import AnimatedText from "./AnimatedText";
-import { $Wrapper, $VideoWrapper, $Phrases } from "./styleCatchphrase";
+import { $Wrapper, $VideoWrapper, $Phrases, $Button } from "./styleCatchphrase";
 import video from "@Assets/image/catchphrase/TSP XR.mp4";
 
 const Catchphrase = () => {
   const phrases = [
     { id: 1, text: "Discover" },
-    { id: 2, text: "new dimensions" },
+    { id: 2, text: "New Dimensions" },
     {
       id: 3,
-      text: "and possibilities",
-    },
-    {
-      id: 4,
-      text: "with our AR solutions",
+      text: "and Possibilities",
     },
   ];
 
@@ -28,6 +24,7 @@ const Catchphrase = () => {
           return <AnimatedText phrase={phrase} key={index} />;
         })}
       </$Phrases>
+      <$Button>Contact Us</$Button>
     </$Wrapper>
   );
 };

@@ -34,10 +34,12 @@
     "compression": "^1.7.4",
     "cross-env": "^7.0.3",
     "express": "^4.18.2",
+    "file-loader": "^6.2.0",
     "serve-static": "^1.15.0",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.1.2",
     "typescript": "^4.9.5",
+    "url-loader": "^4.1.1",
     "vite": "^4.2.1",
     "vite-plugin-favicon": "^1.0.8",
     "vite-tsconfig-paths": "^4.0.7"

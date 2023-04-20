@@ -27,7 +27,8 @@
       "@Styles/*": ["src/styles/*"],
       "@Hooks/*": ["src/hooks/*"],
       "@Animation/*": ["src/animation/*"]
-    }
+    },
+    "typeRoots": ["src/types"]
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const $Wrapper = styled.div`
-  height: 8vw;
+  height: 6vw;
 `;
 
 export const $Letter = styled.span`
   font-family: "GothamBlack";
-  font-size: 8vw;
+  font-size: 6vw;
   color: #fff;
 `;

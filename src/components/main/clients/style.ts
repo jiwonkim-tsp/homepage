@@ -4,7 +4,7 @@ import colors from "@Constants/color";
 
 export const $Wrapper = styled(motion.div)`
   width: 100vw;
-  height: 65vw;
+  height: 45vw;
   position: relative;
   display: flex;
   flex-direction: column;

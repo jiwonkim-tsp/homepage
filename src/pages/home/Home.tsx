@@ -10,13 +10,49 @@ import Loading from "@Components/main/Loading/Loading";
 import { useEffect } from "react";
 import { useRecoilState } from "recoil";
 import { LoadingState } from "@Recoil/atom";
+// import video from "@Assets/image/catchphrase/tsp xr.mp4";
+import { useState, useRef } from "react";
 
 const Home = () => {
   const [loading, setLoading] = useRecoilState(LoadingState);
+  const [playing, setPlaying] = useState(true);
+  const [isScroll, setIsScroll] = useState(false);
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 3500);
+  }, []);
+
+  const ref = useRef<HTMLVideoElement>(null);
+  // const video = ref && ref.current;
+
+  useEffect(() => {
+    let scrollTimeout: any;
+
+    function handleScroll() {
+      setIsScroll(true);
+      if (ref.current) {
+        ref.current.play();
+      }
+
+      clearTimeout(scrollTimeout);
+
+      scrollTimeout = setTimeout(() => {
+        setIsScroll(false);
+        if (ref.current) {
+          ref.current.pause();
+        }
+        console.log("Scrolling has stopped");
+        // Do something here
+      }, 250); // You can adjust the delay time to suit your needs
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      clearTimeout(scrollTimeout);
+    };
   }, []);
 
   return (
@@ -29,6 +65,9 @@ const Home = () => {
       <News />
       <Awards />
       <Clients />
+      {/* <$VideoBox>
+        <video ref={ref} src={video} width="50%" muted loop playsInline></video>
+      </$VideoBox> */}
     </Wrapper>
   );
 };
@@ -40,4 +79,9 @@ const Wrapper = styled.div`
   height: 100%;
   overflow-x: hidden;
   position: relative;
+`;
+
+const $VideoBox = styled.div`
+  position: fixed;
+  bottom: 10vw;
 `;

@@ -17,10 +17,13 @@ const OurSolutions = () => {
 
   return (
     <$Wrapper>
-      <$ImgBox variants={moveLeft} initial="hidden" whileInView="visible">
-        <a href="https://youtu.be/i4eMTrLnEIw" target="_blank">
-          <img src={img} alt="솔루션 이미지" />
-        </a>
+      <$ImgBox
+        onClick={() => navigate("/solutions")}
+        variants={moveLeft}
+        initial="hidden"
+        whileInView="visible"
+      >
+        <img src={img} alt="솔루션 이미지" />
       </$ImgBox>
       <$ContentWrapper>
         <$Title>Solutions</$Title>

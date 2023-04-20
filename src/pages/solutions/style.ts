@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const $Wrapper = styled.div`
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   width: 100vw;
   height: 160vw;
   margin-top: 18vw;
@@ -9,7 +9,7 @@ export const $Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   @media (max-width: 480px) {
-    height: 270vw;
+    height: 370vw;
     margin-top: 28vw;
   }
 `;

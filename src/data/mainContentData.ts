@@ -10,15 +10,11 @@ export const ourTeamData: IContent[] = [
     id: 1,
     sentence: [
       {
-        content: "우리는 세상에 너무 ",
-        color: "white",
+        content: "웹 기반 ARVR 솔루션 ",
+        color: "pink",
       },
       {
-        content: "많은 정보",
-        color: "yellow",
-      },
-      {
-        content: "가",
+        content: "개발 및",
         color: "white",
       },
     ],
@@ -27,7 +23,7 @@ export const ourTeamData: IContent[] = [
     id: 2,
     sentence: [
       {
-        content: "있다고 생각합니다.",
+        content: " 현장 적용을 통해 ",
         color: "white",
       },
     ],
@@ -36,12 +32,12 @@ export const ourTeamData: IContent[] = [
     id: 3,
     sentence: [
       {
-        content: "우리는 자기에게 ",
-        color: "white",
+        content: "웹 기반 디지털 트윈 플랫폼",
+        color: "pink",
       },
       {
-        content: "맞는 정보를 모아 ",
-        color: "purple",
+        content: "을",
+        color: "white",
       },
     ],
   },
@@ -49,7 +45,7 @@ export const ourTeamData: IContent[] = [
     id: 4,
     sentence: [
       {
-        content: "보여주는 시대가 열리리라 생각합니다.",
+        content: "개발하고 있는",
         color: "white",
       },
     ],
@@ -58,28 +54,50 @@ export const ourTeamData: IContent[] = [
     id: 5,
     sentence: [
       {
-        content: "공간의파티의 ",
-        color: "white",
+        content: "공간의파티",
+        color: "purple",
       },
       {
-        content: "증강현실 솔루션",
-        color: "green",
-      },
-      {
-        content: "이",
+        content: "입니다.",
         color: "white",
       },
     ],
   },
-  {
-    id: 6,
-    sentence: [
-      {
-        content: "이를 위한 첫걸음이 될 것입니다.",
-        color: "white",
-      },
-    ],
-  },
+  // {
+  //   id: 4,
+  //   sentence: [
+  //     {
+  //       content: "정보의 홍수 시대에 원하는 정보만을",
+  //       color: "white",
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 5,
+  //   sentence: [
+  //     {
+  //       content: "공간의파티의 ",
+  //       color: "white",
+  //     },
+  //     {
+  //       content: "증강현실 솔루션",
+  //       color: "green",
+  //     },
+  //     {
+  //       content: "이",
+  //       color: "white",
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 6,
+  //   sentence: [
+  //     {
+  //       content: "이를 위한 첫걸음이 될 것입니다.",
+  //       color: "white",
+  //     },
+  //   ],
+  // },
 ];
 
 export const ourSolutionData: IContent[] = [

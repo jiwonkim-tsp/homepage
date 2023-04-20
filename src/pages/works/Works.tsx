@@ -32,7 +32,7 @@ const Works = () => {
           initial="hidden"
           animate="visible"
         >
-          {slicedData.map((list) => (
+          {ourWorkData.map((list) => (
             <WorkList
               key={list.id}
               img={list.img}
@@ -47,14 +47,14 @@ const Works = () => {
       ))}
       {pageNum !== 3 && (
         <$BtnWrapper>
-          <Button
+          {/* <Button
             text={"더보기"}
             color={"#fff"}
             bgColor={"transparent"}
             border={"purple"}
             padding={"1.8vw 5vw"}
             handleClick={handleClick}
-          />
+          /> */}
         </$BtnWrapper>
       )}
     </$Wrapper>

@@ -9,11 +9,11 @@ const colors: IColors = {
   // purple: "#9F70B6",
   // beige: "#f7f7f3",
   // black: "#1d1d20",
-  yellow: "#F4ABBA",
-  pink: "#CC4A79",
-  green: "#007BAE",
-  purple: "#9F70B6",
-  beige: "#f7f7f3",
+  yellow: "#FFBE69",
+  pink: "#E15E8B",
+  green: "#3734BA",
+  purple: "#A163BF",
+  beige: "#F4F4F0",
   black: "#1d1d20",
 };
 

@@ -32,6 +32,8 @@ export const $Phrases = styled.div`
   z-index: 2;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  transform: translateY(11vw) rotate(-10deg);
+  align-items: left;
+  transform: translate(15vw, 16vw);
 `;
+
+export const $Button = styled.div``;

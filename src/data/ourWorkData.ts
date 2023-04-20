@@ -29,7 +29,7 @@ export const carouselData: IOurWorkData[] = [
     title: "디지털트윈 유지 보수관리 시스템",
     location: "부산 EDC 스마트 정수장",
     period: "2022~2023",
-    link: "https://youtu.be/i4eMTrLnEIw",
+    link: "https://www.youtube.com/watch?v=BJSeKC8EwqY",
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ export const carouselData: IOurWorkData[] = [
     title: "AR 도슨트 서비스",
     location: "서울 역사박물관 공평도시유적전시관",
     period: "2022",
-    link: "https://youtu.be/8l-uzgjgUBE",
+    link: "https://www.youtube.com/watch?v=QumHDkjrVZY",
   },
   {
     id: 3,
@@ -65,7 +65,7 @@ export const carouselData: IOurWorkData[] = [
     title: "AR 광고 서비스",
     location: "남산서울타워",
     period: "2022",
-    link: "https://youtu.be/to2l8dx1D_Y",
+    link: "https://www.youtube.com/watch?v=FPMhsI8moSA",
   },
   {
     id: 6,
@@ -128,7 +128,7 @@ export const carouselData: IOurWorkData[] = [
     title: "XR FIT",
     location: "Under development",
     period: "2022",
-    link: "https://youtu.be/CR65HoGYVh4",
+    link: "https://www.youtube.com/watch?v=L9hn7ed8n_8",
   },
   {
     id: 13,
@@ -137,7 +137,7 @@ export const carouselData: IOurWorkData[] = [
     title: "디지털트윈 유지 보수관리 시스템",
     location: "부산 EDC 스마트 정수장",
     period: "2022~2023",
-    link: "https://youtu.be/i4eMTrLnEIw",
+    link: "https://www.youtube.com/watch?v=BJSeKC8EwqY",
   },
   {
     id: 14,
@@ -146,7 +146,7 @@ export const carouselData: IOurWorkData[] = [
     title: "AR 도슨트 서비스",
     location: "서울 역사박물관 공평도시유적전시관",
     period: "2022",
-    link: "https://youtu.be/8l-uzgjgUBE",
+    link: "https://www.youtube.com/watch?v=QumHDkjrVZY",
   },
   {
     id: 15,
@@ -173,7 +173,7 @@ export const carouselData: IOurWorkData[] = [
     title: "AR 광고 서비스",
     location: "남산서울타워",
     period: "2022",
-    link: "https://youtu.be/to2l8dx1D_Y",
+    link: "https://www.youtube.com/watch?v=FPMhsI8moSA",
   },
   {
     id: 18,
@@ -236,7 +236,7 @@ export const carouselData: IOurWorkData[] = [
     title: "XR FIT",
     location: "Under development",
     period: "2022",
-    link: "https://youtu.be/CR65HoGYVh4",
+    link: "https://www.youtube.com/watch?v=L9hn7ed8n_8",
   },
 ];
 
@@ -248,7 +248,7 @@ export const ourWorkData: IOurWorkData[] = [
     title: "디지털 트윈 유지 보수관리 시스템",
     location: "부산 EDC 스마트 정수장",
     period: "2022~2023",
-    link: "https://youtu.be/i4eMTrLnEIw",
+    link: "https://www.youtube.com/watch?v=BJSeKC8EwqY",
   },
   {
     id: 2,
@@ -257,7 +257,7 @@ export const ourWorkData: IOurWorkData[] = [
     title: "AR 도슨트 서비스",
     location: "서울역사박물관 공평도시유적전시관",
     period: "2022",
-    link: "https://youtu.be/8l-uzgjgUBE",
+    link: "https://www.youtube.com/watch?v=QumHDkjrVZY",
   },
   {
     id: 3,
@@ -284,7 +284,7 @@ export const ourWorkData: IOurWorkData[] = [
     title: "AR 광고 서비스",
     location: "남산서울타워",
     period: "2022",
-    link: "https://youtu.be/to2l8dx1D_Y",
+    link: "https://www.youtube.com/watch?v=FPMhsI8moSA",
   },
   {
     id: 6,
@@ -347,6 +347,6 @@ export const ourWorkData: IOurWorkData[] = [
     title: "XR FIT",
     location: "Under development",
     period: "2022",
-    link: "https://youtu.be/CR65HoGYVh4",
+    link: "https://www.youtube.com/watch?v=L9hn7ed8n_8",
   },
 ];

@@ -7,25 +7,27 @@ export const $List = styled.li`
   display: flex;
   align-items: center;
   @media (max-width: 480px) {
-    height: 70vw;
+    flex-direction: column;
+    height: auto;
+    flex-grow: 1;
   }
 `;
 
 export const $ImgBox = styled(motion.div)<{ order: number }>`
   img {
     width: 30vw;
-    transform: ${({ order }) =>
+    /* transform: ${({ order }) =>
       order % 2 === 0
         ? "rotate(15deg) translateX(20vw)"
-        : "rotate(-15deg) translateX(-20vw)"};
+        : "rotate(-15deg) translateX(-20vw)"}; */
   }
   @media (max-width: 480px) {
     img {
       width: 50vw;
-      transform: ${({ order }) =>
+      /* transform: ${({ order }) =>
         order % 2 === 0
           ? "rotate(15deg) translateX(10vw)"
-          : "rotate(-15deg) translateX(0vw)"};
+          : "rotate(-15deg) translateX(0vw)"}; */
     }
   }
 `;
@@ -34,13 +36,14 @@ export const $ContentBox = styled.div<{ order: number }>`
   width: "50vw";
   position: relative;
   z-index: 1;
-  transform: ${({ order }) =>
+  /* transform: ${({ order }) =>
     order % 2 === 0 ? "translate(20vw, 0vw)" : "translate(-10vw, -2vw)"};
-  order: ${({ order }) => (order % 2 === 0 ? "-1" : "")};
+  order: ${({ order }) => (order % 2 === 0 ? "-1" : "")};*/
   @media (max-width: 480px) {
+    flex-grow: 1;
     width: 60vw;
-    transform: ${({ order }) =>
-      order % 2 === 0 ? "translate(15vw, -5vw)" : "translate(10vw,-5vw)"};
+    /* transform: ${({ order }) =>
+      order % 2 === 0 ? "translate(15vw, -5vw)" : "translate(10vw,-5vw)"}; */
   }
 `;
 
@@ -58,19 +61,20 @@ export const $Title = styled.h1`
 `;
 
 export const $Content = styled.div`
-  width: 40vw;
+  width: 45vw;
   font-size: 1.4vw;
   line-height: 1.25;
   @media (max-width: 480px) {
-    width: 40vw;
+    width: 60vw;
     font-size: 3.5vw;
+    margin-bottom: 6vw;
   }
 `;
 
 export const $Sentence = styled.span`
   color: #fff;
 `;
-export const $ColoredText = styled.span<{ color: string }>`
+export const $ColoredText = styled.p<{ color: string }>`
   color: ${({ color }) => colors[color]};
   word-break: keep-all;
   font-family: ${({ color }) =>

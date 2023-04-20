@@ -1,21 +1,21 @@
 import {
   $Wrapper,
+  $ContentWrapper,
   $Contact,
   $ContactTitle,
   $ContactUl,
   $ContactLi,
-  $Content,
-  $Word,
-  $ImgBox,
   $CompanyInfo,
-  $LogoBox,
+  $Rights,
   $SnsBox,
   $SnsList,
 } from "./style";
 import { Link } from "react-router-dom";
 import img from "@Assets/image/footer/pose1.png";
-import logo from "@Assets/image/logo/footerLogo.png";
+// import video from "@Assets/image/catchphrase/tsp xr.mp4";
 import { BsInstagram, BsYoutube } from "react-icons/bs";
+import { useState, useRef } from "react";
+import EmailModal from "./EmailModal";
 
 const contactInfo = [
   {
@@ -26,7 +26,7 @@ const contactInfo = [
   {
     id: "youtube",
     icon: <BsYoutube />,
-    url: "https://www.youtube.com/@tspxr8611",
+    url: "https://www.youtube.com/@tspxr",
   },
 ];
 
@@ -35,20 +35,42 @@ interface IFooterProps {
 }
 
 const Footer = ({ page }: IFooterProps) => {
+  const [showModal, setShowModal] = useState(false);
+  const [text, setText] = useState("info@tsp-xr.com");
+  const inputRef = useRef<HTMLInputElement>(null);
+
   const copyEmail = () => {
-    document.execCommand("info@tsp-xr.com");
+    setShowModal(true);
+    if (inputRef.current !== null) {
+      inputRef.current.focus();
+      inputRef.current.select();
+      document.execCommand("copy");
+    }
   };
 
   return (
     <$Wrapper page={page}>
-      {page === "products" || page === "solutions" ? (
+      <$ContentWrapper>
+        {showModal && <EmailModal showModal={showModal} />}
         <$Contact>
           <$ContactTitle>Contact</$ContactTitle>
+          <input
+            ref={inputRef}
+            type="text"
+            value={text}
+            inputMode="none"
+          ></input>
           <$ContactUl>
             <$ContactLi>
               <a href="tel:02-545-3982">02-545-3982</a>
             </$ContactLi>
-            <$ContactLi onClick={copyEmail}>info@tsp-xr.com</$ContactLi>
+            <$ContactLi
+              onClick={() => {
+                copyEmail();
+              }}
+            >
+              info@tsp-xr.com
+            </$ContactLi>
             <$ContactLi>
               <a href="https://goo.gl/maps/o46jRX5ytXJEuHo56" target="_blank">
                 서울 강남구 학동로 101길 26
@@ -56,38 +78,19 @@ const Footer = ({ page }: IFooterProps) => {
             </$ContactLi>
           </$ContactUl>
         </$Contact>
-      ) : (
-        <>
-          <$Content>
-            <$Word>We're putting</$Word>
-            <$Word>the power of AR</$Word>
-            <$Word>in your palm</$Word>
-          </$Content>
-          {page === "main" ? (
-            <$ImgBox
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 3, ease: "easeOut" }}
-            >
-              <img src={img} alt="오리너구리 이미지" />
-            </$ImgBox>
-          ) : (
-            ""
-          )}
-        </>
-      )}
-      <$CompanyInfo>
-        <$LogoBox>
-          <span>&copy; </span> 공간의파티. All Rights Reserved.
-        </$LogoBox>
-      </$CompanyInfo>
-      <$SnsBox>
-        {contactInfo.map((item) => (
-          <$SnsList key={item.id}>
-            <Link to={item.url}>{item.icon}</Link>
-          </$SnsList>
-        ))}
-      </$SnsBox>
+        <$SnsBox>
+          {contactInfo.map((item) => (
+            <$SnsList key={item.id}>
+              <Link to={item.url}>{item.icon}</Link>
+            </$SnsList>
+          ))}
+        </$SnsBox>
+        <$CompanyInfo>
+          <$Rights>
+            <span>&copy; </span> 공간의파티. All Rights Reserved.
+          </$Rights>
+        </$CompanyInfo>
+      </$ContentWrapper>
     </$Wrapper>
   );
 };
