@@ -28,7 +28,11 @@ const Awards = () => {
       ></$Awards>
       <$Content>
         <$ContentUl>
-          <img src={awardsData[0].img} alt={awardsData[0].title} />
+          <img
+            src={awardsData[0].img}
+            alt={awardsData[0].title}
+            style={{ transform: "translateX(-5vw)" }}
+          />
           <$ContentLi>2022</$ContentLi>
           <$ContentLi>
             초연결 지능화시대 DNA분야 주요 180대 혁신기업 선정
@@ -63,7 +67,11 @@ const Awards = () => {
           </$ContentLi>
         </$ContentUl>
         <$ContentUl>
-          <img src={awardsData[1].img} alt={awardsData[3].title} />
+          <img
+            src={awardsData[1].img}
+            alt={awardsData[3].title}
+            style={{ transform: "translateX(-4vw)" }}
+          />
           <$ContentLi>2022</$ContentLi>
           <$ContentLi>제14기 K-water 협력 스타트업 선정</$ContentLi>
         </$ContentUl>

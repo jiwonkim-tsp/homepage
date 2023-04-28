@@ -16,18 +16,18 @@ export const $List = styled.li`
 export const $ImgBox = styled(motion.div)<{ order: number }>`
   img {
     width: 30vw;
-    /* transform: ${({ order }) =>
+    transform: ${({ order }) =>
       order % 2 === 0
         ? "rotate(15deg) translateX(20vw)"
-        : "rotate(-15deg) translateX(-20vw)"}; */
+        : "rotate(-15deg) translateX(-20vw)"};
   }
   @media (max-width: 480px) {
     img {
       width: 50vw;
-      /* transform: ${({ order }) =>
+      transform: ${({ order }) =>
         order % 2 === 0
           ? "rotate(15deg) translateX(10vw)"
-          : "rotate(-15deg) translateX(0vw)"}; */
+          : "rotate(-15deg) translateX(0vw)"};
     }
   }
 `;
@@ -36,12 +36,13 @@ export const $ContentBox = styled.div<{ order: number }>`
   width: "50vw";
   position: relative;
   z-index: 1;
-  /* transform: ${({ order }) =>
-    order % 2 === 0 ? "translate(20vw, 0vw)" : "translate(-10vw, -2vw)"};
-  order: ${({ order }) => (order % 2 === 0 ? "-1" : "")};*/
+  transform: ${({ order }) =>
+    order % 2 === 0 ? "translate(15vw, 0vw)" : "translate(-10vw, -2vw)"};
+  order: ${({ order }) => (order % 2 === 0 ? "-1" : "")};
   @media (max-width: 480px) {
     flex-grow: 1;
     width: 60vw;
+    order: 0;
     /* transform: ${({ order }) =>
       order % 2 === 0 ? "translate(15vw, -5vw)" : "translate(10vw,-5vw)"}; */
   }
